@@ -46,8 +46,8 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active" style="width:180px"><a href="#">Главная</a></li>
-                        <li><a href="#about" style="width:180px">Галерея</a></li>
+                        <li class="active" style="width:180px"><a href="/">Главная</a></li>
+                        <li><a href="/gallery" style="width:180px">Галерея</a></li>
                         <li class="dropdown" style="width:180px">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О художнице <span class="caret"></span></a>
                             <ul class="dropdown-menu">
@@ -100,7 +100,7 @@
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-    </a> 
+    </a>
 </div><!-- /.carousel -->
 
 
@@ -117,16 +117,16 @@
             <h2>Новости</h2>
             <p>12.03.2015</p>
             <p>Добавлена новая картина в раздел натюрморт.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-default" href="#" role="button">Читать далее &raquo;</a></p>
             <p>10.03.2015</p>
             <p>12 апреля пройдет выставка картин в галерее "Альбатрос"</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-default" href="#" role="button">Читать далее &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
 
             <h2>Новые работы</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-default" href="#" role="button">Читать далее &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
             
