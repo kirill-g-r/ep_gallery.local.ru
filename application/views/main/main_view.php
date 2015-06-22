@@ -23,12 +23,14 @@
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 
-    <link href='http://fonts.googleapis.com/css?family=Pacifico|Dancing+Script|Kaushan+Script|Playball' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Niconne|Marck+Script|Alex+Brush|Calligraffitti|Tangerine|Great+Vibes|Pinyon+Script|Italianno' rel='stylesheet' type='text/css'>
 </head>
 <style>
 
     h2 {
-        font-family: 'Playball', cursive;
+
+        font-family: 'Italianno', cursive;
+        font-weight: 100;
     }
 </style>
 <body class="landing">
@@ -45,10 +47,23 @@
     <!-- Banner -->
     <section id="banner">
         <div class="inner">
-            <h2>ELENA OPALEVA</h2>
+            <h2 style="font-size:400%">Elena Opaleva</h2>
+
+
+
             <p>COMING SOON<br />
+
             </p>
 
+            <div style="text-align: right; margin-right: 150px; margin-bottom: -100px;" >
+
+            <img class="raised" style="width: 200px; -webkit-transform: rotate(20deg); -moz-transform: rotate(-2deg); border: solid; " src="../../../images/20.jpg">
+
+            <img class="raised" style="width: 300px; -webkit-transform: rotate(5deg); -moz-transform: rotate(-2deg); border: solid; " src="../../../images/10.JPG">
+
+            <img class="raised" style="width: 250px; margin-bottom: 100px; -webkit-transform: rotate(-30deg); -moz-transform: rotate(-2deg); border: solid; " src="../../../images/17.jpg">
+
+                </div>
         </div>
 
     </section>

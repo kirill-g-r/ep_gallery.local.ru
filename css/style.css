@@ -1460,7 +1460,7 @@
 		letter-spacing: 0.225em;
 		line-height: 1em;
 		margin: 0 0 1em 0;
-		text-transform: uppercase;
+		text-transform: capitalize;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1471,6 +1471,7 @@
 	h2 {
 		font-size: 1.35em;
 		line-height: 1.75em;
+		margin-left: -100px;
 	}
 
 		@media screen and (max-width: 736px) {
@@ -1571,6 +1572,28 @@
 	.align-right {
 		text-align: right;
 	}
+
+.raised {
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: -20px 30px 30px -30px rgba(0, 0, 0, 0.5), 0 30px 40px rgba(0, 0, 0, 0.3), 0 0 80px rgba(0, 0, 0, 0.1) inset;
+}
+
+.curved:before {
+	top:10px;
+	bottom:10px;
+	left:0;
+	right:50%;
+	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.6);
+	-moz-box-shadow:0 0 15px rgba(0,0,0,0.6);
+	box-shadow:0 0 15px rgba(0,0,0,0.6);
+	-moz-border-radius:10px / 100px;
+	border-radius:10px / 100px;
+}
+.curved-vt-2:before {
+	right:0;
+}
 
 /* Section/Article */
 
@@ -3347,7 +3370,10 @@
 			z-index: 1;
 		}
 
-			#banner h2:before, #banner h2:after {
+/*			#banner h2:before, #banner h2:after {
+*/
+
+			#banner h2:after {
 				-moz-transition: width 0.85s ease;
 				-webkit-transition: width 0.85s ease;
 				-ms-transition: width 0.85s ease;
@@ -3357,9 +3383,13 @@
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
 				background: #fff;
-				content: '';
+				content: 'ARTIST';
 				display: block;
-				height: 2px;
+				text-align: right;
+				font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				color: #c49c4a;
+				font-size: 30px;
+				height: 1px;
 				position: absolute;
 				width: 100%;
 			}
@@ -3370,8 +3400,8 @@
 			}
 
 			#banner h2:after {
-				bottom: 0;
-				right: 0;
+				bottom: 60px;
+				right: -80px;
 			}
 
 		#banner p {
