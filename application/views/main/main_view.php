@@ -13,26 +13,34 @@
 
 
 <head>
-    <title>ELENA OPALEVA | Personal Site</title>
+    <title>ELENA OPALEVA | Official Site</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="http://kirillgoryunov.com/images/favicon_evo.ico" type="image/x-icon">
     <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="http://kirillgoryunov.com/css/style_evo.css" />
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 
     <link href='http://fonts.googleapis.com/css?family=Niconne|Marck+Script|Alex+Brush|Calligraffitti|Tangerine|Great+Vibes|Pinyon+Script|Italianno' rel='stylesheet' type='text/css'>
 </head>
+
 <style>
 
-    h2 {
+    @font-face {
+        font-family: "Zapfino";
+        src: url(http://kirillgoryunov.com/fonts/Zapfino.otf) ;
+        font-weight: bold;
 
-        font-family: 'Italianno', cursive;
-        font-weight: 100;
     }
+    h2 { font-family: "Zapfino"}
+
 </style>
+
+
+
 <body class="landing">
 
 <!-- Page Wrapper -->
