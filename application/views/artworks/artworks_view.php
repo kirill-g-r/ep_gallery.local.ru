@@ -69,32 +69,110 @@
 
 			</div>
 
-			<!-- Main -->
-			<div class="wrapper style1">
 
-				<div class="container">
-					<article id="main" class="special">
+			<!-- Banner -->
+				<section id="banner">
+
+					<header>
+						<h2 class="zapfiro text-shadow" style="font-size: 500%">Artworks</h2>
+<!--
+						<p>
+							A (free) responsive site template by <a href="http://html5up.net">HTML5 UP</a>.
+							Built on <strong>skel</strong> and released under the <a href="http://html5up.net/license">CCA</a> license.
+						</p>
+-->
+					</header>
+				</section>
+
+			<!-- Carousel -->
+			<section class="carousel">
+				<div class="reel">
+
+					<article>
+						<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>
 						<header>
-
-							<p>
-								Contacts:
-							</p>
-
-							<p>
-								mobile: +7 (000) 000 00 00
-							</p>
-							<p>
-								email: xxx@xxx.xx
-							</p>
+							<h3><a >#Натюрморт</a></h3>
 						</header>
-
-						</section>
+						<p>Non potest esse text</p>
 					</article>
 
+					<article>
+						<a href="#banner" class="image featured"><img src="images/3_2.JPG" alt="" /></a>
+						<header>
+							<h3><a >#Композиция</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
+
+					<article>
+						<a href="#banner" class="image featured"><img src="images/10_2.JPG" alt="" /></a>
+						<header>
+							<h3><a >#Пейзаж</a></h3>
+						</header>
+						<p>Non potest esse text, non potest potest esse text</p>
+					</article>
+
+					<article>
+						<a href="#banner" class="image featured"><img src="images/17_2.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Пейзаж</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
+
+					<article>
+						<a href="#banner" class="image featured"><img src="images/20_2.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Композиция</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
+
+					<article>
+						<a href="#banner" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Title</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
+
+					<article>
+						<a href="#banner" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Title</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
+
+					<article>
+						<a href="#banner" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Title</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
+
+					<article>
+						<a href="#banner" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Title</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
+
+					<article>
+						<a href="#banner" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Title</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
 
 				</div>
+			</section>
 
-			</div>
+
+
 			<!-- Footer -->
 				<div id="footer">
 					<div class="container">

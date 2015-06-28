@@ -18,7 +18,7 @@
     <style>
         @font-face {
             font-family: "Zapfino";
-            src: url(http://kirillgoryunov.com/fonts/Zapfino.otf) ;
+            src: url(/fonts/Zapfino.otf) ;
             font-weight: bold;
 
 
@@ -39,7 +39,7 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="index.html" id="logo">Elena Opaleva</a></h1>
+								<h1 style="font-size: 600%"><a href="/" id="logo">Elena Opaleva</a></h1>
 								<hr />
 								<p>ARTIST</p>
 							</header>
@@ -51,130 +51,135 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="#">Artworks</a></li>
-								<li><a href="left-sidebar.html">Artist</a>
-                                    <ul>
-                                        <li><a href="#">Biographi</a></li>
-                                        <li>
-                                            <a href="#">Media &hellip;</a>
-                                            <ul>
-                                                <li><a href="#">Photo</a></li>
-                                                <li><a href="#">Video</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Exhibitions</a></li>
-                                        <li><a href="#">Publishing</a></li>
-                                    </ul>
+								<li><a href="/">Home</a></li>
+								<li><a href="/artworks">Artworks</a></li>
+								<li><a href="/artist">Artist</a></li>
+<!--								<li><a href="/artist">Artist</a></li>
+									<ul>
+										<li><a href="">Biographi</a></li>
+										<li>
+											<a href="">Media &hellip;</a>
+											<ul>
+												<li><a href="">Photo</a></li>
+												<li><a href="">Video</a></li>
+											</ul>
+										</li>
+										<li><a href="">Exhibitions</a></li>
+										<li><a href="">Publishing</a></li>
+									</ul>
 
-                                </li>
-								<li><a href="right-sidebar.html">News</a></li>
-								<li><a href="no-sidebar.html">Articles</a></li>
-                                <li><a href="no-sidebar.html">Contacts</a></li>
+								</li>
+-->
+								<li><a href="/news">News</a></li>
+								<li><a href="/articles">Articles</a></li>
+								<li><a href="/contacts">Contacts</a></li>
 							</ul>
 						</nav>
 
 				</div>
 
+
+
 			<!-- Banner -->
-				<section id="banner">
-					<header>
-						<h2>Artworks</h2>
-<!--
-						<p>
-							A (free) responsive site template by <a href="http://html5up.net">HTML5 UP</a>.
-							Built on <strong>skel</strong> and released under the <a href="http://html5up.net/license">CCA</a> license.
-						</p>
--->
-					</header>
-				</section>
+			<section id="banner">
+				<header>
+					<h2 class="zapfiro text-shadow" style="font-size: 600%">Artworks</h2>
+					<!--
+                                            <p>
+                                                A (free) responsive site template by <a href="http://html5up.net">HTML5 UP</a>.
+                                                Built on <strong>skel</strong> and released under the <a href="http://html5up.net/license">CCA</a> license.
+                                            </p>
+                    -->
+				</header>
+			</section>
 
 			<!-- Carousel -->
-				<section class="carousel">
-					<div class="reel">
+			<section class="carousel">
+				<div class="reel">
 
-						<article>
-							<a href="#" class="image featured"><img src="images/1.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">#Натюрморт</a></h3>
-							</header>
-							<p>Non potest esse text</p>
-						</article>
+					<article>
+						<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Натюрморт</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/3.JPG" alt="" /></a>
-							<header>
-								<h3><a href="#">#Композиция</a></h3>
-							</header>
-							<p>Non potest esse text</p>
-						</article>
+					<article>
+						<a href="#banner" class="image featured"><img src="images/3_2.JPG" alt="" /></a>
+						<header>
+							<h3><a >#Композиция</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/10.JPG" alt="" /></a>
-							<header>
-								<h3><a href="#">#Пейзаж</a></h3>
-							</header>
-							<p>Non potest esse text, non potest potest esse text</p>
-						</article>
+					<article>
+						<a href="#banner" class="image featured"><img src="images/10_2.JPG" alt="" /></a>
+						<header>
+							<h3><a >#Пейзаж</a></h3>
+						</header>
+						<p>Non potest esse text, non potest potest esse text</p>
+					</article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/17.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">#Пейзаж</a></h3>
-							</header>
-							<p>Non potest esse text</p>
-						</article>
+					<article>
+						<a href="#banner" class="image featured"><img src="images/17_2.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Пейзаж</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/20.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">#Композиция</a></h3>
-							</header>
-							<p>Non potest esse text</p>
-						</article>
+					<article>
+						<a href="#banner" class="image featured"><img src="images/20_2.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Композиция</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">#Title</a></h3>
-							</header>
-							<p>Non potest esse text</p>
-						</article>
+					<article>
+						<a href="#banner" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Title</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">#Title</a></h3>
-							</header>
-							<p>Non potest esse text</p>
-						</article>
+					<article>
+						<a href="#banner" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Title</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">#Title</a></h3>
-							</header>
-							<p>Non potest esse text</p>
-						</article>
+					<article>
+						<a href="#banner" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Title</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">#Title</a></h3>
-							</header>
-							<p>Non potest esse text</p>
-						</article>
+					<article>
+						<a href="#banner" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Title</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">#Title</a></h3>
-							</header>
-							<p>Non potest esse text</p>
-						</article>
+					<article>
+						<a href="#banner" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+						<header>
+							<h3><a >#Title</a></h3>
+						</header>
+						<p>Non potest esse text</p>
+					</article>
 
-					</div>
-				</section>
+				</div>
+			</section>
+
 
 
 
@@ -186,9 +191,9 @@
 							<!-- Tweets -->
 								<section class="4u 12u(mobile)">
 									<header>
-                                        <h3>News</h3>
+                                        <h3 class="zapfiro" style="font-size: 300%;">News</h3>
                                         <br>
-										<h2 class="icon fa-twitter circled"><span class="label">Tweets</span></h2>
+										<h2 class="icon fa-newspaper-o circled"><span class="label">Tweets</span></h2>
 									</header>
 									<ul class="divided">
 										<li>
@@ -209,54 +214,45 @@
 												<span class="timestamp">3 hours ago</span>
 											</article>
 										</li>
-										<li>
-											<article class="tweet">
-                                                , some text, some text, some text, some text, some text, some text, some text.
-												<span class="timestamp">5 hours ago</span>
-											</article>
-										</li>
+
 									</ul>
 								</section>
 
                             <!-- Photos -->
                             <section class="4u 12u(mobile)">
                                 <header>
-                                    <h3>Last Artworks</h3>
+                                    <h3 class="zapfiro" style="font-size: 300%;">Last Artworks</h3>
                                     <br>
-                                    <h2 class="icon fa-camera circled"><span class="label">Photos</span></h2>
+                                    <h2 class="icon fa-image circled"><span class="label">Photos</span></h2>
                                 </header>
                                 <div class="row 25%">
                                     <div class="6u">
-                                        <a href="#" class="image fit"><img src="images/20.jpg" alt="" /></a>
+                                        <a href="#" class="image fit"><img src="images/20_2.jpg" alt="" /></a>
                                     </div>
                                     <div class="6u$">
-                                        <a href="#" class="image fit"><img src="images/10.JPG" alt="" /></a>
+                                        <a href="#" class="image fit"><img src="images/10_2.JPG" alt="" /></a>
                                     </div>
                                     <div class="6u">
-                                        <a href="#" class="image fit"><img src="images/17.jpg" alt="" /></a>
+                                        <a href="#" class="image fit"><img src="images/17_2.jpg" alt="" /></a>
                                     </div>
                                     <div class="6u$">
-                                        <a href="#" class="image fit"><img src="images/1.jpg" alt="" /></a>
+                                        <a href="#" class="image fit"><img src="images/1_2.jpg" alt="" /></a>
                                     </div>
-                                    <div class="6u">
-                                        <a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="6u$">
-                                        <a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
-                                    </div>
+
                                 </div>
                             </section>
 
 							<!-- Posts -->
 								<section class="4u 12u(mobile)">
 									<header>
-                                        <h3>Articles</h3>
+                                        <h3 class="zapfiro" style="font-size: 300%;">Articles</h3>
                                         <br>
 
 										<h2 class="icon fa-file circled"><span class="label">Posts</span></h2>
 									</header>
 									<ul class="divided">
 										<li>
+<!--
 											<article class="post stub">
 												<header>
 													<h3><a href="#">Как правильно подобрать обрамление для картины</a></h3>
@@ -279,15 +275,18 @@
 												</header>
 												<span class="timestamp">Yesterday</span>
 											</article>
-										</li>
-										<li>
-											<article class="post stub">
-												<header>
-													<h3><a href="#">Some text, some text</a></h3>
-												</header>
-												<span class="timestamp">2 days ago</span>
+-->
+											<article class="tweet">
+												<a href="/articles">Как правильно подобрать обрамление для картины.</a>
+												<span class="timestamp">40 minutes ago</span>
 											</article>
+											<article class="tweet">
+												<a href="/articles">Some text, some text.</a>
+												<span class="timestamp">40 minutes ago</span>
+											</article>
+
 										</li>
+
 									</ul>
 								</section>
 
@@ -299,16 +298,16 @@
 								<!-- Contact -->
 									<section class="contact">
 										<header>
-											<h3>Contacts or some text</h3>
+											<h1 style="font-size: 400%"><a href="/">Elena Opaleva</a></h1>
 										</header>
-										<p>Find on social networks ...and some text also</p>
+										<p>Find on social networks</p>
 										<ul class="icons">
-											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-											<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-											<li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+											<li><a href="https://twitter.com/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="https://www.facebook.com/?_rdr" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+											<li><a href="https://instagram.com/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="https://ru.pinterest.com/" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+											<li><a href="https://dribbble.com/" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="https://www.linkedin.com/home" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
 										</ul>
 									</section>
 
