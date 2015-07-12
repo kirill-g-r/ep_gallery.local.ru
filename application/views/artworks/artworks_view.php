@@ -12,6 +12,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.onvisible.min.js"></script>
+		<script src="assets/js/util.js"></script>
+
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -36,7 +47,7 @@
 			<!-- Header -->
 			<div id="header" style="background-image: url(/images/banner_FIRST.jpg); padding: 2.5em 0 2em 0;">
 
-				<h1 style="margin-top: 30px;"><a href="/" id="logo">Elena Opaleva</a></h1>
+				<h1 class="custom-reflection" style="margin-top: 30px;"><a href="/" id="logo">Elena Opaleva</a></h1>
 				<!-- Inner -->
 
 
@@ -83,94 +94,120 @@
 						</p>
 -->
 					</header>
+
+					<ul id="nav_bottom_artworks">
+						<li><a href="#">Landsacpes</a></li>
+						<li><a href="#">Composition</a></li>
+						<li><a href="#">Still life</a></li>
+						<li><a href="#">Watercolor</a></li>
+						<!--								<li><a href="/artist">Artist</a></li>
+                                                            <ul>
+                                                                <li><a href="">Biographi</a></li>
+                                                                <li>
+                                                                    <a href="">Media &hellip;</a>
+                                                                    <ul>
+                                                                        <li><a href="">Photo</a></li>
+                                                                        <li><a href="">Video</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><a href="">Exhibitions</a></li>
+                                                                <li><a href="">Publishing</a></li>
+                                                            </ul>
+
+                                                        </li>
+                        -->
+						<li><a href="/news">Acrylic</a></li>
+					</ul>
+
 				</section>
 
-			<!-- Carousel -->
-			<section class="carousel">
-				<div class="reel">
-
+		<!-- Carousel -->
+		<section class="carousel">
+			<div class="reel">
+				<div id="gallery">
 					<article>
-						<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>
+						<a href="images/1_2.jpg" class="image featured"><img src="images/1_2.jpg"  alt=""></a>
+						<!--<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>-->
 						<header>
-							<h3><a >#Натюрморт</a></h3>
+							<h3>#Landscape</h3>
 						</header>
 						<p>Non potest esse text</p>
 					</article>
 
 					<article>
-						<a href="#banner" class="image featured"><img src="images/3_2.JPG" alt="" /></a>
+						<a href="images/3_2.JPG" class="image featured"><img src="images/3_2.JPG" alt="" /></a>
 						<header>
-							<h3><a >#Композиция</a></h3>
+							<h3>#Landscape</h3>
 						</header>
 						<p>Non potest esse text</p>
 					</article>
 
 					<article>
-						<a href="#banner" class="image featured"><img src="images/10_2.JPG" alt="" /></a>
+						<a href="images/10_2.JPG" class="image featured"><img src="images/10_2.JPG" alt="" /></a>
 						<header>
-							<h3><a >#Пейзаж</a></h3>
+							<h3>#Landscape</h3>
 						</header>
 						<p>Non potest esse text, non potest potest esse text</p>
 					</article>
 
 					<article>
-						<a href="#banner" class="image featured"><img src="images/17_2.jpg" alt="" /></a>
+						<a href="images/17_2.jpg" class="image featured"><img src="images/17_2.jpg" alt="" /></a>
 						<header>
-							<h3><a >#Пейзаж</a></h3>
+							<h3>#Landscape</h3>
 						</header>
 						<p>Non potest esse text</p>
 					</article>
 
 					<article>
-						<a href="#banner" class="image featured"><img src="images/20_2.jpg" alt="" /></a>
+						<a href="images/20_2.jpg" class="image featured"><img src="images/20_2.jpg" alt="" /></a>
 						<header>
-							<h3><a >#Композиция</a></h3>
+							<h3>#Landscape</h3>
 						</header>
 						<p>Non potest esse text</p>
 					</article>
 
 					<article>
-						<a href="#banner" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+						<a href="images/pic01.jpg" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 						<header>
-							<h3><a >#Title</a></h3>
+							<h3>#Landscape</h3>
 						</header>
 						<p>Non potest esse text</p>
 					</article>
 
 					<article>
-						<a href="#banner" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+						<a href="images/pic02.jpg" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 						<header>
-							<h3><a >#Title</a></h3>
+							<h3>#Landscape</h3>
 						</header>
 						<p>Non potest esse text</p>
 					</article>
 
 					<article>
-						<a href="#banner" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+						<a href="images/pic02.jpg" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 						<header>
-							<h3><a >#Title</a></h3>
+							<h3>#Landscape</h3>
 						</header>
 						<p>Non potest esse text</p>
 					</article>
 
 					<article>
-						<a href="#banner" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+						<a href="iimages/pic02.jpg" class="image featured"><img src="iimages/pic02.jpg" alt="" /></a>
 						<header>
-							<h3><a >#Title</a></h3>
+							<h3>#Landscape</h3>
 						</header>
 						<p>Non potest esse text</p>
 					</article>
 
 					<article>
-						<a href="#banner" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+						<a href="images/pic02.jpg" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 						<header>
-							<h3><a >#Title</a></h3>
+							<h3>#Landscape</h3>
 						</header>
 						<p>Non potest esse text</p>
 					</article>
-
 				</div>
-			</section>
+			</div>
+		</section>
 
 
 
@@ -240,14 +277,18 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.onvisible.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+		<script>
+			$(function() {
+				$('#gallery').poptrox({
+					usePopupCaption: false
+				});
+
+				$('#gallery_new_artworks').poptrox({
+					usePopupCaption: false
+				});
+
+			});
+		</script>
 
 	</body>
 </html>

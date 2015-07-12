@@ -390,6 +390,8 @@
 
 		</div>
 
+		<!-- Scripts -->
+
 		<script>
 			$(function() {
 				$('#gallery').poptrox({
@@ -402,9 +404,6 @@
 
 			});
 		</script>
-
-		<!-- Scripts -->
-
 
 	</body>
 </html>

@@ -35,7 +35,7 @@
 
 			<!-- Header -->
 			<div id="header" style="background-image: url(/images/banner_FIRST.jpg); padding: 2.5em 0 2em 0;">
-				<h1><a href="/" id="logo">Elena Opaleva</a></h1>
+				<h1 style="margin-top: 30px;"><a href="/" id="logo">Elena Opaleva</a></h1>
 				<!-- Inner -->
 
 
