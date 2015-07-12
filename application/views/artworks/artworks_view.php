@@ -35,7 +35,8 @@
 
 			<!-- Header -->
 			<div id="header" style="background-image: url(/images/banner_FIRST.jpg); padding: 2.5em 0 2em 0;">
-				<h1><a href="/" id="logo">Elena Opaleva</a></h1>
+
+				<h1 style="margin-top: 30px;"><a href="/" id="logo">Elena Opaleva</a></h1>
 				<!-- Inner -->
 
 
@@ -74,7 +75,7 @@
 				<section id="banner">
 
 					<header>
-						<h2 class="zapfiro text-shadow" style="font-size: 500%">Artworks</h2>
+						<h2 class="zapfiro text-shadow" style="font-size: 500%; margin-top: -3%; margin-bottom: -10%;">Artworks</h2>
 <!--
 						<p>
 							A (free) responsive site template by <a href="http://html5up.net">HTML5 UP</a>.
@@ -184,6 +185,32 @@
 								<!-- Contact -->
 									<section class="contact">
 										<header>
+
+											<ul id="nav_bottom">
+												<li><a href="/">Home</a></li>
+												<li><a href="/artworks">Artworks</a></li>
+												<li><a href="/artist">Artist</a></li>
+												<!--								<li><a href="/artist">Artist</a></li>
+                                                                                    <ul>
+                                                                                        <li><a href="">Biographi</a></li>
+                                                                                        <li>
+                                                                                            <a href="">Media &hellip;</a>
+                                                                                            <ul>
+                                                                                                <li><a href="">Photo</a></li>
+                                                                                                <li><a href="">Video</a></li>
+                                                                                            </ul>
+                                                                                        </li>
+                                                                                        <li><a href="">Exhibitions</a></li>
+                                                                                        <li><a href="">Publishing</a></li>
+                                                                                    </ul>
+
+                                                                                </li>
+                                                -->
+												<li><a href="/news">News</a></li>
+												<li><a href="/articles">Articles</a></li>
+												<li><a href="/contacts">Contacts</a></li>
+											</ul>
+
 											<h1 style="font-size: 400%"><a href="/">Elena Opaleva</a></h1>
 										</header>
 										<p>Find on social networks</p>

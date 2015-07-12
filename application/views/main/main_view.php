@@ -12,6 +12,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.onvisible.min.js"></script>
+		<script src="assets/js/util.js"></script>
+
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -23,8 +34,8 @@
 
 
         }
-        h1 { font-family: "Zapfino"; text-shadow: 0px 3px 0px #b2a98f,
-        0px 14px 10px rgba(0,0,0,0.15),
+        h1 { font-family: "Zapfino"; text-shadow: 0px 2px 0px #b2a98f,
+        0px 14px 10px rgba(0,0,0,0.65),
         0px 24px 2px rgba(0,0,0,0.1),
         0px 34px 30px rgba(0,0,0,0.1);}
 
@@ -40,7 +51,7 @@
 						<div class="inner">
 							<header>
 								<h1 style="font-size: 600%"><a href="/" id="logo">Elena Opaleva</a></h1>
-								<hr />
+								<hr class="hr_logo_name"  />
 								<p>ARTIST</p>
 							</header>
 							<footer>
@@ -96,87 +107,88 @@
 			<!-- Carousel -->
 			<section class="carousel">
 				<div class="reel">
+					<div id="gallery">
+						<article>
+							<a href="images/1_2.jpg" class="image featured"><img src="images/1_2.jpg"  alt=""></a>
+							<!--<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>-->
+							<header>
+								<h3>#Натюрморт</h3>
+							</header>
+							<p>Non potest esse text</p>
+						</article>
 
-					<article>
-						<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>
-						<header>
-							<h3><a >#Натюрморт</a></h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
+						<article>
+							<a href="images/3_2.JPG" class="image featured"><img src="images/3_2.JPG" alt="" /></a>
+							<header>
+								<h3>#Композиция</h3>
+							</header>
+							<p>Non potest esse text</p>
+						</article>
 
-					<article>
-						<a href="#banner" class="image featured"><img src="images/3_2.JPG" alt="" /></a>
-						<header>
-							<h3><a >#Композиция</a></h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
+						<article>
+							<a href="images/10_2.JPG" class="image featured"><img src="images/10_2.JPG" alt="" /></a>
+							<header>
+								<h3>#Пейзаж</h3>
+							</header>
+							<p>Non potest esse text, non potest potest esse text</p>
+						</article>
 
-					<article>
-						<a href="#banner" class="image featured"><img src="images/10_2.JPG" alt="" /></a>
-						<header>
-							<h3><a >#Пейзаж</a></h3>
-						</header>
-						<p>Non potest esse text, non potest potest esse text</p>
-					</article>
+						<article>
+							<a href="images/17_2.jpg" class="image featured"><img src="images/17_2.jpg" alt="" /></a>
+							<header>
+								<h3>#Пейзаж</h3>
+							</header>
+							<p>Non potest esse text</p>
+						</article>
 
-					<article>
-						<a href="#banner" class="image featured"><img src="images/17_2.jpg" alt="" /></a>
-						<header>
-							<h3><a >#Пейзаж</a></h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
+						<article>
+							<a href="images/20_2.jpg" class="image featured"><img src="images/20_2.jpg" alt="" /></a>
+							<header>
+								<h3>#Композиция</h3>
+							</header>
+							<p>Non potest esse text</p>
+						</article>
 
-					<article>
-						<a href="#banner" class="image featured"><img src="images/20_2.jpg" alt="" /></a>
-						<header>
-							<h3><a >#Композиция</a></h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
+						<article>
+							<a href="images/pic01.jpg" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+							<header>
+								<h3>#Title</h3>
+							</header>
+							<p>Non potest esse text</p>
+						</article>
 
-					<article>
-						<a href="#banner" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-						<header>
-							<h3><a >#Title</a></h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
+						<article>
+							<a href="images/pic02.jpg" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+							<header>
+								<h3>#Title</h3>
+							</header>
+							<p>Non potest esse text</p>
+						</article>
 
-					<article>
-						<a href="#banner" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-						<header>
-							<h3><a >#Title</a></h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
+						<article>
+							<a href="images/pic02.jpg" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+							<header>
+								<h3>#Title</h3>
+							</header>
+							<p>Non potest esse text</p>
+						</article>
 
-					<article>
-						<a href="#banner" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-						<header>
-							<h3><a >#Title</a></h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
+						<article>
+							<a href="iimages/pic02.jpg" class="image featured"><img src="iimages/pic02.jpg" alt="" /></a>
+							<header>
+								<h3>#Title</h3>
+							</header>
+							<p>Non potest esse text</p>
+						</article>
 
-					<article>
-						<a href="#banner" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-						<header>
-							<h3><a >#Title</a></h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
-
-					<article>
-						<a href="#banner" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-						<header>
-							<h3><a >#Title</a></h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
-
+						<article>
+							<a href="images/pic02.jpg" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+							<header>
+								<h3>#Title</h3>
+							</header>
+							<p>Non potest esse text</p>
+						</article>
+					</div>
 				</div>
 			</section>
 
@@ -225,9 +237,11 @@
                                     <br>
                                     <h2 class="icon fa-image circled"><span class="label">Photos</span></h2>
                                 </header>
+<!--
                                 <div class="row 25%">
+
                                     <div class="6u">
-                                        <a href="#" class="image fit"><img src="images/20_2.jpg" alt="" /></a>
+                                        <a href="images/20_2.jpg" class="image fit"><img src="images/20_2.jpg" alt="" /></a>
                                     </div>
                                     <div class="6u$">
                                         <a href="#" class="image fit"><img src="images/10_2.JPG" alt="" /></a>
@@ -237,9 +251,30 @@
                                     </div>
                                     <div class="6u$">
                                         <a href="#" class="image fit"><img src="images/1_2.jpg" alt="" /></a>
-                                    </div>
+
+									</div>
 
                                 </div>
+-->
+
+								<div class="row 25%" id="gallery_new_artworks">
+
+									<article class="6u">
+										<a href="images/20_2.jpg" class="image fit"><img src="images/20_2.jpg" alt="" /></a>
+									</article>
+									<article class="6u$">
+										<a href="images/10_2.JPG" class="image fit"><img src="images/10_2.JPG" alt="" /></a>
+									</article>
+									<article class="6u">
+										<a href="images/17_2.jpg" class="image fit"><img src="images/17_2.jpg" alt="" /></a>
+									</article>
+									<article class="6u$">
+										<a href="images/1_2.jpg" class="image fit"><img src="images/1_2.jpg" alt="" /></a>
+
+									</article>
+
+								</div>
+
                             </section>
 
 							<!-- Posts -->
@@ -298,9 +333,38 @@
 								<!-- Contact -->
 									<section class="contact">
 										<header>
+
+											<ul id="nav_bottom">
+												<li><a href="/">Home</a></li>
+												<li><a href="/artworks">Artworks</a></li>
+												<li><a href="/artist">Artist</a></li>
+												<!--								<li><a href="/artist">Artist</a></li>
+                                                                                    <ul>
+                                                                                        <li><a href="">Biographi</a></li>
+                                                                                        <li>
+                                                                                            <a href="">Media &hellip;</a>
+                                                                                            <ul>
+                                                                                                <li><a href="">Photo</a></li>
+                                                                                                <li><a href="">Video</a></li>
+                                                                                            </ul>
+                                                                                        </li>
+                                                                                        <li><a href="">Exhibitions</a></li>
+                                                                                        <li><a href="">Publishing</a></li>
+                                                                                    </ul>
+
+                                                                                </li>
+                                                -->
+												<li><a href="/news">News</a></li>
+												<li><a href="/articles">Articles</a></li>
+												<li><a href="/contacts">Contacts</a></li>
+											</ul>
+
 											<h1 style="font-size: 400%"><a href="/">Elena Opaleva</a></h1>
+
 										</header>
+
 										<p>Find on social networks</p>
+
 										<ul class="icons">
 											<li><a href="https://twitter.com/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 											<li><a href="https://www.facebook.com/?_rdr" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
@@ -326,15 +390,21 @@
 
 		</div>
 
+		<script>
+			$(function() {
+				$('#gallery').poptrox({
+					usePopupCaption: false
+				});
+
+				$('#gallery_new_artworks').poptrox({
+					usePopupCaption: false
+				});
+
+			});
+		</script>
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.onvisible.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+
 
 	</body>
 </html>
