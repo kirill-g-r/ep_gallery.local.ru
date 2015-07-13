@@ -7,6 +7,15 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+	@font-face {
+		font-family: "Zapfino";
+		src: url(/fonts/Zapfino.otf) ;
+		font-weight: bold;
+
+
+	}
+
+
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -2243,10 +2252,38 @@ hr {
 
 	}
 
+	.text-shadow-logo {
+
+		font-family: "Zapfino";
+
+		text-shadow: 0px 2px 0px #b2a98f,
+		0px 14px 10px rgba(0,0,0,0.65),
+		0px 24px 2px rgba(0,0,0,0.1),
+		0px 34px 30px rgba(0,0,0,0.1);
+
+	}
+
+	.text-shadow-logo-template {
+
+		font-family: "Zapfino";
+
+	}
+
 	.custom-reflection {
 
-		-webkit-box-reflect: below -35px -webkit-gradient(linear, left top, left bottom, from(transparent),
-		color-stop(0.3, transparent), to(white));
+		-webkit-box-reflect: below -80% -webkit-gradient(linear, left top, left bottom, from(transparent),
+		color-stop(0.4, transparent), to(white));
+
+	}
+
+	a:link,
+	a:visited {
+
+		text-decoration: none;
+	}
+
+	a:hover,
+	a:focus {
 
 	}
 

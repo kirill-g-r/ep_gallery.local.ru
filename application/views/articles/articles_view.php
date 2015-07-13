@@ -12,6 +12,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/page_transition.js"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -23,10 +25,7 @@
 
 
         }
-        h1 { font-family: "Zapfino"; text-shadow: 0px 3px 0px #b2a98f,
-        0px 14px 10px rgba(0,0,0,0.15),
-        0px 24px 2px rgba(0,0,0,0.1),
-        0px 34px 30px rgba(0,0,0,0.1);}
+        h1 { font-family: "Zapfino"; }
 
 
     </style>
@@ -35,7 +34,7 @@
 
 			<!-- Header -->
 			<div id="header" style="background-image: url(/images/banner_FIRST.jpg); padding: 2.5em 0 2em 0;">
-				<h1 style="margin-top: 30px;"><a href="/" id="logo">Elena Opaleva</a></h1>
+				<h1 class="custom-reflection text-shadow-logo-template" style="margin-top: 1%;"><a href="/" id="logo">Elena Opaleva</a></h1>
 				<!-- Inner -->
 
 
@@ -160,7 +159,7 @@
 												<li><a href="/contacts">Contacts</a></li>
 											</ul>
 
-											<h1 style="font-size: 400%"><a href="/">Elena Opaleva</a></h1>
+											<h1 style="font-size: 400%" class="text-shadow-logo"><a href="/">Elena Opaleva</a></h1>
 										</header>
 										<p>Find on social networks</p>
 										<ul class="icons">

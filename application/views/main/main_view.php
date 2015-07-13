@@ -20,6 +20,7 @@
 		<script src="assets/js/jquery.onvisible.min.js"></script>
 		<script src="assets/js/util.js"></script>
 
+
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="assets/js/main.js"></script>
 
@@ -27,17 +28,8 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
     <style>
-        @font-face {
-            font-family: "Zapfino";
-            src: url(/fonts/Zapfino.otf) ;
-            font-weight: bold;
 
 
-        }
-        h1 { font-family: "Zapfino"; text-shadow: 0px 2px 0px #b2a98f,
-        0px 14px 10px rgba(0,0,0,0.65),
-        0px 24px 2px rgba(0,0,0,0.1),
-        0px 34px 30px rgba(0,0,0,0.1);}
 
 
     </style>
@@ -50,7 +42,7 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1 style="font-size: 600%"><a href="/" id="logo">Elena Opaleva</a></h1>
+								<h1 style="font-size: 600%" class="text-shadow-logo"><a href="/" id="logo">Elena Opaleva</a></h1>
 								<hr class="hr_logo_name"  />
 								<p>ARTIST</p>
 							</header>
@@ -63,7 +55,7 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="/">Home</a></li>
-								<li><a href="/artworks">Artworks</a></li>
+								<li><a class="transition" href="/artworks">Artworks</a></li>
 								<li><a href="/artist">Artist</a></li>
 <!--								<li><a href="/artist">Artist</a></li>
 									<ul>
@@ -359,7 +351,7 @@
 												<li><a href="/contacts">Contacts</a></li>
 											</ul>
 
-											<h1 style="font-size: 400%"><a href="/">Elena Opaleva</a></h1>
+											<h1 style="font-size: 400%" class="text-shadow-logo"><a href="/">Elena Opaleva</a></h1>
 
 										</header>
 
