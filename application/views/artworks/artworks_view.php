@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <!--
     ELENA OPALEVA Official site
@@ -6,6 +5,7 @@
 
 	email: info@KIRILLGORYUNOV.COM
 -->
+
 <html>
 	<head>
 		<title>Elena Opaleva | Official Site</title>
@@ -20,6 +20,10 @@
 		<script src="assets/js/jquery.onvisible.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/page_transition.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="assets/gallery/css/style_gallery.css"/>
+		<script src="assets/gallery/js/modernizr.custom.70736.js"></script>
+		<noscript><link rel="stylesheet" type="text/css" href="assets/gallery/css/noJS.css"/></noscript>
 
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="assets/js/main.js"></script>
@@ -86,8 +90,8 @@
 					</header>
 
 					<ul id="nav_bottom_artworks">
-						<li><a href="#">Landsacpes</a></li>
-						<li><a href="#">Composition</a></li>
+						<li><a href="#" onclick="select_gallery('Landscapes');">Landsacpes</a></li>
+						<li><a href="#" onclick="select_gallery('Compositions');">Composition</a></li>
 						<li><a href="#">Still life</a></li>
 						<li><a href="#">Watercolor</a></li>
 						<!--								<li><a href="/artist">Artist</a></li>
@@ -111,95 +115,459 @@
 
 				</section>
 
-		<!-- Carousel -->
-		<section class="carousel">
-			<div class="reel">
-				<div id="gallery">
-					<article>
-						<a href="images/1_2.jpg" class="image featured"><img src="images/1_2.jpg"  alt=""></a>
-						<!--<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>-->
-						<header>
-							<h3>#Landscape</h3>
-						</header>
-						<p>Non potest esse text</p>
+
+
+
+
+<!--
+<div class="main">
+		<div class="gamma-container gamma-loading" id="gamma-container">
+
+			<ul class="gamma-gallery">
+
+				<li>
+					<div data-alt="img03" data-description="<h3>Пейзаж 1</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/1_2.jpg" data-min-width="1300"></div>
+						<div data-src="images/1_2.jpg" data-min-width="1000"></div>
+						<div data-src="images/1_2.jpg" data-min-width="700"></div>
+						<div data-src="images/1_2.jpg" data-min-width="300"><a href="images/1_2.jpg" class="image fit"><img src="images/1_2.jpg" alt="" /></a></div>
+						<div data-src="images/1_2.jpg" data-min-width="200"></div>
+						<div data-src="images/1_2.jpg" data-min-width="140"></div>
+						<div data-src="images/1_2.jpg"></div>
+						<noscript>
+							<img src="images/1_2.jpg" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+				<li>
+					<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/3_2.JPG" data-min-width="1300"></div>
+						<div data-src="images/3_2.JPG" data-min-width="1000"></div>
+						<div data-src="images/3_2.JPG" data-min-width="700"></div>
+						<div data-src="images/3_2.JPG" data-min-width="300"></div>
+						<div data-src="images/3_2.JPG" data-min-width="200"></div>
+						<div data-src="images/3_2.JPG" data-min-width="140"></div>
+						<div data-src="images/3_2.JPG"></div>
+						<noscript>
+							<img src="images/3_2.JPG" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+				<li>
+					<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/20_2.jpg" data-min-width="1300"></div>
+						<div data-src="images/20_2.jpg" data-min-width="1000"></div>
+						<div data-src="images/20_2.jpg" data-min-width="700"></div>
+						<div data-src="images/20_2.jpg" data-min-width="300"></div>
+						<div data-src="images/20_2.jpg" data-min-width="200"></div>
+						<div data-src="images/20_2.jpg" data-min-width="140"></div>
+						<div data-src="images/20_2.jpg"></div>
+						<noscript>
+							<img src="images/20_2.jpg" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+				<li>
+					<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/1_2.jpg" data-min-width="1300"></div>
+						<div data-src="images/1_2.jpg" data-min-width="1000"></div>
+						<div data-src="images/1_2.jpg" data-min-width="700"></div>
+						<div data-src="images/1_2.jpg" data-min-width="300"></div>
+						<div data-src="images/1_2.jpg" data-min-width="200"></div>
+						<div data-src="images/1_2.jpg" data-min-width="140"></div>
+						<div data-src="images/1_2.jpg"></div>
+						<noscript>
+							<img src="images/1_2.jpg" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+				<li>
+					<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/3_2.JPG" data-min-width="1300"></div>
+						<div data-src="images/3_2.JPG" data-min-width="1000"></div>
+						<div data-src="images/3_2.JPG" data-min-width="700"></div>
+						<div data-src="images/3_2.JPG" data-min-width="300"></div>
+						<div data-src="images/3_2.JPG" data-min-width="200"></div>
+						<div data-src="images/3_2.JPG" data-min-width="140"></div>
+						<div data-src="images/3_2.JPG"></div>
+						<noscript>
+							<img src="images/3_2.JPG" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+				<li>
+					<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/20_2.jpg" data-min-width="1300"></div>
+						<div data-src="images/20_2.jpg" data-min-width="1000"></div>
+						<div data-src="images/20_2.jpg" data-min-width="700"></div>
+						<div data-src="images/20_2.jpg" data-min-width="300"></div>
+						<div data-src="images/20_2.jpg" data-min-width="200"></div>
+						<div data-src="images/20_2.jpg" data-min-width="140"></div>
+						<div data-src="images/20_2.jpg"></div>
+						<noscript>
+							<img src="images/20_2.jpg" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+
+				<li>
+					<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/1_2.jpg" data-min-width="1300"></div>
+						<div data-src="images/1_2.jpg" data-min-width="1000"></div>
+						<div data-src="images/1_2.jpg" data-min-width="700"></div>
+						<div data-src="images/1_2.jpg" data-min-width="300"></div>
+						<div data-src="images/1_2.jpg" data-min-width="200"></div>
+						<div data-src="images/1_2.jpg" data-min-width="140"></div>
+						<div data-src="images/1_2.jpg"></div>
+						<noscript>
+							<img src="images/1_2.jpg" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+				<li>
+					<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/3_2.JPG" data-min-width="1300"></div>
+						<div data-src="images/3_2.JPG" data-min-width="1000"></div>
+						<div data-src="images/3_2.JPG" data-min-width="700"></div>
+						<div data-src="images/3_2.JPG" data-min-width="300"></div>
+						<div data-src="images/3_2.JPG" data-min-width="200"></div>
+						<div data-src="images/3_2.JPG" data-min-width="140"></div>
+						<div data-src="images/3_2.JPG"></div>
+						<noscript>
+							<img src="images/3_2.JPG" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+				<li>
+					<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/20_2.jpg" data-min-width="1300"></div>
+						<div data-src="images/20_2.jpg" data-min-width="1000"></div>
+						<div data-src="images/20_2.jpg" data-min-width="700"></div>
+						<div data-src="images/20_2.jpg" data-min-width="300"></div>
+						<div data-src="images/20_2.jpg" data-min-width="200"></div>
+						<div data-src="images/20_2.jpg" data-min-width="140"></div>
+						<div data-src="images/20_2.jpg"></div>
+						<noscript>
+							<img src="images/20_2.jpg" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+
+				<li>
+					<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/1_2.jpg" data-min-width="1300"></div>
+						<div data-src="images/1_2.jpg" data-min-width="1000"></div>
+						<div data-src="images/1_2.jpg" data-min-width="700"></div>
+						<div data-src="images/1_2.jpg" data-min-width="300"></div>
+						<div data-src="images/1_2.jpg" data-min-width="200"></div>
+						<div data-src="images/1_2.jpg" data-min-width="140"></div>
+						<div data-src="images/1_2.jpg"></div>
+						<noscript>
+							<img src="images/1_2.jpg" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+				<li>
+					<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/3_2.JPG" data-min-width="1300"></div>
+						<div data-src="images/3_2.JPG" data-min-width="1000"></div>
+						<div data-src="images/3_2.JPG" data-min-width="700"></div>
+						<div data-src="images/3_2.JPG" data-min-width="300"></div>
+						<div data-src="images/3_2.JPG" data-min-width="200"></div>
+						<div data-src="images/3_2.JPG" data-min-width="140"></div>
+						<div data-src="images/3_2.JPG"></div>
+						<noscript>
+							<img src="images/3_2.JPG" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+				<li>
+					<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/20_2.jpg" data-min-width="1300"></div>
+						<div data-src="images/20_2.jpg" data-min-width="1000"></div>
+						<div data-src="images/20_2.jpg" data-min-width="700"></div>
+						<div data-src="images/20_2.jpg" data-min-width="300"></div>
+						<div data-src="images/20_2.jpg" data-min-width="200"></div>
+						<div data-src="images/20_2.jpg" data-min-width="140"></div>
+						<div data-src="images/20_2.jpg"></div>
+						<noscript>
+							<img src="images/20_2.jpg" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+
+				<li>
+					<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/1_2.jpg" data-min-width="1300"></div>
+						<div data-src="images/1_2.jpg" data-min-width="1000"></div>
+						<div data-src="images/1_2.jpg" data-min-width="700"></div>
+						<div data-src="images/1_2.jpg" data-min-width="300"></div>
+						<div data-src="images/1_2.jpg" data-min-width="200"></div>
+						<div data-src="images/1_2.jpg" data-min-width="140"></div>
+						<div data-src="images/1_2.jpg"></div>
+						<noscript>
+							<img src="images/1_2.jpg" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+				<li>
+					<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/3_2.JPG" data-min-width="1300"></div>
+						<div data-src="images/3_2.JPG" data-min-width="1000"></div>
+						<div data-src="images/3_2.JPG" data-min-width="700"></div>
+						<div data-src="images/3_2.JPG" data-min-width="300"></div>
+						<div data-src="images/3_2.JPG" data-min-width="200"></div>
+						<div data-src="images/3_2.JPG" data-min-width="140"></div>
+						<div data-src="images/3_2.JPG"></div>
+						<noscript>
+							<img src="images/3_2.JPG" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+				<li>
+					<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+						<div data-src="images/20_2.jpg" data-min-width="1300"></div>
+						<div data-src="images/20_2.jpg" data-min-width="1000"></div>
+						<div data-src="images/20_2.jpg" data-min-width="700"></div>
+						<div data-src="images/20_2.jpg" data-min-width="300"></div>
+						<div data-src="images/20_2.jpg" data-min-width="200"></div>
+						<div data-src="images/20_2.jpg" data-min-width="140"></div>
+						<div data-src="images/20_2.jpg"></div>
+						<noscript>
+							<img src="images/20_2.jpg" alt="img03"/>
+						</noscript>
+					</div>
+				</li>
+
+
+			</ul>
+
+			<div class="gamma-overlay"></div>
+
+			<div id="loadmore" class="loadmore">Example for loading more items...</div>
+
+		</div>
+	</div>
+-->
+
+<div class="container">
+		<div class="main">
+
+			<header class="clearfix">
+
+				<h1 id="artworks_type"><?php echo $data['artworks_type']; ?></h1>
+
+			</header>
+
+			<div class="gamma-container gamma-loading" id="gamma-container">
+
+
+				<div class="row 25%" id="gallery">
+
+					<article class="3u">
+						<a href="images/20_2.jpg" class="image fit"><img src="images/20_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+					</article>
+					<article class="3u">
+						<a href="images/10_2.JPG" class="image fit"><img src="images/10_2.JPG" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+					</article>
+					<article class="3u">
+						<a href="images/17_2.jpg" class="image fit"><img src="images/17_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+					</article>
+					<article class="3u$">
+						<a href="images/1_2.jpg" class="image fit"><img src="images/1_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+
 					</article>
 
-					<article>
-						<a href="images/3_2.JPG" class="image featured"><img src="images/3_2.JPG" alt="" /></a>
-						<header>
-							<h3>#Landscape</h3>
-						</header>
-						<p>Non potest esse text</p>
+					<article class="3u">
+						<a href="images/10_2.JPG" class="image fit"><img src="images/10_2.JPG" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+					</article>
+					<article class="3u">
+						<a href="images/17_2.jpg" class="image fit"><img src="images/17_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+					</article>
+					<article class="3u">
+						<a href="images/20_2.jpg" class="image fit"><img src="images/20_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+					</article>
+					<article class="3u$">
+						<a href="images/1_2.jpg" class="image fit"><img src="images/1_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+
 					</article>
 
-					<article>
-						<a href="images/10_2.JPG" class="image featured"><img src="images/10_2.JPG" alt="" /></a>
-						<header>
-							<h3>#Landscape</h3>
-						</header>
-						<p>Non potest esse text, non potest potest esse text</p>
+
+					<article class="3u">
+						<a href="images/1_2.jpg" class="image fit"><img src="images/1_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+					</article>
+					<article class="3u">
+						<a href="images/10_2.JPG" class="image fit"><img src="images/10_2.JPG" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+					</article>
+					<article class="3u">
+						<a href="images/17_2.jpg" class="image fit"><img src="images/17_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+					</article>
+					<article class="3u$">
+						<a href="images/20_2.jpg" class="image fit"><img src="images/20_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+
 					</article>
 
-					<article>
-						<a href="images/17_2.jpg" class="image featured"><img src="images/17_2.jpg" alt="" /></a>
-						<header>
-							<h3>#Landscape</h3>
-						</header>
-						<p>Non potest esse text</p>
+
+					<article class="3u">
+						<a href="images/10_2.JPG" class="image fit"><img src="images/10_2.JPG" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+					</article>
+					<article class="3u">
+						<a href="images/17_2.jpg" class="image fit"><img src="images/17_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+					</article>
+					<article class="3u">
+						<a href="images/20_2.jpg" class="image fit"><img src="images/20_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+					</article>
+					<article class="3u$">
+						<a href="images/1_2.jpg" class="image fit"><img src="images/1_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+
 					</article>
 
-					<article>
-						<a href="images/20_2.jpg" class="image featured"><img src="images/20_2.jpg" alt="" /></a>
-						<header>
-							<h3>#Landscape</h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
 
-					<article>
-						<a href="images/pic01.jpg" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-						<header>
-							<h3>#Landscape</h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
-
-					<article>
-						<a href="images/pic02.jpg" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-						<header>
-							<h3>#Landscape</h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
-
-					<article>
-						<a href="images/pic02.jpg" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-						<header>
-							<h3>#Landscape</h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
-
-					<article>
-						<a href="iimages/pic02.jpg" class="image featured"><img src="iimages/pic02.jpg" alt="" /></a>
-						<header>
-							<h3>#Landscape</h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
-
-					<article>
-						<a href="images/pic02.jpg" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-						<header>
-							<h3>#Landscape</h3>
-						</header>
-						<p>Non potest esse text</p>
-					</article>
 				</div>
+
+<!--
+				<ul class="gamma-gallery">
+
+
+					<li>
+						<div data-alt="img03" data-description="<h3>Пейзаж 1</h3>" data-max-width="1800" data-max-height="1350">
+							<div data-src="images/1_2.jpg" data-min-width="1300"></div>
+							<div data-src="images/1_2.jpg" data-min-width="1000"></div>
+							<div data-src="images/1_2.jpg" data-min-width="700"></div>
+							<div data-src="images/1_2.jpg" data-min-width="300"></div>
+							<div data-src="images/1_2.jpg" data-min-width="200"></div>
+							<div data-src="images/1_2.jpg" data-min-width="140"></div>
+							<div data-src="images/1_2.jpg"></div>
+							<noscript>
+								<img src="images/1_2.jpg" alt="img03"/>
+							</noscript>
+						</div>
+					</li>
+					<li>
+						<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+							<div data-src="images/3_2.JPG" data-min-width="1300"></div>
+							<div data-src="images/3_2.JPG" data-min-width="1000"></div>
+							<div data-src="images/3_2.JPG" data-min-width="700"></div>
+							<div data-src="images/3_2.JPG" data-min-width="300"></div>
+							<div data-src="images/3_2.JPG" data-min-width="200"></div>
+							<div data-src="images/3_2.JPG" data-min-width="140"></div>
+							<div data-src="images/3_2.JPG"></div>
+							<noscript>
+								<img src="images/3_2.JPG" alt="img03"/>
+							</noscript>
+						</div>
+					</li>
+					<li>
+						<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+							<div data-src="images/20_2.jpg" data-min-width="1300"></div>
+							<div data-src="images/20_2.jpg" data-min-width="1000"></div>
+							<div data-src="images/20_2.jpg" data-min-width="700"></div>
+							<div data-src="images/20_2.jpg" data-min-width="300"></div>
+							<div data-src="images/20_2.jpg" data-min-width="200"></div>
+							<div data-src="images/20_2.jpg" data-min-width="140"></div>
+							<div data-src="images/20_2.jpg"></div>
+							<noscript>
+								<img src="images/20_2.jpg" alt="img03"/>
+							</noscript>
+						</div>
+					</li>
+					<li>
+						<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+							<div data-src="images/1_2.jpg" data-min-width="1300"></div>
+							<div data-src="images/1_2.jpg" data-min-width="1000"></div>
+							<div data-src="images/1_2.jpg" data-min-width="700"></div>
+							<div data-src="images/1_2.jpg" data-min-width="300"></div>
+							<div data-src="images/1_2.jpg" data-min-width="200"></div>
+							<div data-src="images/1_2.jpg" data-min-width="140"></div>
+							<div data-src="images/1_2.jpg"></div>
+							<noscript>
+								<img src="images/1_2.jpg" alt="img03"/>
+							</noscript>
+						</div>
+					</li>
+					<li>
+						<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+							<div data-src="images/3_2.JPG" data-min-width="1300"></div>
+							<div data-src="images/3_2.JPG" data-min-width="1000"></div>
+							<div data-src="images/3_2.JPG" data-min-width="700"></div>
+							<div data-src="images/3_2.JPG" data-min-width="300"></div>
+							<div data-src="images/3_2.JPG" data-min-width="200"></div>
+							<div data-src="images/3_2.JPG" data-min-width="140"></div>
+							<div data-src="images/3_2.JPG"></div>
+							<noscript>
+								<img src="images/3_2.JPG" alt="img03"/>
+							</noscript>
+						</div>
+					</li>
+					<li>
+						<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+							<div data-src="images/20_2.jpg" data-min-width="1300"></div>
+							<div data-src="images/20_2.jpg" data-min-width="1000"></div>
+							<div data-src="images/20_2.jpg" data-min-width="700"></div>
+							<div data-src="images/20_2.jpg" data-min-width="300"></div>
+							<div data-src="images/20_2.jpg" data-min-width="200"></div>
+							<div data-src="images/20_2.jpg" data-min-width="140"></div>
+							<div data-src="images/20_2.jpg"></div>
+							<noscript>
+								<img src="images/20_2.jpg" alt="img03"/>
+							</noscript>
+						</div>
+					</li>
+
+					<li>
+						<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+							<div data-src="images/1_2.jpg" data-min-width="1300"></div>
+							<div data-src="images/1_2.jpg" data-min-width="1000"></div>
+							<div data-src="images/1_2.jpg" data-min-width="700"></div>
+							<div data-src="images/1_2.jpg" data-min-width="300"></div>
+							<div data-src="images/1_2.jpg" data-min-width="200"></div>
+							<div data-src="images/1_2.jpg" data-min-width="140"></div>
+							<div data-src="images/1_2.jpg"></div>
+							<noscript>
+								<img src="images/1_2.jpg" alt="img03"/>
+							</noscript>
+						</div>
+					</li>
+					<li>
+						<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+							<div data-src="images/3_2.JPG" data-min-width="1300"></div>
+							<div data-src="images/3_2.JPG" data-min-width="1000"></div>
+							<div data-src="images/3_2.JPG" data-min-width="700"></div>
+							<div data-src="images/3_2.JPG" data-min-width="300"></div>
+							<div data-src="images/3_2.JPG" data-min-width="200"></div>
+							<div data-src="images/3_2.JPG" data-min-width="140"></div>
+							<div data-src="images/3_2.JPG"></div>
+							<noscript>
+								<img src="images/3_2.JPG" alt="img03"/>
+							</noscript>
+						</div>
+					</li>
+					<li>
+						<div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+							<div data-src="images/20_2.jpg" data-min-width="1300"></div>
+							<div data-src="images/20_2.jpg" data-min-width="1000"></div>
+							<div data-src="images/20_2.jpg" data-min-width="700"></div>
+							<div data-src="images/20_2.jpg" data-min-width="300"></div>
+							<div data-src="images/20_2.jpg" data-min-width="200"></div>
+							<div data-src="images/20_2.jpg" data-min-width="140"></div>
+							<div data-src="images/20_2.jpg"></div>
+							<noscript>
+								<img src="images/20_2.jpg" alt="img03"/>
+							</noscript>
+						</div>
+					</li>
+
+
+				</ul>
+-->
+				<div class="gamma-overlay"></div>
+
+				<div id="loadmore" class="loadmore">Example for loading more items...</div>
+
 			</div>
-		</section>
 
-
+		</div><!--/main-->
+</div>
 
 			<!-- Footer -->
 				<div id="footer">
@@ -270,15 +638,79 @@
 		<script>
 			$(function() {
 				$('#gallery').poptrox({
-					usePopupCaption: false
+					usePopupCaption: true
 				});
+				$('.caption').css('font-size', '70%');
+				$('.caption').css('line-height', '115%');
+				$('.caption').css('padding', '5%');
 
-				$('#gallery_new_artworks').poptrox({
-					usePopupCaption: false
-				});
 
 			});
 		</script>
 
+	<script src="/js/pages/artworks/artworks.js"></script>
+
+	<script src="assets/gallery/js/jquery.masonry.min.js"></script>
+	<script src="assets/gallery/js/jquery.history.js"></script>
+	<script src="assets/gallery/js/js-url.min.js"></script>
+	<script src="assets/gallery/js/jquerypp.custom.js"></script>
+	<script src="assets/gallery/js/gamma.js"></script>
+	<script type="text/javascript">
+
+		$(function() {
+
+			var GammaSettings = {
+				// order is important!
+				viewport : [ {
+					width : 1200,
+					columns : 5
+				}, {
+					width : 900,
+					columns : 4
+				}, {
+					width : 500,
+					columns : 3
+				}, {
+					width : 320,
+					columns : 2
+				}, {
+					width : 0,
+					columns : 2
+				} ]
+			};
+
+			Gamma.init( GammaSettings, fncallback );
+
+
+			// Example how to add more items (just a dummy):
+
+
+
+			function fncallback() {
+/*
+				$( '#loadmore' ).show().on( 'click', function() {
+
+					++page;
+					var newitems = items[page-1]
+					if( page <= 1 ) {
+
+						Gamma.add( $( newitems ) );
+
+					}
+					if( page === 1 ) {
+
+						$( this ).remove();
+
+					}
+
+				} );
+*/
+			}
+
+		});
+
+	</script>
+
 	</body>
 </html>
+-->

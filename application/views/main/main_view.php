@@ -101,7 +101,7 @@
 				<div class="reel">
 					<div id="gallery">
 						<article>
-							<a href="images/1_2.jpg" class="image featured"><img src="images/1_2.jpg"  alt=""></a>
+							<a href="images/1_2.jpg" class="image featured"><img src="images/1_2.jpg"  alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014"></a>
 							<!--<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>-->
 							<header>
 								<h3>#Натюрморт</h3>
@@ -110,7 +110,7 @@
 						</article>
 
 						<article>
-							<a href="images/3_2.JPG" class="image featured"><img src="images/3_2.JPG" alt="" /></a>
+							<a href="images/3_2.JPG" class="image featured"><img src="images/3_2.JPG" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014"/></a>
 							<header>
 								<h3>#Композиция</h3>
 							</header>
@@ -252,7 +252,7 @@
 								<div class="row 25%" id="gallery_new_artworks">
 
 									<article class="6u">
-										<a href="images/20_2.jpg" class="image fit"><img src="images/20_2.jpg" alt="" /></a>
+										<a href="images/20_2.jpg" class="image fit"><img src="images/20_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
 									</article>
 									<article class="6u$">
 										<a href="images/10_2.JPG" class="image fit"><img src="images/10_2.JPG" alt="" /></a>
@@ -387,12 +387,17 @@
 		<script>
 			$(function() {
 				$('#gallery').poptrox({
-					usePopupCaption: false
+					usePopupCaption: true
 				});
 
+
 				$('#gallery_new_artworks').poptrox({
-					usePopupCaption: false
+					usePopupCaption: true
 				});
+
+				$('.caption').css('font-size', '70%');
+				$('.caption').css('line-height', '115%');
+				$('.caption').css('padding', '5%');
 
 			});
 		</script>
