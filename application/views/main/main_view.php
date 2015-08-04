@@ -47,7 +47,7 @@
 								<p>ARTIST</p>
 							</header>
 							<footer>
-								<a href="#banner" class="button circled scrolly fa fa-arrow-circle-down fa-5x"></a>
+								<a href="#carousel" class="button circled scrolly fa fa-arrow-circle-down fa-5x"></a>
 							</footer>
 						</div>
 
@@ -84,29 +84,29 @@
 
 
 			<!-- Banner -->
-			<section id="banner">
+			<!--<section id="banner">
 				<header>
-					<h2 class="zapfiro text-shadow" style="font-size: 600%">Artworks</h2>
+					<!--<h2 class="zapfiro text-shadow" style="font-size: 600%">Artworks</h2>
 					<!--
                                             <p>
                                                 A (free) responsive site template by <a href="http://html5up.net">HTML5 UP</a>.
                                                 Built on <strong>skel</strong> and released under the <a href="http://html5up.net/license">CCA</a> license.
                                             </p>
                     -->
-				</header>
+<!--				</header>
 			</section>
-
+-->
 			<!-- Carousel -->
-			<section class="carousel">
+			<section id="carousel" class="carousel">
 				<div class="reel">
 					<div id="gallery">
 						<article>
-							<a href="images/1_2.jpg" class="image featured"><img src="images/1_2.jpg"  alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014"></a>
+							<a  href="images/1_2.jpg" class="image featured"><img src="images/1_2.jpg"  alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014"></a>
 							<!--<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>-->
 							<header>
 								<h3>#Натюрморт</h3>
 							</header>
-							<p>Non potest esse text</p>
+							Non potest esse text
 						</article>
 
 						<article>
@@ -114,7 +114,7 @@
 							<header>
 								<h3>#Композиция</h3>
 							</header>
-							<p>Non potest esse text</p>
+							Non potest esse text
 						</article>
 
 						<article>
@@ -122,7 +122,7 @@
 							<header>
 								<h3>#Пейзаж</h3>
 							</header>
-							<p>Non potest esse text, non potest potest esse text</p>
+							Non potest esse text, non potest
 						</article>
 
 						<article>
@@ -130,7 +130,7 @@
 							<header>
 								<h3>#Пейзаж</h3>
 							</header>
-							<p>Non potest esse text</p>
+							Non potest esse text
 						</article>
 
 						<article>
@@ -138,7 +138,7 @@
 							<header>
 								<h3>#Композиция</h3>
 							</header>
-							<p>Non potest esse text</p>
+							Non potest esse text
 						</article>
 
 						<article>
@@ -146,7 +146,7 @@
 							<header>
 								<h3>#Title</h3>
 							</header>
-							<p>Non potest esse text</p>
+							Non potest esse text
 						</article>
 
 						<article>
@@ -154,7 +154,7 @@
 							<header>
 								<h3>#Title</h3>
 							</header>
-							<p>Non potest esse text</p>
+							Non potest esse text
 						</article>
 
 						<article>
@@ -162,7 +162,7 @@
 							<header>
 								<h3>#Title</h3>
 							</header>
-							<p>Non potest esse text</p>
+							Non potest esse text
 						</article>
 
 						<article>
@@ -170,7 +170,7 @@
 							<header>
 								<h3>#Title</h3>
 							</header>
-							<p>Non potest esse text</p>
+							Non potest esse text
 						</article>
 
 						<article>
@@ -249,13 +249,23 @@
                                 </div>
 -->
 
+								<style>
+									.layer_gkg {
+										overflow: hidden; /* Добавляем полосы прокрутки */
+										width: 300px; /* Ширина блока */
+										height: 158px; /* Высота блока */
+
+
+									}
+								</style>
+
 								<div class="row 25%" id="gallery_new_artworks">
 
 									<article class="6u">
 										<a href="images/20_2.jpg" class="image fit"><img src="images/20_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
 									</article>
 									<article class="6u$">
-										<a href="images/10_2.JPG" class="image fit"><img src="images/10_2.JPG" alt="" /></a>
+										<a href="images/10_2.JPG" class="image fit"><img class="layer_gkg" src="images/10_2.JPG" alt="" /></a>
 									</article>
 									<article class="6u">
 										<a href="images/17_2.jpg" class="image fit"><img src="images/17_2.jpg" alt="" /></a>
