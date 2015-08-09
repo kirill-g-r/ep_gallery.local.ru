@@ -42,9 +42,9 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1 style="font-size: 600%" class="text-shadow-logo"><a href="/" id="logo">Elena Opaleva</a></h1>
-								<hr class="hr_logo_name"  />
-								<p>ARTIST</p>
+								<h1 style="font-size: 600%" class="text-shadow-logo slideLeft"><a href="/" id="logo">Elena Opaleva</a></h1>
+								<hr class="hr_logo_name slideLeft"  />
+								<p class="slideLeft">ARTIST</p>
 							</header>
 							<footer>
 								<a href="#carousel" class="button circled scrolly fa fa-arrow-circle-down fa-5x"></a>
@@ -257,7 +257,16 @@
 
 
 									}
+									.layer_gkg_2 {
+										overflow: hidden; /* Добавляем полосы прокрутки */
+										width: 300px; /* Ширина блока */
+										height: 168px; /* Высота блока */
+
+
+									}
+
 								</style>
+
 
 								<div class="row 25%" id="gallery_new_artworks">
 
@@ -271,7 +280,7 @@
 										<a href="images/17_2.jpg" class="image fit"><img src="images/17_2.jpg" alt="" /></a>
 									</article>
 									<article class="6u$">
-										<a href="images/1_2.jpg" class="image fit"><img src="images/1_2.jpg" alt="" /></a>
+										<a href="images/1_2.jpg" class="image fit"><img class="layer_gkg_2" src="images/1_2.jpg" alt="" /></a>
 
 									</article>
 

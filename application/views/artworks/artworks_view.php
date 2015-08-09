@@ -39,9 +39,11 @@
 	<div id="page-wrapper">
 
 			<!-- Header -->
-			<div id="header" style="background-image: url(/images/banner_FIRST.jpg); padding: 2.5em 0 2em 0;">
+			<div id="header" style="background-image: url(/images/banner_FIRST.jpg); background-position bottom ; padding: 2.5em 0 2em 0;">
 
-				<h1 class="custom-reflection text-shadow-logo-template" style="margin-top: 1%;"><a href="/" id="logo">Elena Opaleva</a></h1>
+				<h1 class="logo_simple" style="margin-top: 1%;"><a href="/" id="logo">Elena Opaleva</a></h1>
+<!--				<h1 class="custom-reflection text-shadow-logo-template" style="margin-top: 1%;"><a href="/" id="logo">Elena Opaleva</a></h1>
+-->
 				<!-- Inner -->
 
 
@@ -350,7 +352,7 @@
 	</div>
 -->
 
-<div class="container">
+<div class="container slideLeft" style="-webkit-animation-duration: 3s;">
 		<div class="main">
 
 			<header class="clearfix">

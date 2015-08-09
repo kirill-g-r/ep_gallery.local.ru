@@ -25,10 +25,7 @@
 
 
         }
-        h1 { font-family: "Zapfino"; text-shadow: 0px 1px 0px #b2a98f,
-        0px 14px 10px rgba(0,0,0,0.15),
-        0px 10px 2px rgba(0,0,0,0.1),
-        0px 34px 30px rgba(0,0,0,0.1);}
+
 
 
     </style>
@@ -37,7 +34,7 @@
 
 			<!-- Header -->
 			<div id="header" style="background-image: url(/images/banner_FIRST.jpg); padding: 2.5em 0 2em 0;">
-				<h1 style="margin-top: 1%;" ><a href="/" id="logo">Elena Opaleva</a></h1>
+				<h1 class="logo_simple" style="margin-top: 1%;" ><a href="/" id="logo">Elena Opaleva</a></h1>
 				<!-- Inner -->
 
 
