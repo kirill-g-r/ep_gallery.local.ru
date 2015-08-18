@@ -41,7 +41,7 @@
 			<!-- Header -->
 			<div id="header" style="background-image: url(/images/banner_FIRST.jpg); background-position bottom ; padding: 2.5em 0 2em 0;">
 
-				<h1 class="logo_simple" style="margin-top: 1%;"><a href="/" id="logo">Elena Opaleva</a></h1>
+				<h1 class="logo_simple" style="margin-top: 1%; font-size: 400%;"><a href="/" id="logo">Elena Opaleva</a></h1>
 <!--				<h1 class="custom-reflection text-shadow-logo-template" style="margin-top: 1%;"><a href="/" id="logo">Elena Opaleva</a></h1>
 -->
 				<!-- Inner -->
@@ -82,7 +82,7 @@
 				<section id="banner">
 
 					<header>
-						<h2 class="zapfiro text-shadow" style="font-size: 500%; margin-top: -3%; margin-bottom: -10%;">Artworks</h2>
+						<h2 class="zapfiro text-shadow" style="font-size: 400%; margin-top: -3%; margin-bottom: -10%;">Artworks</h2>
 <!--
 						<p>
 							A (free) responsive site template by <a href="http://html5up.net">HTML5 UP</a>.

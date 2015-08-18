@@ -36,7 +36,7 @@
 			<div id="header" style="background-image: url(/images/banner_FIRST.jpg); padding: 2.5em 0 2em 0;">
 <!--				<h1 class="custom-reflection text-shadow-logo-template" style="margin-top: 1%;"><a href="/" id="logo">Elena Opaleva</a></h1>
 -->
-				<h1 class="logo_simple" style="margin-top: 1%;"><a href="/" id="logo">Elena Opaleva</a></h1>
+				<h1 class="logo_simple" style="margin-top: 1%; font-size: 400%;"><a href="/" id="logo">Elena Opaleva</a></h1>
 				<!-- Inner -->
 
 
@@ -80,8 +80,11 @@
 							<p>
 								Articles
 							</p>
-						</header>
 
+							<p>COMMING SOON!</p>
+
+						</header>
+<!--
 						<p>
 							Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere accumsan massa
 							posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis purus
@@ -118,6 +121,7 @@
 								egestas odio nisl duis sociis purus faucibus morbi. Eget massa mus etiam sociis pharetra magna.
 							</p>
 						</section>
+-->
 					</article>
 					<hr />
 

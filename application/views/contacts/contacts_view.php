@@ -34,7 +34,7 @@
 
 			<!-- Header -->
 			<div id="header" style="background-image: url(/images/banner_FIRST.jpg); padding: 2.5em 0 2em 0;">
-				<h1 class="logo_simple" style="margin-top: 1%;"><a href="/" id="logo">Elena Opaleva</a></h1>
+				<h1 class="logo_simple" style="margin-top: 1%; font-size: 400%;"><a href="/" id="logo">Elena Opaleva</a></h1>
 				<!-- Inner -->
 
 
@@ -80,10 +80,10 @@
 							</p>
 
 							<p>
-								mobile: +7 (000) 000 00 00
+								Phone: <b>+7 (985) 764-09-94</b>
 							</p>
 							<p>
-								email: xxx@xxx.xx
+								email: <b>opaleva.art@gmail.com</b>
 							</p>
 						</header>
 

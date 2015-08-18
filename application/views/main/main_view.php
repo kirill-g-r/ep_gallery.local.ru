@@ -118,7 +118,7 @@
 						</article>
 
 						<article>
-							<a href="images/10_2.JPG" class="image featured"><img src="images/10_2.JPG" alt="" /></a>
+							<a href="images/10_new_2.JPG" class="image featured"><img src="images/10_2.JPG" alt="" /></a>
 							<header>
 								<h3>#Пейзаж</h3>
 							</header>
@@ -185,7 +185,8 @@
 			</section>
 
 
-
+			<div style="height: 40px;  background-image: url('images/10_new_2.JPG'); background-size: cover ">
+			</div>
 
 			<!-- Footer -->
 				<div id="footer">
@@ -253,14 +254,14 @@
 									.layer_gkg {
 										overflow: hidden; /* Добавляем полосы прокрутки */
 										width: 300px; /* Ширина блока */
-										height: 158px; /* Высота блока */
+										height: 180px; /* Высота блока */
 
 
 									}
 									.layer_gkg_2 {
 										overflow: hidden; /* Добавляем полосы прокрутки */
 										width: 300px; /* Ширина блока */
-										height: 168px; /* Высота блока */
+										height: 180px; /* Высота блока */
 
 
 									}
@@ -270,17 +271,17 @@
 
 								<div class="row 25%" id="gallery_new_artworks">
 
-									<article class="6u">
-										<a href="images/20_2.jpg" class="image fit"><img src="images/20_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+									<article class="6u" >
+										<a href="images/20.jpg" class="image fit"><img class="layer_gkg" src="images/20_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
 									</article>
 									<article class="6u$">
-										<a href="images/10_2.JPG" class="image fit"><img class="layer_gkg" src="images/10_2.JPG" alt="" /></a>
+										<a href="images/10_new_2.JPG" class="image fit"><img class="layer_gkg" src="images/10_2.JPG" alt="" /></a>
 									</article>
 									<article class="6u">
-										<a href="images/17_2.jpg" class="image fit"><img src="images/17_2.jpg" alt="" /></a>
+										<a href="images/17.jpg" class="image fit"><img class="layer_gkg_2" src="images/17_2.jpg" alt="" /></a>
 									</article>
 									<article class="6u$">
-										<a href="images/1_2.jpg" class="image fit"><img class="layer_gkg_2" src="images/1_2.jpg" alt="" /></a>
+										<a href="images/1.jpg" class="image fit"><img class="layer_gkg_2" src="images/1_2.jpg" alt="" /></a>
 
 									</article>
 
