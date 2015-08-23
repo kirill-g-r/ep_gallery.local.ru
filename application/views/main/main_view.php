@@ -100,85 +100,51 @@
 				<div class="reel">
 					<div id="gallery">
 						<article>
-							<a  href="images/1_2.jpg" class="image featured"><img src="images/1_2.jpg"  alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014"></a>
+							<a  href="images/artworks/large/1.jpg" class="image featured"><img src="images/artworks/small/1.jpg_small.jpg"  alt="" title="Крещение"></a>
 							<!--<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>-->
+<!--
 							<header>
 								<h3>#Натюрморт</h3>
 							</header>
-							Non potest esse text
+-->
+							Крещение
 						</article>
 
 						<article>
-							<a href="images/3_2.JPG" class="image featured"><img src="images/3_2.JPG" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014"/></a>
-							<header>
-								<h3>#Композиция</h3>
-							</header>
-							Non potest esse text
+							<a href="images/artworks/large/2.jpg" class="image featured"><img src="images/artworks/small/2.jpg_small.jpg" alt="" title="Снег в Париже"/></a>
+							Снег в Париже
 						</article>
 
 						<article>
-							<a href="images/10_new_2.JPG" class="image featured"><img src="images/10_2.JPG" alt="" /></a>
-							<header>
-								<h3>#Пейзаж</h3>
-							</header>
-							Non potest esse text, non potest
+							<a href="images/artworks/large/3.jpg" class="image featured"><img src="images/artworks/small/3.jpg_small.jpg" alt="" title="Баржи на сене"/></a>
+							Баржи на сене
 						</article>
 
 						<article>
-							<a href="images/17_2.jpg" class="image featured"><img src="images/17_2.jpg" alt="" /></a>
-							<header>
-								<h3>#Пейзаж</h3>
-							</header>
-							Non potest esse text
+							<a href="images/artworks/large/4.jpg" class="image featured"><img src="images/artworks/small/4.jpg_small.jpg" alt="" title="Страсбург Pont St. Martin"/></a>
+							Страсбург Pont St. Martin
 						</article>
 
 						<article>
-							<a href="images/20_2.jpg" class="image featured"><img src="images/20_2.jpg" alt="" /></a>
-							<header>
-								<h3>#Композиция</h3>
-							</header>
-							Non potest esse text
+							<a href="images/artworks/large/5.jpg" class="image featured"><img src="images/artworks/small/5.jpg_small.jpg" alt="" title="Страсбург. Ресторан Au Pont St. Martin"/></a>
+							Страсбург. Au Pont St. Martin
 						</article>
 
 						<article>
-							<a href="images/pic01.jpg" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-							<header>
-								<h3>#Title</h3>
-							</header>
-							Non potest esse text
+							<a href="images/artworks/large/6.jpg" class="image featured"><img src="images/artworks/small/6.jpg_small.jpg" alt="" title="Страсбург.La Petite France"/></a>
+							Страсбург.La Petite France
 						</article>
 
 						<article>
-							<a href="images/pic02.jpg" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-							<header>
-								<h3>#Title</h3>
-							</header>
-							Non potest esse text
+							<a href="images/artworks/large/7.jpg" class="image featured"><img src="images/artworks/small/7.jpg_small.jpg" alt="" title="Тенистые улочки Эза"/></a>
+							Тенистые улочки Эза
 						</article>
 
 						<article>
-							<a href="images/pic02.jpg" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-							<header>
-								<h3>#Title</h3>
-							</header>
-							Non potest esse text
+							<a href="images/artworks/large/8.jpg" class="image featured"><img src="images/artworks/small/8.jpg_small.jpg" alt="" title="Цветочный базар"/></a>
+							Цветочный базар
 						</article>
 
-						<article>
-							<a href="iimages/pic02.jpg" class="image featured"><img src="iimages/pic02.jpg" alt="" /></a>
-							<header>
-								<h3>#Title</h3>
-							</header>
-							Non potest esse text
-						</article>
-
-						<article>
-							<a href="images/pic02.jpg" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-							<header>
-								<h3>#Title</h3>
-							</header>
-							<p>Non potest esse text</p>
-						</article>
 					</div>
 				</div>
 			</section>
@@ -271,18 +237,19 @@
 								<div class="row 25%" id="gallery_new_artworks">
 
 									<article class="6u" >
-										<a href="images/20.jpg" class="image fit"><img class="layer_gkg" src="images/20_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
+										<a href="images/artworks/large/1.jpg" class="image fit"><img src="images/artworks/small/1.jpg_small.jpg" alt="" title="Крещение<BR>бумага, акварель, 56 х76, 2014" /></a>
 									</article>
 									<article class="6u$">
-										<a href="images/10_new_2.JPG" class="image fit"><img class="layer_gkg" src="images/10_2.JPG" alt="" /></a>
+										<a href="images/artworks/large/2.jpg" class="image fit"><img src="images/artworks/small/2.jpg_small.jpg" alt="" title="Баржи на сене<BR>бумага, акварель, 56 х76, 2014"  /></a>
 									</article>
 									<article class="6u">
-										<a href="images/17.jpg" class="image fit"><img class="layer_gkg_2" src="images/17_2.jpg" alt="" /></a>
+										<a href="images/artworks/large/3.jpg" class="image fit"><img src="images/artworks/small/3.jpg_small.jpg" alt="" title="Баржи на сене<BR>бумага, акварель, 56 х76, 2014" /></a>
 									</article>
 									<article class="6u$">
-										<a href="images/1.jpg" class="image fit"><img class="layer_gkg_2" src="images/1_2.jpg" alt="" /></a>
+										<a href="images/artworks/large/4.jpg" class="image fit"><img src="images/artworks/small/4.jpg_small.jpg" alt="" title="Страсбург. Ресторан Au Pont St. Martin<BR>бумага, акварель, 56 х76, 2014" /></a>
 
 									</article>
+
 
 								</div>
 

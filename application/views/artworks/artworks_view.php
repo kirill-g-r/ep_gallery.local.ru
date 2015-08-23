@@ -90,13 +90,13 @@
 						</p>
 -->
 					</header>
-
+<!-- CHANGE ARTWORKS TYPE
 					<ul id="nav_bottom_artworks">
 						<li><a href="#" onclick="select_gallery('Landscapes');">Landsacpes</a></li>
 						<li><a href="#" onclick="select_gallery('Compositions');">Composition</a></li>
 						<li><a href="#">Still life</a></li>
 						<li><a href="#">Watercolor</a></li>
-						<!--								<li><a href="/artist">Artist</a></li>
+														<li><a href="/artist">Artist</a></li>
                                                             <ul>
                                                                 <li><a href="">Biographi</a></li>
                                                                 <li>
@@ -111,9 +111,10 @@
                                                             </ul>
 
                                                         </li>
-                        -->
+
 						<li><a href="/news">Acrylic</a></li>
 					</ul>
+-->
 
 				</section>
 
@@ -355,16 +356,22 @@
 <div class="container slideLeft" style="-webkit-animation-duration: 3s;">
 		<div class="main">
 
+<!-- NAME OF CATEGORY ARTWORKS
 			<header class="clearfix">
 
 				<h1 id="artworks_type"><?php echo $data['artworks_type']; ?></h1>
 
 			</header>
-
+-->
 			<div class="gamma-container gamma-loading" id="gamma-container">
 
 
 				<div class="row 25%" id="gallery">
+
+					<?php echo $data['artworks']; ?>
+
+
+<!--
 
 					<article class="3u">
 						<a href="images/20_2.jpg" class="image fit"><img src="images/20_2.jpg" alt="" title="Снег в Париже<BR>бумага, акварель, 56 х76, 2014" /></a>
@@ -426,6 +433,7 @@
 
 
 				</div>
+-->
 
 <!--
 				<ul class="gamma-gallery">
@@ -570,7 +578,7 @@
 
 		</div><!--/main-->
 </div>
-
+</div>
 			<!-- Footer -->
 				<div id="footer">
 					<div class="container">
