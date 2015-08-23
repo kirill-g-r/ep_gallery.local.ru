@@ -2129,6 +2129,21 @@ hr {
 			padding-top: 0;
 		}
 
+	#header-like {
+		position: relative;
+		background-image: url("../../images/10_new_2.JPG");
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 1.5em 0 2em 0;
+		cursor: default;
+
+	}
+
+
+
 /* Header */
 
 	#header {

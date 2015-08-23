@@ -78,7 +78,6 @@
 								<li><a href="/contacts">Contacts</a></li>
 							</ul>
 						</nav>
-
 				</div>
 
 
@@ -185,7 +184,7 @@
 			</section>
 
 
-			<div style="height: 40px;  background-image: url('images/10_new_2.JPG'); background-size: cover ">
+			<div id="header-like">
 			</div>
 
 			<!-- Footer -->
