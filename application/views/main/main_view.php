@@ -27,12 +27,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-    <style>
 
-
-
-
-    </style>
 	<body class="homepage">
 		<div id="page-wrapper">
 
@@ -52,97 +47,132 @@
 						</div>
 
 					<!-- Nav -->
+<!--
 						<nav id="nav">
 							<ul>
 								<li><a href="/">Home</a></li>
 								<li><a class="transition" href="/artworks">Artworks</a></li>
 								<li><a href="/artist">Artist</a></li>
-<!--								<li><a href="/artist">Artist</a></li>
-									<ul>
-										<li><a href="">Biographi</a></li>
-										<li>
-											<a href="">Media &hellip;</a>
-											<ul>
-												<li><a href="">Photo</a></li>
-												<li><a href="">Video</a></li>
-											</ul>
-										</li>
-										<li><a href="">Exhibitions</a></li>
-										<li><a href="">Publishing</a></li>
-									</ul>
+						<!--								<li><a href="/artist">Artist</a></li>
+															<ul>
+																<li><a href="">Biographi</a></li>
+																<li>
+																	<a href="">Media &hellip;</a>
+																	<ul>
+																		<li><a href="">Photo</a></li>
+																		<li><a href="">Video</a></li>
+																	</ul>
+																</li>
+																<li><a href="">Exhibitions</a></li>
+																<li><a href="">Publishing</a></li>
+															</ul>
 
-								</li>
--->
+														</li>
+						-->
+<!--
 								<li><a href="/news">News</a></li>
 								<li><a href="/articles">Articles</a></li>
 								<li><a href="/contacts">Contacts</a></li>
 							</ul>
 						</nav>
+-->
 				</div>
 
+			<style type="text/css">
 
+
+			</style>
+
+			<div id="footer_gkg">
+
+				<ul id="nav_bottom" style="text-align: center; margin-bottom: 0%;">
+					<li><a href="/">Home</a></li>
+					<li><a href="/artworks">Artworks</a></li>
+					<li><a href="/artist">Artist</a></li>
+					<!--								<li><a href="/artist">Artist</a></li>
+                                                        <ul>
+                                                            <li><a href="">Biographi</a></li>
+                                                            <li>
+                                                                <a href="">Media &hellip;</a>
+                                                                <ul>
+                                                                    <li><a href="">Photo</a></li>
+                                                                    <li><a href="">Video</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="">Exhibitions</a></li>
+                                                            <li><a href="">Publishing</a></li>
+                                                        </ul>
+
+                                                    </li>
+                    -->
+					<li><a href="/news">News</a></li>
+					<li><a href="/articles">Articles</a></li>
+					<li><a href="/contacts">Contacts</a></li>
+				</ul>
+
+			</div>
 
 			<!-- Banner -->
-			<!--<section id="banner">
+			<section id="banner" style="padding-top: 2%; padding-bottom: 1%;">
 				<header>
-					<!--<h2 class="zapfiro text-shadow" style="font-size: 600%">Artworks</h2>
+					<h2 class="zapfiro text-shadow" style="font-size: 600%;">Artworks</h2>
 					<!--
                                             <p>
                                                 A (free) responsive site template by <a href="http://html5up.net">HTML5 UP</a>.
                                                 Built on <strong>skel</strong> and released under the <a href="http://html5up.net/license">CCA</a> license.
                                             </p>
                     -->
-<!--				</header>
+				</header>
 			</section>
--->
+
 			<!-- Carousel -->
 			<section id="carousel" class="carousel">
 				<div class="reel">
 					<div id="gallery">
 						<article>
-							<a  href="images/artworks/large/1.jpg" class="image featured"><img src="images/artworks/small/1.jpg_small.jpg"  alt="" title="Крещение"></a>
+							<a  href="images/artworks/large/1.jpg" class="image featured"><img src="images/artworks/small/1.jpg_small.jpg"  alt="" title="Baptism"></a>
 							<!--<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>-->
 <!--
 							<header>
 								<h3>#Натюрморт</h3>
 							</header>
 -->
-							Крещение
+							Baptism
 						</article>
 
 						<article>
-							<a href="images/artworks/large/2.jpg" class="image featured"><img src="images/artworks/small/2.jpg_small.jpg" alt="" title="Снег в Париже"/></a>
-							Снег в Париже
+							<a href="images/artworks/large/2.jpg" class="image featured"><img src="images/artworks/small/2.jpg_small.jpg" alt="" title="Snow in Paris"/></a>
+							Snow in Paris
 						</article>
 
 						<article>
-							<a href="images/artworks/large/3.jpg" class="image featured"><img src="images/artworks/small/3.jpg_small.jpg" alt="" title="Баржи на сене"/></a>
-							Баржи на сене
+							<a href="images/artworks/large/3.jpg" class="image featured"><img src="images/artworks/small/3.jpg_small.jpg" alt="" title="Barges on the Seine"/></a>
+							Barges on the Seine
 						</article>
 
 						<article>
-							<a href="images/artworks/large/4.jpg" class="image featured"><img src="images/artworks/small/4.jpg_small.jpg" alt="" title="Страсбург Pont St. Martin"/></a>
-							Страсбург Pont St. Martin
+							<a href="images/artworks/large/4.jpg" class="image featured"><img src="images/artworks/small/4.jpg_small.jpg" alt="" title="Strasbourg Pont St. Martin"/></a>
+							Strasbourg Pont St. Martin
 						</article>
 
 						<article>
-							<a href="images/artworks/large/5.jpg" class="image featured"><img src="images/artworks/small/5.jpg_small.jpg" alt="" title="Страсбург. Ресторан Au Pont St. Martin"/></a>
-							Страсбург. Au Pont St. Martin
+							<a href="images/artworks/large/5.jpg" class="image featured"><img src="images/artworks/small/5.jpg_small.jpg" alt="" title="Strasbourg Pont St. Martin"/></a>
+							Strasbourg Pont St. Martin
 						</article>
 
 						<article>
-							<a href="images/artworks/large/6.jpg" class="image featured"><img src="images/artworks/small/6.jpg_small.jpg" alt="" title="Страсбург.La Petite France"/></a>
-							Страсбург.La Petite France
+							<a href="images/artworks/large/6.jpg" class="image featured"><img src="images/artworks/small/6.jpg_small.jpg" alt="" title="Strasbourg. La Petite France"/></a>
+							Strasbourg. La Petite France
 						</article>
 
 						<article>
-							<a href="images/artworks/large/7.jpg" class="image featured"><img src="images/artworks/small/7.jpg_small.jpg" alt="" title="Тенистые улочки Эза"/></a>
-							Тенистые улочки Эза
+							<a href="images/artworks/large/7.jpg" class="image featured"><img src="images/artworks/small/7.jpg_small.jpg" alt="" title="Shady Street. Eze"/></a>
+							Shady Street. Eze
 						</article>
 
 						<article>
-							<a href="images/artworks/large/8.jpg" class="image featured"><img src="images/artworks/small/8.jpg_small.jpg" alt="" title="Цветочный базар"/></a>
-							Цветочный базар
+							<a href="images/artworks/large/8.jpg" class="image featured"><img src="images/artworks/small/8.jpg_small.jpg" alt="" title="Flower Market in Paris"/></a>
+							Flower Market in Paris
 						</article>
 
 					</div>
@@ -237,16 +267,16 @@
 								<div class="row 25%" id="gallery_new_artworks">
 
 									<article class="6u" >
-										<a href="images/artworks/large/1.jpg" class="image fit"><img src="images/artworks/small/1.jpg_small.jpg" alt="" title="Крещение<BR>бумага, акварель, 56 х76, 2014" /></a>
+										<a href="images/artworks/large/1.jpg" class="image fit"><img src="images/artworks/small/1.jpg_small.jpg" alt="" title="Baptism" /></a>
 									</article>
 									<article class="6u$">
-										<a href="images/artworks/large/2.jpg" class="image fit"><img src="images/artworks/small/2.jpg_small.jpg" alt="" title="Баржи на сене<BR>бумага, акварель, 56 х76, 2014"  /></a>
+										<a href="images/artworks/large/2.jpg" class="image fit"><img src="images/artworks/small/2.jpg_small.jpg" alt="" title="Barges on the Seine"  /></a>
 									</article>
 									<article class="6u">
-										<a href="images/artworks/large/3.jpg" class="image fit"><img src="images/artworks/small/3.jpg_small.jpg" alt="" title="Баржи на сене<BR>бумага, акварель, 56 х76, 2014" /></a>
+										<a href="images/artworks/large/3.jpg" class="image fit"><img src="images/artworks/small/3.jpg_small.jpg" alt="" title="Barges on the Seine" /></a>
 									</article>
 									<article class="6u$">
-										<a href="images/artworks/large/4.jpg" class="image fit"><img src="images/artworks/small/4.jpg_small.jpg" alt="" title="Страсбург. Ресторан Au Pont St. Martin<BR>бумага, акварель, 56 х76, 2014" /></a>
+										<a href="images/artworks/large/4.jpg" class="image fit"><img src="images/artworks/small/4.jpg_small.jpg" alt="" title="Restaurant on the Pont St. Martin. Strasbourg" /></a>
 
 									</article>
 
@@ -311,11 +341,12 @@
 								<!-- Contact -->
 									<section class="contact">
 										<header>
-
+<!--
 											<ul id="nav_bottom">
 												<li><a href="/">Home</a></li>
 												<li><a href="/artworks">Artworks</a></li>
 												<li><a href="/artist">Artist</a></li>
+-->
 												<!--								<li><a href="/artist">Artist</a></li>
                                                                                     <ul>
                                                                                         <li><a href="">Biographi</a></li>
@@ -332,11 +363,12 @@
 
                                                                                 </li>
                                                 -->
+<!--
 												<li><a href="/news">News</a></li>
 												<li><a href="/articles">Articles</a></li>
 												<li><a href="/contacts">Contacts</a></li>
 											</ul>
-
+-->
 											<h1 style="font-size: 400%" class="text-shadow-logo"><a href="/">Elena Opaleva</a></h1>
 
 										</header>

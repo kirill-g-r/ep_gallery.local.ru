@@ -15,7 +15,7 @@ class Model
 	public $dbConnect;
 	
 	public function __construct() {
-		
+/* ОТКЛЮЧЕНО
 		if (!isset($this->dbConnect)) {
 
 			global $config;
@@ -33,7 +33,7 @@ class Model
 			}
 
 		}
-			
+*/
 	}
 		
 	// метод выборки данных

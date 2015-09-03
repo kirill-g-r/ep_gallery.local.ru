@@ -79,12 +79,54 @@
 								Contacts:
 							</p>
 
-							<p>
-								Phone: <b>+7 (985) 764-09-94</b>
-							</p>
-							<p>
-								email: <b>opaleva.art@gmail.com</b>
-							</p>
+							<div class="container">
+
+								<div class="row">
+
+									<section class="2u 12u(mobile)">
+
+										</section>
+									<section class="2u 12u(mobile)">
+
+									</section>
+									<section class="2u 12u(mobile)">
+										<h3>Phone:</h3>
+									</section>
+									<section class="2u 12u(mobile)">
+										<h3>+7 (985) 764-09-94</h3>
+									</section>
+									<section class="2u 12u(mobile)">
+
+									</section>
+									<section class="2u 12u(mobile)">
+
+									</section>
+
+								</div>
+
+								<div class="row">
+
+									<section class="2u 12u(mobile)">
+
+									</section>
+									<section class="2u 12u(mobile)">
+
+									</section>
+									<section class="2u 12u(mobile)">
+										<h3>Email:</h3>
+									</section>
+									<section class="2u 12u(mobile)">
+										<h3>opaleva.art@gmail.com</h3>
+									</section>
+									<section class="2u 12u(mobile)">
+
+									</section>
+									<section class="2u 12u(mobile)">
+
+									</section>
+								</div>
+							</div>
+
 						</header>
 
 						</section>

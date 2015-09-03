@@ -2252,6 +2252,24 @@ hr {
 		opacity: 1;
 	}
 
+	#footer_gkg {
+		position: fixed; /* Фиксированное положение */
+		left: 0; bottom: 0; /* Левый нижний угол */
+		padding: 10px; /* Поля вокруг текста */
+		background: #2b252c; /* Цвет фона */
+		color: #ffffff; /* Цвет текста */
+		width: 100%; /* Ширина слоя */
+		border-top: 1px solid #ffffff;
+		z-index: 1000;
+		visibility: inherit;
+	}
+
+	 body.mobile .no-mobile {
+
+		 display: none;
+
+	 }
+
 	.zapfiro {
 
 		font-family:'Zapfino', cursive;

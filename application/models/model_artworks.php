@@ -47,6 +47,36 @@ class Model_Artworks extends Model {
 
         $artwork_name = array(
 
+            0 => 'Square in Colmar, France',
+            1 => 'Baptism',
+            2 => 'Snow in Paris',
+            3 => 'Barges on the Seine',
+            4 => 'Barges on the Seine',
+            5 => 'Restaurant on the Pont St. Martin. Strasbourg',
+            6 => 'Strasbourg Pont St. Martin',
+            7 => 'Shady Street. Eze',
+            8 => 'Flower Market in Paris',
+            9 => 'Bordeaux. Pont de Pietter',
+            10 => 'An Austrian Wood',
+            11 => 'Venice. Far from Busy Streets',
+            12 => 'Parisian Roofscape',
+            13 => 'In Love on Bridge',
+            14 => 'Rain in Venice',
+            15 => 'Dusk on the Seine',
+            16 => 'Place des Six Montagnes Noires in Colmar',
+            17 => 'Winter Garden in Luxembourg',
+            18 => 'Frosty Morning',
+            19 => 'Alone in Norway',
+            20 => 'Midday in Eguisheim',
+            21 => 'Midday in Eze',
+            22 => 'Strolling in Vienna',
+            23 => 'Riquewihr',
+            24 => 'TEST_NAME',
+
+        );
+
+        $artwork_name_rus = array(
+
             0 => 'Кольмар. Тенисный дворик.',
             1 => 'Крещение.',
             2 => 'Снег в Париже.',
