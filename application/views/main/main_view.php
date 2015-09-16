@@ -47,13 +47,13 @@
 						</div>
 
 					<!-- Nav -->
-<!--
+
 						<nav id="nav">
 							<ul>
 								<li><a href="/">Home</a></li>
 								<li><a class="transition" href="/artworks">Artworks</a></li>
 								<li><a href="/artist">Artist</a></li>
-						<!--								<li><a href="/artist">Artist</a></li>
+<!--														<li><a href="/artist">Artist</a></li>
 															<ul>
 																<li><a href="">Biographi</a></li>
 																<li>
@@ -68,14 +68,14 @@
 															</ul>
 
 														</li>
-						-->
-<!--
+-->
+
 								<li><a href="/news">News</a></li>
 								<li><a href="/articles">Articles</a></li>
 								<li><a href="/contacts">Contacts</a></li>
 							</ul>
 						</nav>
--->
+
 				</div>
 
 			<style type="text/css">
@@ -83,9 +83,9 @@
 
 			</style>
 
-			<div id="footer_gkg">
+			<div id="footer_gkg" style="opacity: 0.9">
 
-				<ul id="nav_bottom" style="text-align: center; margin-bottom: 0%;">
+				<ul id="nav_bottom" style=" text-align: center; margin-bottom: 0%;">
 					<li><a href="/">Home</a></li>
 					<li><a href="/artworks">Artworks</a></li>
 					<li><a href="/artist">Artist</a></li>

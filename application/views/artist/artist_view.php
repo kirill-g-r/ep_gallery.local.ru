@@ -33,14 +33,17 @@
 	<div id="page-wrapper">
 <div style="position: fixed; width: 100%">
 			<!-- Header -->
-			<div id="header" style="background-image: url(/images/banner_FIRST.jpg); padding: 2.5em 0 2em 0;">
-				<h1 class="logo_simple" style="margin-top: 1%; font-size: 400%;" ><a href="/" id="logo">Elena Opaleva</a></h1>
+			<div id="header" style="opacity: 0.9; background-image: url(/images/banner_FIRST.jpg); padding: 2.0em 0 0em 0;">
+<!--					<div id="header" style="opacity: 0.9; background-image: url(/images/banner_FIRST.jpg); padding: 2.5em 0 2em 0;">
+<h1 class="logo_simple" style="margin-top: 1%; font-size: 400%;" ><a href="/" id="logo">Elena Opaleva</a></h1>
+-->
+				<h1 class="logo_simple" style="margin-top: -3%; font-size: 400%;" ><a href="/" id="logo">Elena Opaleva</a></h1>
 				<!-- Inner -->
 
 
 				<!-- Nav -->
-				<nav id="nav">
-					<ul>
+				<nav id="nav" style="position: static; padding: 0.5em 0 1.5em 0 ">
+					<ul style="position:static;">
 						<li><a href="/">Home</a></li>
 						<li><a href="/artworks">Artworks</a></li>
 						<li><a href="/artist">Artist</a></li>
@@ -74,7 +77,8 @@
 				<div class="container">
 					<article id="main" class="special">
 						<header>
-
+<br>
+							<br>
 							<p>
 								About Artist
 							</p>
