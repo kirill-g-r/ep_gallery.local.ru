@@ -78,10 +78,6 @@
 
 				</div>
 
-			<style type="text/css">
-
-
-			</style>
 
 			<div id="footer_gkg" style="opacity: 0.9">
 

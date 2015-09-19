@@ -77,6 +77,35 @@
 
 			</div>
 
+		<div id="footer_gkg" style="opacity: 0.9">
+
+			<ul id="nav_bottom" style=" text-align: center; margin-bottom: 0%;">
+				<li><a href="/">Home</a></li>
+				<li><a href="/artworks">Artworks</a></li>
+				<li><a href="/artist">Artist</a></li>
+				<!--								<li><a href="/artist">Artist</a></li>
+                                                    <ul>
+                                                        <li><a href="">Biographi</a></li>
+                                                        <li>
+                                                            <a href="">Media &hellip;</a>
+                                                            <ul>
+                                                                <li><a href="">Photo</a></li>
+                                                                <li><a href="">Video</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="">Exhibitions</a></li>
+                                                        <li><a href="">Publishing</a></li>
+                                                    </ul>
+
+                                                </li>
+                -->
+				<li><a href="/news">News</a></li>
+				<li><a href="/articles">Articles</a></li>
+				<li><a href="/contacts">Contacts</a></li>
+			</ul>
+
+		</div>
+
 
 			<!-- Banner -->
 				<section id="banner">

@@ -31,7 +31,7 @@
     </style>
 	<body class="no-sidebar">
 	<div id="page-wrapper">
-<div style="position: fixed; width: 100%">
+<div style=" width: 100%">
 			<!-- Header -->
 			<div id="header" style="opacity: 0.9; background-image: url(/images/banner_FIRST.jpg); padding: 2.0em 0 0em 0;">
 <!--					<div id="header" style="opacity: 0.9; background-image: url(/images/banner_FIRST.jpg); padding: 2.5em 0 2em 0;">
@@ -43,7 +43,7 @@
 
 				<!-- Nav -->
 				<nav id="nav" style="position: static; padding: 0.5em 0 1.5em 0 ">
-					<ul style="position:static;">
+					<ul>
 						<li><a href="/">Home</a></li>
 						<li><a href="/artworks">Artworks</a></li>
 						<li><a href="/artist">Artist</a></li>
@@ -77,8 +77,7 @@
 				<div class="container">
 					<article id="main" class="special">
 						<header>
-<br>
-							<br>
+
 							<p>
 								About Artist
 							</p>

@@ -2253,13 +2253,15 @@ hr {
 	}
 
 	#footer_gkg {
+		height: 6%;
 		position: fixed; /* Фиксированное положение */
 		left: 0; bottom: 0; /* Левый нижний угол */
-		padding: 10px; /* Поля вокруг текста */
+		padding: 0px; /* Поля вокруг текста */
 		background: #2b252c; /* Цвет фона */
 		color: #ffffff; /* Цвет текста */
 		width: 100%; /* Ширина слоя */
-		border-top: 1px solid #ffffff;
+/*		border-top: 1px solid rgba(0, 0, 0, 0.74);
+*/
 		z-index: 1000;
 		visibility: inherit;
 	}
