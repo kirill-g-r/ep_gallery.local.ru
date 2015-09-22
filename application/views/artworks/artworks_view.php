@@ -38,17 +38,18 @@
 	<body class="no-sidebar">
 	<div id="page-wrapper">
 
+		<div style=" width: 100%">
 			<!-- Header -->
-			<div id="header" style="background-image: url(/images/banner_FIRST.jpg); background-position bottom ; padding: 2.5em 0 2em 0;">
-
-				<h1 class="logo_simple" style="margin-top: 1%; font-size: 400%;"><a href="/" id="logo">Elena Opaleva</a></h1>
-<!--				<h1 class="custom-reflection text-shadow-logo-template" style="margin-top: 1%;"><a href="/" id="logo">Elena Opaleva</a></h1>
--->
+			<div id="header" style="opacity: 0.9; background-image: url(/images/banner_FIRST.jpg); padding: 2.0em 0 0em 0;">
+				<!--					<div id="header" style="opacity: 0.9; background-image: url(/images/banner_FIRST.jpg); padding: 2.5em 0 2em 0;">
+                <h1 class="logo_simple" style="margin-top: 1%; font-size: 400%;" ><a href="/" id="logo">Elena Opaleva</a></h1>
+                -->
+				<h1 class="logo_simple" style="margin-top: -3%; font-size: 400%;" ><a href="/" id="logo">Elena Opaleva</a></h1>
 				<!-- Inner -->
 
 
 				<!-- Nav -->
-				<nav id="nav">
+				<nav id="nav" style="position: static; padding: 0.5em 0 1.5em 0 ">
 					<ul>
 						<li><a href="/">Home</a></li>
 						<li><a href="/artworks">Artworks</a></li>
@@ -76,7 +77,50 @@
 				</nav>
 
 			</div>
+		</div>
 
+			<!-- Header -->
+<!--
+			<div id="header" style="background-image: url(/images/banner_FIRST.jpg); background-position bottom ; padding: 2.5em 0 2em 0;">
+
+				<h1 class="logo_simple" style="margin-top: 1%; font-size: 400%;"><a href="/" id="logo">Elena Opaleva</a></h1>
+<!--				<h1 class="custom-reflection text-shadow-logo-template" style="margin-top: 1%;"><a href="/" id="logo">Elena Opaleva</a></h1>
+-->
+				<!-- Inner -->
+
+
+				<!-- Nav -->
+<!--
+				<nav id="nav">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/artworks">Artworks</a></li>
+						<li><a href="/artist">Artist</a></li>
+						<!--								<li><a href="/artist">Artist</a></li>
+                                                            <ul>
+                                                                <li><a href="">Biographi</a></li>
+                                                                <li>
+                                                                    <a href="">Media &hellip;</a>
+                                                                    <ul>
+                                                                        <li><a href="">Photo</a></li>
+                                                                        <li><a href="">Video</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><a href="">Exhibitions</a></li>
+                                                                <li><a href="">Publishing</a></li>
+                                                            </ul>
+
+                                                        </li>
+                        -->
+<!--
+						<li><a href="/news">News</a></li>
+						<li><a href="/articles">Articles</a></li>
+						<li><a href="/contacts">Contacts</a></li>
+					</ul>
+				</nav>
+
+			</div>
+-->
 		<div id="footer_gkg" style="opacity: 0.9">
 
 			<ul id="nav_bottom" style=" text-align: center; margin-bottom: 0%;">
@@ -119,12 +163,14 @@
 						</p>
 -->
 					</header>
-<!-- CHANGE ARTWORKS TYPE
+
 					<ul id="nav_bottom_artworks">
-						<li><a href="#" onclick="select_gallery('Landscapes');">Landsacpes</a></li>
-						<li><a href="#" onclick="select_gallery('Compositions');">Composition</a></li>
+						<li><a href="#" onclick="select_gallery('landscapes');">Landsacpes</a></li>
+						<li><a href="#" onclick="select_gallery('composition');">Composition</a></li>
+<!--
 						<li><a href="#">Still life</a></li>
 						<li><a href="#">Watercolor</a></li>
+<!--
 														<li><a href="/artist">Artist</a></li>
                                                             <ul>
                                                                 <li><a href="">Biographi</a></li>
@@ -142,8 +188,9 @@
                                                         </li>
 
 						<li><a href="/news">Acrylic</a></li>
-					</ul>
 -->
+					</ul>
+
 
 				</section>
 
@@ -382,7 +429,7 @@
 	</div>
 -->
 
-<div class="container slideLeft" style="-webkit-animation-duration: 3s;">
+<div id="xxx_test" class="container slideLeft" style="-webkit-animation-duration: 3s;">
 		<div class="main">
 
 <!-- NAME OF CATEGORY ARTWORKS
@@ -599,11 +646,13 @@
 
 				</ul>
 -->
+
+
+			</div>
+
 				<div class="gamma-overlay"></div>
 
 				<div id="loadmore" class="loadmore">Example for loading more items...</div>
-
-			</div>
 
 		</div><!--/main-->
 </div>
@@ -672,6 +721,7 @@
 				</div>
 
 		</div>
+
 
 		<!-- Scripts -->
 		<script>

@@ -31,9 +31,9 @@ class Controller_Artworks extends Controller
 
 	function load_page() {
 
-		$data['artworks_type'] = 'Landscapes';
+		$data['artworks_type'] = 'landscapes';
 
-		$data['artworks'] = $this->getArtworks();
+		$data['artworks'] = $this->getArtworks($data['artworks_type']);
 
 		$this->view->generate('', 'artworks_view.php', $data);
 		//$this->view->generate('main_view.php', 'template_view.php');
@@ -42,16 +42,18 @@ class Controller_Artworks extends Controller
 	}
 
 	function select_gallery() {
-echo '123<BR>123<BR>123';
+
 		$data['artworks_type'] = $_POST['artworks_type'];
 
-		//$this->view->generate('', 'artworks_view.php', $data);
+		echo $data['artworks'] = $this->getArtworks($data['artworks_type']);
+
+
 
 	}
 
-	function getArtworks() {
+	function getArtworks($type = 'landscapes') {
 
-		$artworks = $this->model->getArtworks();
+		$artworks = $this->model->getArtworks($type);
 
 		$html = '';
 
@@ -70,7 +72,7 @@ echo '123<BR>123<BR>123';
 			$html .= '
 
 				<article class="3u">
-					<a href="images/artworks/large/'.$artworks['large'][$key].'" class="image fit"><img src="images/artworks/small/'.$artworks['small'][$key].'" alt="" title="'.$artworks['name'][$key].'" /></a>
+					<a href="images/artworks/'.$type.'/large/'.$artworks['large'][$key].'" class="image fit"><img src="images/artworks/'.$type.'/small/'.$artworks['small'][$key].'" alt="" title="'.$artworks['name'][$key].'<BR>'.$artworks['property'][$key].'" /></a>
 				</article>
 
 				';

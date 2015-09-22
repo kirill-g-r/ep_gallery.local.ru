@@ -103,74 +103,63 @@
 
 		</div>
 
-			<!-- Main -->
-			<div class="wrapper style1">
+		<br>
 
-				<div class="container">
-					<article id="main" class="special">
-						<header>
+		<!-- Form to Contact -->
+		<div class="container">
 
-							<p>
-								Contacts:
-							</p>
 
-							<div class="container">
+			<div class="row">
 
-								<div class="row">
+				<section class="3u 12u(mobile)">
 
-									<section class="2u 12u(mobile)">
+					<h3>Contacts</h3>
+					<br>
 
-										</section>
-									<section class="2u 12u(mobile)">
+					<blockquote>
+						phone: <b>+7 (985) 764-09-94</b>
+						<br>
+						email: <b>opaleva.art@gmail.com</b>
+					</blockquote>
 
-									</section>
-									<section class="2u 12u(mobile)">
-										<h3>Phone:</h3>
-									</section>
-									<section class="2u 12u(mobile)">
-										<h3>+7 (985) 764-09-94</h3>
-									</section>
-									<section class="2u 12u(mobile)">
+				</section>
 
-									</section>
-									<section class="2u 12u(mobile)">
+				<section class="6u 12u(mobile)">
 
-									</section>
 
-								</div>
 
-								<div class="row">
 
-									<section class="2u 12u(mobile)">
 
-									</section>
-									<section class="2u 12u(mobile)">
-
-									</section>
-									<section class="2u 12u(mobile)">
-										<h3>Email:</h3>
-									</section>
-									<section class="2u 12u(mobile)">
-										<h3>opaleva.art@gmail.com</h3>
-									</section>
-									<section class="2u 12u(mobile)">
-
-									</section>
-									<section class="2u 12u(mobile)">
-
-									</section>
-								</div>
+					<h3>Form To Contact</h3>
+					<br>
+					<form method="post" action="#">
+						<div class="row uniform">
+							<div class="6u 12u$(xsmall)">
+								<input type="text" name="about_send_mail_name" id="about_send_mail_name" value="" placeholder="Your Name" />
+							</div>
+							<div class="6u$ 12u$(xsmall)">
+								<input type="email" name="about_send_mail_email" id="about_send_mail_email" value="" placeholder="Email" />
 							</div>
 
-						</header>
-
-						</section>
-					</article>
-
-
-				</div>
+							<div class="12u$">
+								<textarea name="about_send_mail_message" id="about_send_mail_message" placeholder="Enter your message" rows="6"></textarea>
+							</div>
+							<div class="12u$">
+								<ul class="actions">
+									<li><input type="button" value="Send Message" class="special" onclick="alert('Letter will be sent');"/></li>
+									<li><input type="reset" value="Reset" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</section>
 
 			</div>
+		</div>
+		<BR>
+		<!-- End of Form to Contact -->
+
+
 			<!-- Footer -->
 				<div id="footer">
 					<div class="container">
