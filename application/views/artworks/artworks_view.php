@@ -166,7 +166,7 @@
 
 					<ul id="nav_bottom_artworks">
 						<li><a href="#" onclick="select_gallery('landscapes');">Landsacpes</a></li>
-						<li><a href="#" onclick="select_gallery('composition');">Composition</a></li>
+						<li><a href="#" onclick="select_gallery('composition');">Compositions</a></li>
 <!--
 						<li><a href="#">Still life</a></li>
 						<li><a href="#">Watercolor</a></li>

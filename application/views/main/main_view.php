@@ -42,7 +42,7 @@
 								<p class="slideLeft">ARTIST</p>
 							</header>
 							<footer>
-								<a href="#carousel" class="button circled scrolly fa fa-arrow-circle-down fa-5x"></a>
+								<a href="#banner" class="button circled scrolly fa fa-arrow-circle-down fa-5x"></a>
 							</footer>
 						</div>
 
