@@ -20,6 +20,9 @@ function select_gallery(gallery_type) {
 
 
 
+
+
+
             $( "#gallery" ).fadeOut( "slow", function () {
 
                 $('#gallery').html('').html(data);
@@ -38,6 +41,7 @@ function select_gallery(gallery_type) {
                 });
 
             });
+
 
 
 

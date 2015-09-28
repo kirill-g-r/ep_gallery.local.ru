@@ -118,6 +118,10 @@
 								COMMING SOON!
 							</p>
 
+							<BR>
+							<BR>
+							<BR>
+
 						</header>
 
 <!--
@@ -177,32 +181,9 @@
 									<section class="contact">
 										<header>
 
-											<ul id="nav_bottom">
-												<li><a href="/">Home</a></li>
-												<li><a href="/artworks">Artworks</a></li>
-												<li><a href="/artist">Artist</a></li>
-												<!--								<li><a href="/artist">Artist</a></li>
-                                                                                    <ul>
-                                                                                        <li><a href="">Biographi</a></li>
-                                                                                        <li>
-                                                                                            <a href="">Media &hellip;</a>
-                                                                                            <ul>
-                                                                                                <li><a href="">Photo</a></li>
-                                                                                                <li><a href="">Video</a></li>
-                                                                                            </ul>
-                                                                                        </li>
-                                                                                        <li><a href="">Exhibitions</a></li>
-                                                                                        <li><a href="">Publishing</a></li>
-                                                                                    </ul>
-
-                                                                                </li>
-                                                -->
-												<li><a href="/news">News</a></li>
-												<li><a href="/articles">Articles</a></li>
-												<li><a href="/contacts">Contacts</a></li>
-											</ul>
-
-											<h1 class="custom-reflection text-shadow-logo-template" style="margin-top: 30px;"><a href="/" id="logo">Elena Opaleva</a></h1>
+<!--											<h1 class="custom-reflection text-shadow-logo-template" style="margin-top: 30px;"><a href="/" id="logo">Elena Opaleva</a></h1>
+-->
+											<h1 style="font-size: 400%" class="text-shadow-logo"><a href="/">Elena Opaleva</a></h1>
 										</header>
 										<p>Find on social networks</p>
 										<ul class="icons">

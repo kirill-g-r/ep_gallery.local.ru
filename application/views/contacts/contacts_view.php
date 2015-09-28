@@ -111,7 +111,7 @@
 
 			<div class="row">
 
-				<section class="3u 12u(mobile)">
+				<section class="3u 12u(mobile)" >
 
 					<h3>Contacts</h3>
 					<br>
@@ -156,6 +156,11 @@
 
 			</div>
 		</div>
+		<BR>
+		<BR>
+		<BR>
+		<BR>
+		<BR>
 		<BR>
 		<!-- End of Form to Contact -->
 

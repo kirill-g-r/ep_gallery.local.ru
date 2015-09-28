@@ -72,7 +72,7 @@ class Controller_Artworks extends Controller
 			$html .= '
 
 				<article class="3u">
-					<a href="images/artworks/'.$type.'/large/'.$artworks['large'][$key].'" class="image fit"><img src="images/artworks/'.$type.'/small/'.$artworks['small'][$key].'" alt="" title="'.$artworks['name'][$key].'<BR>'.$artworks['property'][$key].'" /></a>
+					<a href="images/artworks/'.$type.'/large/'.$artworks['large'][$key].'" class="image fit"><img src="images/artworks/'.$type.'/small/'.$artworks['small'][$key].'" alt="" title="<b>'.$artworks['name'][$key].'</b><BR>'.$artworks['property'][$key].'" /></a>
 				</article>
 
 				';
