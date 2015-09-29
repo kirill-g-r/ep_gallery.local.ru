@@ -111,13 +111,15 @@
 						<header>
 
 							<p>
-								News
+								<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -10%; margin-bottom: -2%;">News</h2>
 							</p>
 
 							<p>
 								COMMING SOON!
 							</p>
 
+							<BR>
+							<BR>
 							<BR>
 							<BR>
 							<BR>

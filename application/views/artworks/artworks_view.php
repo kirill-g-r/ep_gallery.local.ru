@@ -152,10 +152,10 @@
 
 
 			<!-- Banner -->
-				<section id="banner">
+				<section id="banner" style="padding: 4.5em 0 1em 0">
 
 					<header>
-						<h2 class="zapfiro text-shadow" style="font-size: 400%; margin-top: -3%; margin-bottom: -10%;">Artworks</h2>
+						<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -3%; margin-bottom: -10%;">Artworks</h2>
 <!--
 						<p>
 							A (free) responsive site template by <a href="http://html5up.net">HTML5 UP</a>.

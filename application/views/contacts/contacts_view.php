@@ -105,17 +105,34 @@
 
 		<br>
 
+
+
+
+
+				<article id="main" class="special">
+					<header>
+
+						<p>
+						<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -3%; margin-bottom: -2%;">Contacts</h2>
+						</p>
+					</header>
+				</article>
+
+
+
+
+
 		<!-- Form to Contact -->
 		<div class="container">
 
 
 			<div class="row">
 
-				<section class="3u 12u(mobile)" >
+				<section class="6u 12u(mobile)" >
 
-					<h3>Contacts</h3>
-					<br>
 
+					Please contact  me for additional information about pricing<br>
+					or any other questions that you may have<br><br>
 					<blockquote>
 						phone: <b>+7 (985) 764-09-94</b>
 						<br>
@@ -130,20 +147,28 @@
 
 
 
-					<h3>Form To Contact</h3>
-					<br>
+
 					<form method="post" action="#">
 						<div class="row uniform">
+<!--
 							<div class="6u 12u$(xsmall)">
 								<input type="text" name="about_send_mail_name" id="about_send_mail_name" value="" placeholder="Your Name" />
 							</div>
 							<div class="6u$ 12u$(xsmall)">
 								<input type="email" name="about_send_mail_email" id="about_send_mail_email" value="" placeholder="Email" />
 							</div>
-
+-->
 							<div class="12u$">
-								<textarea name="about_send_mail_message" id="about_send_mail_message" placeholder="Enter your message" rows="6"></textarea>
+								<input type="text" name="about_send_mail_message" id="about_send_mail_message" placeholder="Your name" />
+								<input type="email" name="about_send_mail_message" id="about_send_mail_message" placeholder="Your Email" />
+								<input type="text" name="about_send_mail_message" id="about_send_mail_message" placeholder="Subject" />
+								<textarea name="about_send_mail_message" id="about_send_mail_message" placeholder="Your message" rows="1"></textarea>
 							</div>
+<!--
+							<div class="12u$">
+								<textarea name="about_send_mail_message" id="about_send_mail_message" placeholder="Your message" rows="1"></textarea>
+							</div>
+-->
 							<div class="12u$">
 								<ul class="actions">
 									<li><input type="button" value="Send Message" class="special" onclick="alert('Letter will be sent');"/></li>
