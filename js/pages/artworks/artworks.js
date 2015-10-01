@@ -35,7 +35,8 @@ function select_gallery(gallery_type) {
                     });
                     $('.caption').css('font-size', '70%');
                     $('.caption').css('line-height', '115%');
-                    $('.caption').css('padding', '5%');
+                    $('.caption').css('padding-top', '2%');
+                    $('.caption').css('padding-bottom', '2%');
 
 
                 });
@@ -60,7 +61,8 @@ function select_gallery(gallery_type) {
                 });
                 $('.caption').css('font-size', '70%');
                 $('.caption').css('line-height', '115%');
-                $('.caption').css('padding', '5%');
+                $('.caption').css('padding-top', '2%');
+                $('.caption').css('padding-bottom', '2%');
 
 
             });

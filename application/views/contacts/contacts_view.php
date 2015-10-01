@@ -119,29 +119,32 @@
 				</article>
 
 
-
-
-
 		<!-- Form to Contact -->
-		<div class="container">
+		<div class="container" >
 
 
-			<div class="row">
+			<div class="row" style="padding-left: 10%; padding-right: 10%">
 
 				<section class="6u 12u(mobile)" >
 
 
 					Please contact  me for additional information about pricing<br>
 					or any other questions that you may have<br><br>
-					<blockquote>
-						phone: <b>+7 (985) 764-09-94</b>
+
+					<a class="icon fa-phone"><span class="label">Phone</span></a>
+					&nbsp&nbsp&nbsp&nbsp&nbspPhone:
+					<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>+7 (985) 764-09-94</b>
 						<br>
-						email: <b>opaleva.art@gmail.com</b>
-					</blockquote>
+					<a class="icon fa-envelope"><span class="label">Email</span></a>
+						&nbsp&nbsp&nbsp&nbsp&nbspEmail:
+					<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>opaleva.art@gmail.com</b>
+
 
 				</section>
 
-				<section class="6u 12u(mobile)">
+				<section class="6u 12u(mobile)" >
 
 
 

@@ -433,7 +433,7 @@
 		<div class="main">
 
 <!-- NAME OF CATEGORY ARTWORKS
-			<header class="clearfix">
+			<header class="clearfix">zz
 
 				<h1 id="artworks_type"><?php echo $data['artworks_type']; ?></h1>
 
@@ -708,7 +708,8 @@
 				});
 				$('.caption').css('font-size', '70%');
 				$('.caption').css('line-height', '115%');
-				$('.caption').css('padding', '5%');
+				$('.caption').css('padding-top', '2%');
+				$('.caption').css('padding-bottom', '2%');
 
 
 			});
