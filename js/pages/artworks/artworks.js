@@ -36,7 +36,7 @@ function select_gallery(gallery_type) {
                     $('.caption').css('font-size', '80%');
                     $('.caption').css('line-height', '115%');
                     $('.caption').css('padding-top', '2%');
-                    $('.caption').css('padding-bottom', '2%');
+                    $('.caption').css('padding-bottom', '5%');
 
 
                 });
@@ -62,7 +62,7 @@ function select_gallery(gallery_type) {
                 $('.caption').css('font-size', '80%');
                 $('.caption').css('line-height', '115%');
                 $('.caption').css('padding-top', '2%');
-                $('.caption').css('padding-bottom', '2%');
+                $('.caption').css('padding-bottom', '5%');
 
 
             });
