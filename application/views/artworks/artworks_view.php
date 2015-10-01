@@ -706,7 +706,7 @@
 				$('#gallery').poptrox({
 					usePopupCaption: true
 				});
-				$('.caption').css('font-size', '70%');
+				$('.caption').css('font-size', '80%');
 				$('.caption').css('line-height', '115%');
 				$('.caption').css('padding-top', '2%');
 				$('.caption').css('padding-bottom', '2%');
