@@ -57,6 +57,19 @@ class Controller_Artworks extends Controller
 
 		$html = '';
 
+		//--------
+
+		$html .= '
+					<div id="xxx_test" class="container slideLeft" style="-webkit-animation-duration: 3s;">
+						<div class="main">
+							<div class="gamma-container gamma-loading" id="gamma-container">
+								<div class="row 25%" id="gallery">
+
+					';
+
+
+	//--------
+
 		foreach ( $artworks['large'] as $key => $artwork ) {
 
 			if (!isset($artworks['large'][$key]) || !isset($artworks['small'][$key])) {
@@ -79,6 +92,14 @@ class Controller_Artworks extends Controller
 
 
 		}
+
+		$html .= '
+								</div>
+							</div>
+						</div>
+					</div>
+
+					';
 
 		return $html;
 

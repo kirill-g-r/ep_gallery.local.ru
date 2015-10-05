@@ -102,14 +102,17 @@
 		</div>
 			<!-- Main -->
 			<div class="wrapper style1">
+				<article id="main" class="special">
+					<header>
 
-				<div class="container">
+						<p>
+						<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -8%; margin-bottom: -2%;">Artist</h2>
+						</p>
+					</header>
+				</article>
+				<div class="container slideLeft">
 					<article id="main" class="special">
-						<header>
-							<p>
-								<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -10%; margin-bottom: -2%;">Artist</h2>
-							</p>
-						</header>
+
 
 						<BR>
 

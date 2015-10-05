@@ -113,14 +113,14 @@
 					<header>
 
 						<p>
-						<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -3%; margin-bottom: -2%;">Contacts</h2>
+						<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -3.5%; margin-bottom: -2%;">Contacts</h2>
 						</p>
 					</header>
 				</article>
 
 
 		<!-- Form to Contact -->
-		<div class="container" >
+		<div class="container slideLeft" >
 
 
 			<div class="row" style="padding-left: 10%; padding-right: 10%">

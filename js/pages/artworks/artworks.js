@@ -11,6 +11,22 @@ function select_gallery(gallery_type) {
         },
 
         success: function(data){
+
+
+            $("#xxx_test").fadeOut('slow');
+
+            $("#xxx_test").load(location.href + " #xxx_test", function () {
+
+                $("#xxx_test").fadeIn('slow');
+
+                $("#xxx_test").html(data);
+
+                return true;
+
+            });
+
+
+
 //alert(data);
 
             //$('#gallery').animate({width: 'hide'}, 700);
