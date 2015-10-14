@@ -21,6 +21,18 @@ function select_gallery(gallery_type) {
 
                 $("#xxx_test").html(data);
 
+                $(function() {
+                    $('#gallery').poptrox({
+                        usePopupCaption: true
+                    });
+                    $('.caption').css('font-size', '80%');
+                    $('.caption').css('line-height', '115%');
+                    $('.caption').css('padding-top', '2%');
+                    $('.caption').css('padding-bottom', '5%');
+
+
+                });
+
                 return true;
 
             });
@@ -84,6 +96,7 @@ function select_gallery(gallery_type) {
             });
 
         }
+
     });
 
 }
