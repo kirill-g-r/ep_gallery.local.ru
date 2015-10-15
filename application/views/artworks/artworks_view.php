@@ -19,7 +19,7 @@
 		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/jquery.onvisible.min.js"></script>
 		<script src="assets/js/util.js"></script>
-		<script src="assets/js/page_transition.js"></script>
+		<!--<script src="assets/js/page_transition.js"></script>-->
 
 		<link rel="stylesheet" type="text/css" href="assets/gallery/css/style_gallery.css"/>
 		<script src="assets/gallery/js/modernizr.custom.70736.js"></script>
@@ -152,7 +152,7 @@
 
 
 			<!-- Banner -->
-				<section id="banner" style="padding: 4.5em 0 1em 0">
+				<section id="banner" style="padding: 4.5em 0 1em 0" class="slideLeft">
 
 					<header>
 						<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -3%; margin-bottom: -10%;">Artworks</h2>

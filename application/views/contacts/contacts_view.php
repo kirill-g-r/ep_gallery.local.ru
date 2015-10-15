@@ -13,7 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/page_transition.js"></script>
+		<!--<script src="assets/js/page_transition.js"></script>-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -109,18 +109,20 @@
 
 
 
-				<article id="main" class="special">
-					<header>
 
-						<p>
-						<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -3.5%; margin-bottom: -2%;">Contacts</h2>
-						</p>
-					</header>
-				</article>
 
 
 		<!-- Form to Contact -->
 		<div class="container slideLeft" >
+
+			<article id="main" class="special">
+				<header>
+
+					<p>
+					<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -3.5%; margin-bottom: -2%;">Contacts</h2>
+					</p>
+				</header>
+			</article>
 
 
 			<div class="row" style="padding-left: 10%; padding-right: 10%">
@@ -190,6 +192,8 @@
 		<BR>
 		<BR>
 		<BR>
+
+
 		<!-- End of Form to Contact -->
 
 

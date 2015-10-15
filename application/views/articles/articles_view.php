@@ -13,7 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/page_transition.js"></script>
+		<!--<script src="assets/js/page_transition.js"></script>-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -105,20 +105,23 @@
 
 			<!-- Main -->
 			<div class="wrapper style1">
-				<article id="main" class="special">
-					<header>
 
-						<p>
-						<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -8%; margin-bottom: -2%;">Articles</h2>
-						</p>
-						<br>
-						<br>
-						<br>
-
-
-					</header>
-				</article>
 				<div class="container slideLeft">
+
+					<article id="main" class="special">
+						<header>
+
+							<p>
+							<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -8%; margin-bottom: -2%;">Articles</h2>
+							</p>
+							<br>
+							<br>
+							<br>
+
+
+						</header>
+					</article>
+
 					<article id="main" class="special">
 						<header><p>COMMING SOON!</p></header>
 						<br>

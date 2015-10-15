@@ -111,7 +111,7 @@
 			<!-- Banner -->
 			<section id="banner" style="padding-top: 2%; padding-bottom: 1%;">
 				<header>
-					<h2 class="zapfiro text-shadow" style="font-size: 600%;">Artworks</h2>
+					<a href="/artworks"><h2 class="zapfiro text-shadow" style="font-size: 600%;">Artworks</h2></a>
 					<!--
                                             <p>
                                                 A (free) responsive site template by <a href="http://html5up.net">HTML5 UP</a>.
@@ -133,42 +133,42 @@
 								<h3>#Натюрморт</h3>
 							</header>
 -->
-							Baptism
+
 						</article>
 
 						<article>
 							<a href="images/artworks/landscapes/large/2.jpg" class="image featured"><img src="images/artworks/landscapes/small/2.jpg_small.jpg" alt="" title="Snow in Paris"/></a>
-							Snow in Paris
+
 						</article>
 
 						<article>
 							<a href="images/artworks/landscapes/large/3.jpg" class="image featured"><img src="images/artworks/landscapes/small/3.jpg_small.jpg" alt="" title="Barges on the Seine"/></a>
-							Barges on the Seine
+
 						</article>
 
 						<article>
 							<a href="images/artworks/landscapes/large/4.jpg" class="image featured"><img src="images/artworks/landscapes/small/4.jpg_small.jpg" alt="" title="Strasbourg Pont St. Martin"/></a>
-							Strasbourg Pont St. Martin
+
 						</article>
 
 						<article>
 							<a href="images/artworks/landscapes/large/5.jpg" class="image featured"><img src="images/artworks/landscapes/small/5.jpg_small.jpg" alt="" title="Strasbourg Pont St. Martin"/></a>
-							Strasbourg Pont St. Martin
+
 						</article>
 
 						<article>
 							<a href="images/artworks/landscapes/large/6.jpg" class="image featured"><img src="images/artworks/landscapes/small/6.jpg_small.jpg" alt="" title="Strasbourg. La Petite France"/></a>
-							Strasbourg. La Petite France
+
 						</article>
 
 						<article>
 							<a href="images/artworks/landscapes/large/7.jpg" class="image featured"><img src="images/artworks/landscapes/small/7.jpg_small.jpg" alt="" title="Shady Street. Eze"/></a>
-							Shady Street. Eze
+
 						</article>
 
 						<article>
 							<a href="images/artworks/landscapes/large/8.jpg" class="image featured"><img src="images/artworks/landscapes/small/8.jpg_small.jpg" alt="" title="Flower Market in Paris"/></a>
-							Flower Market in Paris
+
 						</article>
 
 					</div>
@@ -187,9 +187,11 @@
 							<!-- Tweets -->
 								<section class="4u 12u(mobile)">
 									<header>
-                                        <h3 class="zapfiro" style="font-size: 300%;">News</h3>
-                                        <br>
-										<h2 class="icon fa-newspaper-o circled"><span class="label">Tweets</span></h2>
+										<a href="/news">
+											<h3 class="zapfiro" style="font-size: 300%;">News</h3>
+                                        	<br>
+											<h2 class="icon fa-newspaper-o circled"><span class="label">Tweets</span></h2>
+										</a>
 									</header>
 									<ul class="divided">
 										<li>
@@ -216,11 +218,15 @@
 
                             <!-- Photos -->
                             <section class="4u 12u(mobile)">
-                                <header>
-                                    <h3 class="zapfiro" style="font-size: 300%;">Last Artworks</h3>
-                                    <br>
-                                    <h2 class="icon fa-image circled"><span class="label">Photos</span></h2>
-                                </header>
+
+								<header>
+									<a href="/artworks">
+										<h3 class="zapfiro" style="font-size: 300%;">Last Artworks</h3>
+                                    	<br>
+                                    	<h2 class="icon fa-image circled"><span class="label">Photos</span></h2>
+									</a>
+								</header>
+
 <!--
                                 <div class="row 25%">
 
@@ -284,10 +290,12 @@
 							<!-- Posts -->
 								<section class="4u 12u(mobile)">
 									<header>
-                                        <h3 class="zapfiro" style="font-size: 300%;">Articles</h3>
-                                        <br>
+										<a href="/articles">
+                                        	<h3 class="zapfiro" style="font-size: 300%;">Articles</h3>
+                                        	<br>
 
-										<h2 class="icon fa-file circled"><span class="label">Posts</span></h2>
+											<h2 class="icon fa-file circled"><span class="label">Posts</span></h2>
+										</a>
 									</header>
 									<ul class="divided">
 										<li>

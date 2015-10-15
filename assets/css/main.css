@@ -2253,7 +2253,7 @@ hr {
 	}
 
 	#footer_gkg {
-		height: 6%;
+		height: 4.5%;
 		position: fixed; /* Фиксированное положение */
 		left: 0; bottom: 0; /* Левый нижний угол */
 		padding: 0px; /* Поля вокруг текста */
@@ -2474,7 +2474,7 @@ hr {
 		#nav_bottom > li {
 
 			display: inline-block;
-			margin: -9px 0.5em 0 0.5em;
+			margin: -15px 0.5em 0 0.5em;
 			border-radius: 0.5em;
 			padding: 0.85em;
 
