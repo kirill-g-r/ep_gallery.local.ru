@@ -2808,10 +2808,12 @@ hr {
 
 		.carousel article {
 			display: inline-block;
-			width: 20em;
+			width: 28em;
 			background: #fff;
 			text-align: center;
-			padding: 0 1em 1em 1em;
+			/*padding: 0 1em 1em 1em;
+			*/
+			padding: 1em 2em 0em 2em;
 			margin: 0 2.5em 0 0;
 			white-space: normal;
 			opacity: 1.0;

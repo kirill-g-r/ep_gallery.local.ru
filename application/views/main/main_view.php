@@ -126,7 +126,7 @@
 				<div class="reel">
 					<div id="gallery">
 						<article>
-							<a  href="images/artworks/landscapes/large/1.jpg" class="image featured"><img src="images/artworks/landscapes/small/1.jpg_small.jpg"  alt="" title="Baptism"></a>
+							<a  href="images/artworks/slider/large/1.jpg" class="image featured"><img src="images/artworks/slider/small/1.jpg_small.jpg"  alt="" title="Baptism"></a>
 							<!--<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>-->
 <!--
 							<header>
@@ -137,44 +137,44 @@
 						</article>
 
 						<article>
-							<a href="images/artworks/landscapes/large/2.jpg" class="image featured"><img src="images/artworks/landscapes/small/2.jpg_small.jpg" alt="" title="Snow in Paris"/></a>
+							<a href="images/artworks/slider/large/2.jpg" class="image featured"><img src="images/artworks/slider/small/2.jpg_small.jpg" alt="" title="Snow in Paris"/></a>
 
 						</article>
 
 						<article>
-							<a href="images/artworks/landscapes/large/3.jpg" class="image featured"><img src="images/artworks/landscapes/small/3.jpg_small.jpg" alt="" title="Barges on the Seine"/></a>
+							<a href="images/artworks/slider/large/3.jpg" class="image featured"><img src="images/artworks/slider/small/3.jpg_small.jpg" alt="" title="Barges on the Seine"/></a>
 
 						</article>
 
 						<article>
-							<a href="images/artworks/landscapes/large/4.jpg" class="image featured"><img src="images/artworks/landscapes/small/4.jpg_small.jpg" alt="" title="Strasbourg Pont St. Martin"/></a>
+							<a href="images/artworks/slider/large/4.jpg" class="image featured"><img src="images/artworks/slider/small/4.jpg_small.jpg" alt="" title="Strasbourg Pont St. Martin"/></a>
 
 						</article>
 
 						<article>
-							<a href="images/artworks/landscapes/large/5.jpg" class="image featured"><img src="images/artworks/landscapes/small/5.jpg_small.jpg" alt="" title="Strasbourg Pont St. Martin"/></a>
+							<a href="images/artworks/slider/large/5.jpg" class="image featured"><img src="images/artworks/slider/small/5.jpg_small.jpg" alt="" title="Strasbourg Pont St. Martin"/></a>
 
 						</article>
 
 						<article>
-							<a href="images/artworks/landscapes/large/6.jpg" class="image featured"><img src="images/artworks/landscapes/small/6.jpg_small.jpg" alt="" title="Strasbourg. La Petite France"/></a>
+							<a href="images/artworks/slider/large/10.jpg" class="image featured"><img src="images/artworks/slider/small/10.jpg_small.jpg" alt="" title="Strasbourg. La Petite France"/></a>
 
 						</article>
 
 						<article>
-							<a href="images/artworks/landscapes/large/7.jpg" class="image featured"><img src="images/artworks/landscapes/small/7.jpg_small.jpg" alt="" title="Shady Street. Eze"/></a>
+							<a href="images/artworks/slider/large/11.jpg" class="image featured"><img src="images/artworks/slider/small/11.jpg_small.jpg" alt="" title="Shady Street. Eze"/></a>
 
 						</article>
 
 						<article>
-							<a href="images/artworks/landscapes/large/8.jpg" class="image featured"><img src="images/artworks/landscapes/small/8.jpg_small.jpg" alt="" title="Flower Market in Paris"/></a>
+							<a href="images/artworks/slider/large/8.jpg" class="image featured"><img src="images/artworks/slider/small/8.jpg_small.jpg" alt="" title="Flower Market in Paris"/></a>
 
 						</article>
 
 						<!--Reprize slider-->
 
 						<article>
-							<a  href="images/artworks/landscapes/large/1.jpg" class="image featured"><img src="images/artworks/landscapes/small/1.jpg_small.jpg"  alt="" title="Baptism"></a>
+							<a  href="images/artworks/slider/large/1.jpg" class="image featured"><img src="images/artworks/slider/small/1.jpg_small.jpg"  alt="" title="Baptism"></a>
 							<!--<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>-->
 							<!--
                                                         <header>
@@ -185,37 +185,37 @@
 						</article>
 
 						<article>
-							<a href="images/artworks/landscapes/large/2.jpg" class="image featured"><img src="images/artworks/landscapes/small/2.jpg_small.jpg" alt="" title="Snow in Paris"/></a>
+							<a href="images/artworks/slider/large/2.jpg" class="image featured"><img src="images/artworks/slider/small/2.jpg_small.jpg" alt="" title="Snow in Paris"/></a>
 
 						</article>
 
 						<article>
-							<a href="images/artworks/landscapes/large/3.jpg" class="image featured"><img src="images/artworks/landscapes/small/3.jpg_small.jpg" alt="" title="Barges on the Seine"/></a>
+							<a href="images/artworks/slider/large/3.jpg" class="image featured"><img src="images/artworks/slider/small/3.jpg_small.jpg" alt="" title="Barges on the Seine"/></a>
 
 						</article>
 
 						<article>
-							<a href="images/artworks/landscapes/large/4.jpg" class="image featured"><img src="images/artworks/landscapes/small/4.jpg_small.jpg" alt="" title="Strasbourg Pont St. Martin"/></a>
+							<a href="images/artworks/slider/large/4.jpg" class="image featured"><img src="images/artworks/slider/small/4.jpg_small.jpg" alt="" title="Strasbourg Pont St. Martin"/></a>
 
 						</article>
 
 						<article>
-							<a href="images/artworks/landscapes/large/5.jpg" class="image featured"><img src="images/artworks/landscapes/small/5.jpg_small.jpg" alt="" title="Strasbourg Pont St. Martin"/></a>
+							<a href="images/artworks/slider/large/5.jpg" class="image featured"><img src="images/artworks/slider/small/5.jpg_small.jpg" alt="" title="Strasbourg Pont St. Martin"/></a>
 
 						</article>
 
 						<article>
-							<a href="images/artworks/landscapes/large/6.jpg" class="image featured"><img src="images/artworks/landscapes/small/6.jpg_small.jpg" alt="" title="Strasbourg. La Petite France"/></a>
+							<a href="images/artworks/slider/large/10.jpg" class="image featured"><img src="images/artworks/slider/small/10.jpg_small.jpg" alt="" title="Strasbourg. La Petite France"/></a>
 
 						</article>
 
 						<article>
-							<a href="images/artworks/landscapes/large/7.jpg" class="image featured"><img src="images/artworks/landscapes/small/7.jpg_small.jpg" alt="" title="Shady Street. Eze"/></a>
+							<a href="images/artworks/slider/large/11.jpg" class="image featured"><img src="images/artworks/slider/small/11.jpg_small.jpg" alt="" title="Shady Street. Eze"/></a>
 
 						</article>
 
 						<article>
-							<a href="images/artworks/landscapes/large/8.jpg" class="image featured"><img src="images/artworks/landscapes/small/8.jpg_small.jpg" alt="" title="Flower Market in Paris"/></a>
+							<a href="images/artworks/slider/large/8.jpg" class="image featured"><img src="images/artworks/slider/small/8.jpg_small.jpg" alt="" title="Flower Market in Paris"/></a>
 
 						</article>
 
@@ -328,7 +328,7 @@
 										<a href="images/artworks/landscapes/large/3.jpg" class="image fit"><img src="images/artworks/landscapes/small/3.jpg_small.jpg" alt="" title="Barges on the Seine" /></a>
 									</article>
 									<article class="6u$">
-										<a href="images/artworks/landscapes/large/4.jpg" class="image fit"><img src="images/artworks/landscapes/small/4.jpg_small.jpg" alt="" title="Restaurant on the Pont St. Martin. Strasbourg" /></a>
+										<a href="images/artworks/slider/large/4.jpg" class="image fit"><img src="images/artworks/landscapes/small/4.jpg_small.jpg" alt="" title="Restaurant on the Pont St. Martin. Strasbourg" /></a>
 
 									</article>
 
