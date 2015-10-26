@@ -112,6 +112,29 @@
 					itemWidth,
 					reelWidth,
 					timerId;
+			// Auto Scroll
+
+				mobile_flag = false;
+
+				skel.on('+mobile -mobile', function() {
+					mobile_flag = true;
+				})
+
+				if (mobile_flag == false) {
+
+					timerId = window.setInterval(function () {
+						pos -= 0.2;
+
+						if (pos <= rightLimit) {
+							window.clearInterval(timerId);
+							pos = rightLimit;
+						}
+
+						$t._updatePos();
+					}, 10);
+
+				}
+
 
 				// Items.
 					if (settings.carousels.fadeIn) {

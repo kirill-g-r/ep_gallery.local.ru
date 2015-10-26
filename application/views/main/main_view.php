@@ -171,6 +171,56 @@
 
 						</article>
 
+						<!--Reprize slider-->
+
+						<article>
+							<a  href="images/artworks/landscapes/large/1.jpg" class="image featured"><img src="images/artworks/landscapes/small/1.jpg_small.jpg"  alt="" title="Baptism"></a>
+							<!--<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>-->
+							<!--
+                                                        <header>
+                                                            <h3>#Натюрморт</h3>
+                                                        </header>
+                            -->
+
+						</article>
+
+						<article>
+							<a href="images/artworks/landscapes/large/2.jpg" class="image featured"><img src="images/artworks/landscapes/small/2.jpg_small.jpg" alt="" title="Snow in Paris"/></a>
+
+						</article>
+
+						<article>
+							<a href="images/artworks/landscapes/large/3.jpg" class="image featured"><img src="images/artworks/landscapes/small/3.jpg_small.jpg" alt="" title="Barges on the Seine"/></a>
+
+						</article>
+
+						<article>
+							<a href="images/artworks/landscapes/large/4.jpg" class="image featured"><img src="images/artworks/landscapes/small/4.jpg_small.jpg" alt="" title="Strasbourg Pont St. Martin"/></a>
+
+						</article>
+
+						<article>
+							<a href="images/artworks/landscapes/large/5.jpg" class="image featured"><img src="images/artworks/landscapes/small/5.jpg_small.jpg" alt="" title="Strasbourg Pont St. Martin"/></a>
+
+						</article>
+
+						<article>
+							<a href="images/artworks/landscapes/large/6.jpg" class="image featured"><img src="images/artworks/landscapes/small/6.jpg_small.jpg" alt="" title="Strasbourg. La Petite France"/></a>
+
+						</article>
+
+						<article>
+							<a href="images/artworks/landscapes/large/7.jpg" class="image featured"><img src="images/artworks/landscapes/small/7.jpg_small.jpg" alt="" title="Shady Street. Eze"/></a>
+
+						</article>
+
+						<article>
+							<a href="images/artworks/landscapes/large/8.jpg" class="image featured"><img src="images/artworks/landscapes/small/8.jpg_small.jpg" alt="" title="Flower Market in Paris"/></a>
+
+						</article>
+
+						<!--End of reprize slider-->
+
 					</div>
 				</div>
 			</section>
