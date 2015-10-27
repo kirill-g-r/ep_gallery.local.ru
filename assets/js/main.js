@@ -123,7 +123,7 @@
 				if (mobile_flag == false) {
 
 					timerId = window.setInterval(function () {
-						pos -= 0.2;
+						pos -= 0.4;
 
 						if (pos <= rightLimit) {
 							window.clearInterval(timerId);

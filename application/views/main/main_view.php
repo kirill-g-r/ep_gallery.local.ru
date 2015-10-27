@@ -111,7 +111,7 @@
 			<!-- Banner -->
 			<section id="banner" style="padding-top: 2%; padding-bottom: 1%;">
 				<header>
-					<a href="/artworks"><h2 class="zapfiro text-shadow" style="font-size: 600%;">Artworks</h2></a>
+					<a href="/artworks"><h2 class="zapfiro text-shadow" style="font-size: 400%;">Artworks</h2></a>
 					<!--
                                             <p>
                                                 A (free) responsive site template by <a href="http://html5up.net">HTML5 UP</a>.
