@@ -129,18 +129,36 @@
 -->
 							<?php
 
+							if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {
+
+								$file = 'translations/' . $_COOKIE['language'] . '/artist/artist.txt';
+
+								$fp = fopen($file, "r");
+								$contents = fread($fp, filesize($file));
+
+								/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
+								$contents = str_replace("\n", "<br>", $contents);
+
+								//echo file_get_contents($file);
+								echo '<textarea id="artist_info" cols="100" rows="20" >'.$contents.'</textarea>';
+								echo '<BR>';
+								echo '<div style="text-align: center"> <button onclick="updateArtistInfo();">Update info</button> </div>';
 
 
-							$file = 'translations/'.$_COOKIE['language'].'/artist/artist.txt';
+							} else {
 
-							$fp = fopen($file, "r");
-							$contents = fread($fp, filesize ($file));
+								$file = 'translations/' . $_COOKIE['language'] . '/artist/artist.txt';
 
-							/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
-							$contents = str_replace("\n","<br>",$contents);
+								$fp = fopen($file, "r");
+								$contents = fread($fp, filesize($file));
 
-							//echo file_get_contents($file);
-							echo $contents;
+								/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
+								$contents = str_replace("\n", "<br>", $contents);
+
+								//echo file_get_contents($file);
+								echo $contents;
+
+							}
 
 							?>
 						</p>
@@ -251,6 +269,8 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<script src="/js/pages/artist/artist.js"></script>
 
 	</body>
 </html>
