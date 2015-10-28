@@ -120,7 +120,7 @@
 						<BR>
 
 						<p style="text-indent: 50px;">
-							<img src="images/artist/artist.jpg"  height="400"
+							<img src="images/artist/<?php echo $_COOKIE['language']; ?>/artist.jpg"  height="400"
 								 align="left"
 								 vspace="5" hspace="5" style="padding-right: 5%">
 <!--							Elena has loved painting as long as she can remember; she trained as an economist but her heart always lay in creativity and so she took up a career in interior design. She continued to sketch or paint anything she saw that created an impression on her, eager to capture the image on paper, experimenting in many styles including abstract, impressionistic works and gradually moving towards realism as her work developed. Her love for beautiful interior designs merged with her remarkable talent for reproducing the essence of what she saw around her – from a street scene to a still life or even a neighbour’s dog - as part of her continual search for harmony and beauty in the world around us.
