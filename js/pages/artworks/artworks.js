@@ -10,10 +10,12 @@ function select_gallery(gallery_type) {
 
         },
 
-        success: function(data){
+        success: function(data) {
+
+            window.onload = function() {
 
 
-            $("#xxx_test").fadeOut('slow');
+                $("#xxx_test").fadeOut('slow');
 
             $("#xxx_test").load(location.href + " #xxx_test", function () {
 
@@ -21,7 +23,7 @@ function select_gallery(gallery_type) {
 
                 $("#xxx_test").html(data);
 
-                $(function() {
+                $(function () {
                     $('#gallery').poptrox({
                         usePopupCaption: true
                     });
@@ -38,7 +40,6 @@ function select_gallery(gallery_type) {
             });
 
 
-
 //alert(data);
 
             //$('#gallery').animate({width: 'hide'}, 700);
@@ -47,17 +48,13 @@ function select_gallery(gallery_type) {
             //$('#gallery').addClass('slideLeft');
 
 
-
-
-
-
-            $( "#gallery" ).fadeOut( "slow", function () {
+            $("#gallery").fadeOut("slow", function () {
 
                 $('#gallery').html('').html(data);
-                $( "#gallery" ).fadeIn( "slow");
+                $("#gallery").fadeIn("slow");
 
                 // Update for gallery window works
-                $(function() {
+                $(function () {
                     $('#gallery').poptrox({
                         usePopupCaption: true
                     });
@@ -72,8 +69,6 @@ function select_gallery(gallery_type) {
             });
 
 
-
-
             //$('#gallery').html('').html(data);
 
             //$( "#gallery" ).fadeIn( "slow");
@@ -82,8 +77,8 @@ function select_gallery(gallery_type) {
             //$('#gallery').animate({width: 'show'}, 700);
             //$('#xxx_test').load(document    .URL +  ' #xxx_test').html().html(data);
 
-    // Update for gallery window works
-            $(function() {
+            // Update for gallery window works
+            $(function () {
                 $('#gallery').poptrox({
                     usePopupCaption: true
                 });
@@ -94,6 +89,8 @@ function select_gallery(gallery_type) {
 
 
             });
+
+        }
 
         }
 

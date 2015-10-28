@@ -2808,7 +2808,7 @@ hr {
 
 		.carousel article {
 			display: inline-block;
-			width: 28em;
+			width: 29.2em;
 			/*background: #fff;
 			*/
 			text-align: center;
@@ -2865,7 +2865,7 @@ hr {
 				}
 
 				.carousel article {
-					width: 18em;
+					width: 25em;
 					margin: 0 1.25em 0 0;
 				}
 
@@ -2951,7 +2951,7 @@ hr {
 			}
 
 				.carousel article {
-					width: 18em;
+					width: 24em;
 					margin: 0 1em 0 0;
 				}
 
