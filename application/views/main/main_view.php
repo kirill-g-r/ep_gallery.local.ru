@@ -21,6 +21,8 @@
 		<script src="assets/js/util.js"></script>
 
 
+
+
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="assets/js/main.js"></script>
 
@@ -34,21 +36,28 @@
 			<!-- Header -->
 				<div id="header">
 
+
+
 					<!-- Inner -->
 						<div class="inner">
+
 							<header>
 								<h1 style="font-size: 600%" class="text-shadow-logo slideLeft"><a href="/" id="logo">Elena Opaleva</a></h1>
 								<hr class="hr_logo_name slideLeft"  />
 								<p class="slideLeft">ARTIST</p>
 							</header>
 							<footer>
+
 								<a href="#banner" class="button circled scrolly fa fa-arrow-circle-down fa-5x"></a>
+
 							</footer>
+
 						</div>
 
 					<!-- Nav -->
 
 						<nav id="nav">
+
 							<ul>
 								<li><a href="/">Home</a></li>
 								<li><a class="transition" href="/artworks">Artworks</a></li>
@@ -74,6 +83,14 @@
 								<li><a href="/articles">Articles</a></li>
 								<li><a href="/contacts">Contacts</a></li>
 							</ul>
+
+							<br>
+							<br>
+							<a onclick="change_language('EN');">EN</a>/<a onclick="change_language('RU');">RU</a>
+							
+							<!--<a href="../../../../EN">EN</a>/<a href="../../../../RU">RU</a>
+							-->
+
 						</nav>
 
 				</div>
@@ -455,6 +472,8 @@
 		</div>
 
 		<!-- Scripts -->
+
+		<script src="/js/pages/main/main.js"></script>
 
 		<script>
 			$(function() {

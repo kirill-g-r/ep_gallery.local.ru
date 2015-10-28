@@ -12,7 +12,7 @@ function select_gallery(gallery_type) {
 
         success: function(data) {
 
-            window.onload = function() {
+            if (document.readyState === "complete") {
 
 
                 $("#xxx_test").fadeOut('slow');

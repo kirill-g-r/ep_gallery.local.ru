@@ -123,9 +123,26 @@
 							<img src="images/artist/artist.jpg"  height="400"
 								 align="left"
 								 vspace="5" hspace="5" style="padding-right: 5%">
-							Elena has loved painting as long as she can remember; she trained as an economist but her heart always lay in creativity and so she took up a career in interior design. She continued to sketch or paint anything she saw that created an impression on her, eager to capture the image on paper, experimenting in many styles including abstract, impressionistic works and gradually moving towards realism as her work developed. Her love for beautiful interior designs merged with her remarkable talent for reproducing the essence of what she saw around her – from a street scene to a still life or even a neighbour’s dog - as part of her continual search for harmony and beauty in the world around us.
+<!--							Elena has loved painting as long as she can remember; she trained as an economist but her heart always lay in creativity and so she took up a career in interior design. She continued to sketch or paint anything she saw that created an impression on her, eager to capture the image on paper, experimenting in many styles including abstract, impressionistic works and gradually moving towards realism as her work developed. Her love for beautiful interior designs merged with her remarkable talent for reproducing the essence of what she saw around her – from a street scene to a still life or even a neighbour’s dog - as part of her continual search for harmony and beauty in the world around us.
 							Her magnificent works have featured in many art exhibitions in Russia and Europe, including the International Federation of Watercolour Artists in Moscow, and she has been awarded repeated prizes for her paintings in Moscow’s annual International Competition of Contemporary Art. She has travelled extensively in Europe seeking inspiration for her paintings. She has also been published in various catalogues including the Russian Art Catalogue and the Best Works of 2013 in Russia Catalogue.
 							Elena is proficient in many mediums including acrylics, oils, pastels, pen and ink, pencil and watercolours.
+-->
+							<?php
+
+
+
+							$file = 'translations/'.$_COOKIE['language'].'/artist/artist.txt';
+
+							$fp = fopen($file, "r");
+							$contents = fread($fp, filesize ($file));
+
+							/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
+							$contents = str_replace("\n","<br>",$contents);
+
+							//echo file_get_contents($file);
+							echo $contents;
+
+							?>
 						</p>
 
 
