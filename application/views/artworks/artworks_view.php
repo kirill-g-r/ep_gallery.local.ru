@@ -442,7 +442,7 @@
 			<div class="gamma-container gamma-loading" id="gamma-container">
 
 
-				<div class="row 25%" id="gallery">
+				<div class="row 25%" id="gallery" style="display:none" >
 
 					<?php echo $data['artworks']; ?>
 
@@ -702,7 +702,9 @@
 
 		<!-- Scripts -->
 		<script>
-			$(function() {
+
+			$(function () {
+
 				$('#gallery').poptrox({
 					usePopupCaption: true
 				});
@@ -711,8 +713,12 @@
 				$('.caption').css('padding-top', '2%');
 				$('.caption').css('padding-bottom', '5%');
 
+				$("#gallery").show('fast');
+
 
 			});
+
+
 		</script>
 
 	<script src="/js/pages/artworks/artworks.js"></script>
