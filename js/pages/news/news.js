@@ -24,3 +24,32 @@ function deletePost(postID) {
     });
 
 }
+
+function addPost() {
+
+
+    $.ajax({
+        type: "POST",
+        url: "news",
+        data: {
+            type_request: 'ajax_request',
+            action: 'add_post',
+            post_img_id: $('#post_img_id').val(),
+            post_info: $('#post_info').val()
+
+
+        },
+
+        success: function (data) {
+
+            location.reload();
+
+            alert('New post added!!' + data);
+
+        }
+
+    });
+
+}
+
+

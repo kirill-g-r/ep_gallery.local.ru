@@ -153,11 +153,19 @@
 
 						echo '<tr><td>';
 
-						echo '<textarea id="artist_info" cols="150" rows="10" ></textarea>';
+						echo '<textarea id="post_info" cols="150" rows="10" ></textarea>';
 						echo '<BR>';
-						echo '<div style="text-align: center"> <input name="userfile" type="file" /> </div>';
+
+						echo '<div style="text-align: center">
+									<form enctype="multipart/form-data" action="__URL__" method="POST">
+										<input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+										<input name="post_img" id="post_img_id" type="file" />
+
+										<input type="submit" onclick="addPost();" value="Send File" />
+									</form>
+								</div>';
 						echo '<BR>';
-						echo '<div style="text-align: center"> <button onclick="addPost();">addPost</button> </div><hr />';
+						//echo '<div style="text-align: center"> <button onclick="addPost();">addPost</button> </div><hr />';
 
 						echo '</td></tr>';
 /*
