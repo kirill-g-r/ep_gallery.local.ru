@@ -139,7 +139,7 @@
 								/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
 								$contents = str_replace("\n", "<br>", $contents);
 
-								//echo file_get_contents($file);
+								//echo file_get_contents($file);http://www.youtube.com/watch?v=Rq0n5MS-zw0&list=PLX4HhkDnmQ8CvaaBufs0dk63WKDnc6mHE
 								echo '<textarea id="artist_info" cols="100" rows="20" >'.$contents.'</textarea>';
 								echo '<BR>';
 								echo '<div style="text-align: center"> <button onclick="updateArtistInfo();">Update info</button> </div>';
@@ -261,6 +261,13 @@
 		</div>
 
 		<!-- Scripts -->
+			<script>
+
+
+
+			</script>
+
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

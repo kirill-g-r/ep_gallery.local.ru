@@ -2480,6 +2480,16 @@ hr {
 
 		}
 
+	@media screen and (max-width: 736px) {
+
+		#nav_bottom_artworks {
+
+			margin-top: -40%;
+
+		}
+
+	}
+
 	#nav_bottom_artworks {
 
 		font-size: 110%;

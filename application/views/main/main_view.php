@@ -86,7 +86,9 @@
 
 							<br>
 							<br>
+							<!--
 							<a onclick="change_language('EN');">EN</a>/<a onclick="change_language('EN');">RU</a>
+							-->
 							
 							<!--<a href="../../../../EN">EN</a>/<a href="../../../../RU">RU</a>
 							-->

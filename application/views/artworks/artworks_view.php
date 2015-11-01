@@ -429,7 +429,9 @@
 	</div>
 -->
 
-<div id="xxx_test" class="container slideLeft" style="-webkit-animation-duration: 3s;">
+<!--<div id="xxx_test" class="container slideLeft" style=" -webkit-animation-duration: 3s; ">
+-->
+		<div id="xxx_test" class="container  ">
 		<div class="main">
 
 <!-- NAME OF CATEGORY ARTWORKS
@@ -439,7 +441,7 @@
 
 			</header>
 -->
-			<div class="gamma-container gamma-loading" id="gamma-container">
+			<div class="gamma-container gamma-loading" id="gamma-container" style="min-height: 500px">
 
 
 				<div class="row 25%" id="gallery" style="display:none" >
@@ -704,6 +706,7 @@
 		<script>
 
 			$(function () {
+
 
 				$('#gallery').poptrox({
 					usePopupCaption: true

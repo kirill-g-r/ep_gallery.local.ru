@@ -106,7 +106,7 @@
 	<!-- Main -->
 	<div class="wrapper style1">
 
-		<div class="container slideLeft">
+		<div class="">
 
 			<article id="main" class="special">
 				<header>
