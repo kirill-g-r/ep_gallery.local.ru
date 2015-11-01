@@ -164,9 +164,9 @@
 							</div>
 -->
 							<div class="12u$">
-								<input type="text" name="about_send_mail_message" id="about_send_mail_message" placeholder="Your name" />
-								<input type="email" name="about_send_mail_message" id="about_send_mail_message" placeholder="Your Email" />
-								<input type="text" name="about_send_mail_message" id="about_send_mail_message" placeholder="Subject" />
+								<input type="text" name="about_send_mail_message" id="about_send_mail_name" placeholder="Your name" />
+								<input type="email" name="about_send_mail_message" id="about_send_mail_email" placeholder="Your Email" />
+								<input type="text" name="about_send_mail_message" id="about_send_mail_subject" placeholder="Subject" />
 								<textarea name="about_send_mail_message" id="about_send_mail_message" placeholder="Your message" rows="1"></textarea>
 							</div>
 <!--
@@ -176,7 +176,7 @@
 -->
 							<div class="12u$">
 								<ul class="actions">
-									<li><input type="button" value="Send Message" class="special" onclick="alert('Letter will be sent');"/></li>
+									<li><input type="button" value="Send Message" class="special" onclick="sentMail();"/></li>
 									<li><input type="reset" value="Reset" /></li>
 								</ul>
 							</div>
@@ -282,6 +282,8 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<script src="/js/pages/contacts/contacts.js"></script>
 
 	</body>
 </html>

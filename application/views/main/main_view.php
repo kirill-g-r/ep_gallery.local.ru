@@ -265,20 +265,23 @@
 									<ul class="divided">
 										<li>
 											<article class="tweet">
-												Добавлена новая картина в разделе натюрморт.
-												<span class="timestamp">40 minutes ago</span>
+												Added a new artwork in landscapes theme.
+												<BR>
+												<span class="timestamp">21.10.2015</span>
 											</article>
 										</li>
 										<li>
 											<article class="tweet">
-                                                С 29 ноября по 12 декабря в картинной галерее пройдет выставка работв ...текст
-												<span class="timestamp">1 day ago</span>
+												Added a new artwork in landscapes theme.
+												<BR>
+												<span class="timestamp">19.10.2015</span>
 											</article>
 										</li>
 										<li>
 											<article class="tweet">
-												Some text, some text, some text, some text, some text.
-												<span class="timestamp">3 hours ago</span>
+												Added a new artwork in compositions theme.
+												<BR>
+												<span class="timestamp">9.10.2015</span>
 											</article>
 										</li>
 
@@ -393,14 +396,16 @@
 											</article>
 -->
 											<article class="tweet">
-												<a href="/articles">Как правильно подобрать обрамление для картины.</a>
-												<span class="timestamp">40 minutes ago</span>
+												<a href="/articles">How to choose the right frame for the picture.</a>
+												<BR>
+												<span class="timestamp">11.10.2015</span>
 											</article>
+<!--
 											<article class="tweet">
 												<a href="/articles">Some text, some text.</a>
 												<span class="timestamp">40 minutes ago</span>
 											</article>
-
+-->
 										</li>
 
 									</ul>
