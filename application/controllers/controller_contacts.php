@@ -57,7 +57,8 @@ class Controller_Contacts extends Controller
 		$subject    = $_POST['subject'];
 		$message    = $_POST['message'];
 
-		$to      = 'info@elena-opaleva.com';
+//		$to      = 'info@elena-opaleva.com';
+		$to      = 'info@elena-opaleva.com' . ', opaleva.art@gmail.com';
 		$subject = $subject;
 		$message = $message;
 		$headers = 'From: '.$username.' <'.$email.'>' . "\r\n" .
