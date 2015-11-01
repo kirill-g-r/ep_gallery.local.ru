@@ -114,13 +114,160 @@
 							<p>
 							<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -8%; margin-bottom: -2%;">News</h2>
 							</p>
-							<br>
-							<br>
-							<br>
+
 
 
 						</header>
 					</article>
+<!--
+					<article id="main" class="special">
+
+
+						<BR>
+
+						<p style="text-indent: 50px;">
+
+							<img src="images/news/<?php echo $_COOKIE['language']; ?>/artist.jpg"  height="400"
+								 align="left"
+								 vspace="5" hspace="5" style="padding-right: 5%">
+
+														Elena has loved painting as long as she can remember; she trained as an economist but her heart always lay in creativity and so she took up a career in interior design. She continued to sketch or paint anything she saw that created an impression on her, eager to capture the image on paper, experimenting in many styles including abstract, impressionistic works and gradually moving towards realism as her work developed. Her love for beautiful interior designs merged with her remarkable talent for reproducing the essence of what she saw around her – from a street scene to a still life or even a neighbour’s dog - as part of her continual search for harmony and beauty in the world around us.
+                                                        Her magnificent works have featured in many art exhibitions in Russia and Europe, including the International Federation of Watercolour Artists in Moscow, and she has been awarded repeated prizes for her paintings in Moscow’s annual International Competition of Contemporary Art. She has travelled extensively in Europe seeking inspiration for her paintings. She has also been published in various catalogues including the Russian Art Catalogue and the Best Works of 2013 in Russia Catalogue.
+                                                        Elena is proficient in many mediums including acrylics, oils, pastels, pen and ink, pencil and watercolours.
+
+
+						</p>
+
+					</article>
+-->
+
+					<?php
+
+					if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {
+
+						$dir = scandir('translations/news/', SCANDIR_SORT_DESCENDING);
+
+						echo '<table>';
+
+						echo '<tr><td><div style="text-align: center"><b>ADD NEW POST</b></div></td></tr>';
+
+						echo '<tr><td>';
+
+						echo '<textarea id="artist_info" cols="150" rows="10" ></textarea>';
+						echo '<BR>';
+						echo '<div style="text-align: center"> <input name="userfile" type="file" /> </div>';
+						echo '<BR>';
+						echo '<div style="text-align: center"> <button onclick="addPost();">addPost</button> </div><hr />';
+
+						echo '</td></tr>';
+/*
+						echo '<tr><td><div style="text-align: center"><b>DELETE POST</b></div></td></tr>';
+
+						echo '<tr><td><div style="text-align: center"><input id="post_id" type="text" value="enter post date for delete"></div></td></tr>';
+
+						echo '<tr><td><div style="text-align: center"> <button onclick="deletePost();">Delete Post</button> </div><hr /></td></tr>';
+*/
+
+
+
+						foreach ($dir as $item) {
+
+							if (strlen($item) != 8) {
+
+								continue;
+
+							}
+
+							echo '<tr"><td><article id="main" class="special">
+
+									<p style="text-indent: 50px;">';
+
+							echo '<img src="images/news/' . $item . '/img.jpg"
+								 			align="left" vspace="5" hspace="5" style="padding-right: 5%; max-height:300px">';
+
+							echo '<p><b>'.date("d.m.Y", strtotime($item)).'</b></p>';
+
+
+							$file = 'translations/news/' . $item . '/' . $_COOKIE['language'] . '/item.txt';
+
+							$fp = fopen($file, "r");
+							$contents = fread($fp, filesize($file));
+							fclose($fp);
+							unset($fp);
+
+
+							$contents = str_replace("\n", "<br>", $contents);
+
+							//echo file_get_contents($file);
+							echo $contents;
+
+							echo '</p>
+								</article></td></tr>';
+
+							echo '<tr><td><div style="text-align: center"> <button onclick="deletePost('.$item.');">Delete Post</button> </div><hr /></td></tr>';
+
+						}
+
+
+
+						unset($dir);
+
+						echo '</table>';
+
+
+					} else {
+
+						$dir = scandir('translations/news/', SCANDIR_SORT_DESCENDING);
+
+						echo '<table>';
+
+						foreach ($dir as $item) {
+
+							if (strlen($item) != 8) {
+
+								continue;
+
+							}
+
+							echo '<tr"><td><article id="main" class="special">
+
+									<p style="text-indent: 50px;">';
+
+							echo '<img src="images/news/' . $item . '/img.jpg"
+								 			align="left" vspace="5" hspace="5" style="padding-right: 5%; max-height:300px">';
+
+							echo '<p><b>'.date("d.m.Y", strtotime($item)).'</b></p>';
+
+
+							$file = 'translations/news/' . $item . '/' . $_COOKIE['language'] . '/item.txt';
+
+							$fp = fopen($file, "r");
+							$contents = fread($fp, filesize($file));
+							fclose($fp);
+							unset($fp);
+
+							/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
+							$contents = str_replace("\n", "<br>", $contents);
+
+							//echo file_get_contents($file);
+							echo $contents;
+
+							unset($contents);
+
+							echo '</p>
+								</article></td></tr>';
+
+							echo '<tr><td><hr /></td></tr>';
+
+						}
+
+						unset($dir);
+
+						echo '</table>';
+
+					}
+
+					?>
 
 					<article id="main" class="special">
 						<header><p>COMMING SOON!</p></header>
@@ -234,6 +381,8 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<script src="/js/pages/news/news.js"></script>
 
 	</body>
 </html>

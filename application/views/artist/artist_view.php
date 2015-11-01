@@ -131,7 +131,7 @@
 
 							if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {
 
-								$file = 'translations/' . $_COOKIE['language'] . '/artist/artist.txt';
+								$file = 'translations/artist/' . $_COOKIE['language'] . '/artist.txt';
 
 								$fp = fopen($file, "r");
 								$contents = fread($fp, filesize($file));
@@ -147,7 +147,7 @@
 
 							} else {
 
-								$file = 'translations/' . $_COOKIE['language'] . '/artist/artist.txt';
+								$file = 'translations/artist/' . $_COOKIE['language'] . '/artist.txt';
 
 								$fp = fopen($file, "r");
 								$contents = fread($fp, filesize($file));

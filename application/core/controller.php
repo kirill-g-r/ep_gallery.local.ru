@@ -77,6 +77,14 @@ class Controller {
 		}
 
 	}
+	public function removeDir($dir) {
+		if ($objs = glob($dir."/*")) {
+			foreach($objs as $obj) {
+				is_dir($obj) ? $this->removeDir($obj) : unlink($obj);
+			}
+		}
+		rmdir($dir);
+	}
 	
 	
 }
