@@ -103,7 +103,7 @@
 			<!-- Main -->
 			<div class="wrapper style1">
 
-				<div class="container slideLeft">
+				<div id="page" class="container slideLeft" style="display: none">
 
 					<article id="main" class="special">
 						<header>
@@ -263,6 +263,22 @@
 		<!-- Scripts -->
 			<script>
 
+				$(function () {
+
+					$("#page").show('fast');
+
+					$('#page').poptrox({
+						usePopupCaption: true
+					});
+					$('.caption').css('font-size', '80%');
+					$('.caption').css('line-height', '115%');
+					$('.caption').css('padding-top', '2%');
+					$('.caption').css('padding-bottom', '5%');
+
+
+
+
+				});
 
 
 			</script>

@@ -27,7 +27,6 @@ function deletePost(postID) {
 
 function addPost() {
 
-
     $.ajax({
         type: "POST",
         url: "news",
@@ -44,7 +43,15 @@ function addPost() {
 
             location.reload();
 
-            alert('New post added!!' + data);
+            if (data.length < 5) {
+
+                alert('New post added!!');
+
+            } else {
+
+                alert(data);
+
+            }
 
         }
 

@@ -152,7 +152,7 @@
 
 
 			<!-- Banner -->
-				<section id="banner" style="padding: 4.5em 0 1em 0" class="slideLeft">
+				<section id="banner" style="display:none; padding: 4.5em 0 1em 0" class="slideLeft">
 
 					<header>
 						<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -3%; margin-bottom: -10%;">Artworks</h2>
@@ -444,7 +444,7 @@
 			<div class="gamma-container gamma-loading" id="gamma-container" style="min-height: 500px">
 
 
-				<div class="row 25%" id="gallery" style="display:none" >
+				<div class="row 25% container slideLeft" id="gallery" style="display:none" >
 
 					<?php echo $data['artworks']; ?>
 
@@ -707,6 +707,18 @@
 
 			$(function () {
 
+				$("#banner").show('fast');
+
+				$('#banner').poptrox({
+					usePopupCaption: true
+				});
+				$('.caption').css('font-size', '80%');
+				$('.caption').css('line-height', '115%');
+				$('.caption').css('padding-top', '2%');
+				$('.caption').css('padding-bottom', '5%');
+
+
+				$("#gallery").show('fast');
 
 				$('#gallery').poptrox({
 					usePopupCaption: true
@@ -716,7 +728,7 @@
 				$('.caption').css('padding-top', '2%');
 				$('.caption').css('padding-bottom', '5%');
 
-				$("#gallery").show('fast');
+
 
 
 			});

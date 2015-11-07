@@ -60,21 +60,42 @@ class Controller_News extends Controller
 		$post_info = $_POST['post_info'];
 		$post_id = date('Ymd');
 
+		if (is_dir('translations/news/' . $post_id . '/' . $_COOKIE['language'])) {
+
+			echo 'Only one post a day!';
+			return true;
+
+		}
+
 		mkdir('translations/news/' . $post_id . '/' . $_COOKIE['language'], 0777, true);
 		$file = 'translations/news/' . $post_id . '/' . $_COOKIE['language'] . '/item.txt';
+
 		$fp = fopen($file, "w");
 		fwrite($fp, $post_info);
+
+
+
+		if (is_dir('images/news/' . $post_id)) {
+
+			echo 'Only one post a day!';
+			return true;
+
+		}
 
 
 		mkdir('images/news/' . $post_id, 0777, true);
 		$upload_dir = 'images/news/' . $post_id . '/img.jpg';
 
-		if (move_uploaded_file($_FILES['post_img']['tmp_name'], $upload_dir)) {
 
-		} else {
-			echo 'Upload file fail!';
-		}
-echo $file . '=' . $upload_dir . '++' . $_FILES['post_img']['tmp_name'] . "===" . serialize($_FILES);
+#		if (move_uploaded_file($_FILES['post_img']['tmp_name'], $upload_dir)) {
+#
+#		} else {
+#			echo 'Upload file fail!';
+#		}
+#echo $file . '=' . $upload_dir . '++' . $_FILES['post_img']['tmp_name'] . "===" . serialize($_FILES);
+
+
+
 
 //		unlink('translations/news/' . $_POST['post_id'] . '/' . $_COOKIE['language'] . '/item.txt');
 //		unlink('images/news/' . $_POST['post_id'] . '/img.jpg');

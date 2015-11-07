@@ -156,26 +156,53 @@
 						echo '<textarea id="post_info" cols="150" rows="10" ></textarea>';
 						echo '<BR>';
 
-						echo '<div style="text-align: center">
-									<form enctype="multipart/form-data" action="__URL__" method="POST">
-										<input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+						echo '<div style="text-align: center" xmlns="http://www.w3.org/1999/html">
+									<form enctype="multipart/form-data" method="POST">
+
 										<input name="post_img" id="post_img_id" type="file" />
 
-										<input type="submit" onclick="addPost();" value="Send File" />
+										<button  onclick="addPost()" >Create Post</button>
+
+										<!--<input type="submit"  value="Send File" />-->
+
 									</form>
 								</div>';
+						echo '<BR>';
+						echo '<BR>';
+						echo '<BR>';
 						echo '<BR>';
 						//echo '<div style="text-align: center"> <button onclick="addPost();">addPost</button> </div><hr />';
 
 						echo '</td></tr>';
-/*
-						echo '<tr><td><div style="text-align: center"><b>DELETE POST</b></div></td></tr>';
+						echo '<tr><td><div style="text-align: center"><b>POSTS</b></div></td></tr>';
 
-						echo '<tr><td><div style="text-align: center"><input id="post_id" type="text" value="enter post date for delete"></div></td></tr>';
+						/*
+                                                echo '<tr><td><div style="text-align: center"><b>DELETE POST</b></div></td></tr>';
 
-						echo '<tr><td><div style="text-align: center"> <button onclick="deletePost();">Delete Post</button> </div><hr /></td></tr>';
-*/
+                                                echo '<tr><td><div style="text-align: center"><input id="post_id" type="text" value="enter post date for delete"></div></td></tr>';
 
+                                                echo '<tr><td><div style="text-align: center"> <button onclick="deletePost();">Delete Post</button> </div><hr /></td></tr>';
+                        */
+
+
+#############
+
+						$post_id = date('Ymd');
+
+						$upload_dir = 'images/news/' . $post_id . '/img.jpg';
+
+						if (!file_exists($upload_dir)) {
+
+							if (isset($_FILES['post_img']['tmp_name'])) {
+
+								move_uploaded_file($_FILES['post_img']['tmp_name'], $upload_dir);
+
+							}
+
+						}
+
+
+##############
 
 
 						foreach ($dir as $item) {

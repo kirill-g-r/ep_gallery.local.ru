@@ -24,6 +24,11 @@ class Controller_Artist extends Controller
 
 	function load_page() {
 
+		if (!isset($_COOKIE['language'])) {
+
+			setcookie("language", 'EN');
+
+		}
 
 		$this->view->generate('', 'artist_view.php');
 		//$this->view->generate('main_view.php', 'template_view.php');
