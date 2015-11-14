@@ -217,8 +217,12 @@
 
 									<p style="text-indent: 50px;">';
 
-							echo '<img src="images/news/' . $item . '/img.jpg"
+							if (file_exists('images/news/' . $item . '/img.jpg')) {
+
+								echo '<img src="images/news/' . $item . '/img.jpg"
 								 			align="left" vspace="5" hspace="5" style="padding-right: 5%; max-height:300px">';
+
+							}
 
 							echo '<p><b>'.date("d.m.Y", strtotime($item)).'</b></p>';
 
@@ -268,8 +272,12 @@
 
 									<p style="text-indent: 50px;">';
 
-							echo '<img src="images/news/' . $item . '/img.jpg"
+							if (file_exists('images/news/' . $item . '/img.jpg')) {
+
+								echo '<img src="images/news/' . $item . '/img.jpg"
 								 			align="left" vspace="5" hspace="5" style="padding-right: 5%; max-height:300px">';
+
+							}
 
 							echo '<p><b>'.date("d.m.Y", strtotime($item)).'</b></p>';
 
