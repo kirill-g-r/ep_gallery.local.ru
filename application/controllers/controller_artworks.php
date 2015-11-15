@@ -130,7 +130,7 @@ class Controller_Artworks extends Controller
 
 		if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {
 
-
+/*
 			$html .= '<div style="text-align: center" xmlns="http://www.w3.org/1999/html">
 									<form enctype="multipart/form-data" method="POST">
 
@@ -140,7 +140,7 @@ class Controller_Artworks extends Controller
 
 										<br>
 										<br>
-										<button  onclick="addWork()" >Add Work</button>
+										<button  onclick="addWork();" >Add Work</button>
 
 										<!--<input type="submit"  value="Send File" />-->
 
@@ -154,6 +154,8 @@ class Controller_Artworks extends Controller
 			$html .= '</td></tr>';
 
 			$html .= '</table>';
+*/
+
 
 
 		}
@@ -169,5 +171,19 @@ class Controller_Artworks extends Controller
 		mkdir('images/artworks/' . $_POST['new_gallery_name'] . '/small', 0777, true);
 
 	}
+	function add_work() {
+
+
+		return true;
+
+
+	}
+	function delete_work() {
+
+		unlink($_POST['src_img_small']);
+		unlink(str_replace('/small/', '/large/', $_POST['src_img_small']));
+
+	}
 		
 }
+

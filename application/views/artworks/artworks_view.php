@@ -480,21 +480,72 @@
 
                     <?php
 
+                    if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {
+                        echo '<div style="text-align: center" xmlns="http://www.w3.org/1999/html">
+									<form enctype="multipart/form-data" method="POST">
+
+										<label>Large image</label><input name="gallery_img_large" id="gallery_img_large" type="file" />
+										<br>
+										<label>Small image</label><input name="gallery_img_small" id="gallery_img_small" type="file" />
+
+										<br>
+										<br>
+										<button  onclick="addWork();" >Add Work</button>
+
+										<!--<input type="submit"  value="Send File" />-->
+
+									</form>
+								</div>';
+                        echo '<BR>';
+                        echo '<BR>';
+                        echo '<BR>';
+                        echo '<BR>';
+
+                        echo '</td></tr>';
+
+                        echo '</table>';
+
+                    }
+
+
+
 #############
 
                         $post_id = date('Ymd');
 
-                        $upload_dir = 'images/articles/' . $post_id . '/img.jpg';
+                        $upload_dir = 'images/artworks/'.$data['artworks_type'];
 
-                        if (!file_exists($upload_dir)) {
+                        $artworks_dir = scandir($upload_dir . '/large');
 
-                            if (isset($_FILES['post_img']['tmp_name'])) {
+                        $new_name = date('YmdHi');
 
-                                move_uploaded_file($_FILES['post_img']['tmp_name'], $upload_dir);
+
+$fp = fopen('images/artworks/'.$data['artworks_type'].'/log.log', 'a');
+fwrite($fp, implode('=', $artworks_dir));
+                    fwrite($fp, '=1='.@$_FILES['gallery_img_large']['tmp_name'] . '=2=3=' . $upload_dir . '/large/'.$new_name.'.jpg');
+                    fwrite($fp, '=1='.@$_FILES['gallery_img_small']['tmp_name'] . '=2=3=' . $upload_dir . '/small/'.$new_name.'.jpg');
+
+                    if (isset($_FILES['gallery_img_large']['tmp_name']) && isset($_FILES['gallery_img_small']['tmp_name'])) {
+
+                        if (!file_exists($upload_dir . '/large/' . $new_name . '.jpg')) {
+
+                            if (isset($_FILES['gallery_img_large']['tmp_name'])) {
+
+                                move_uploaded_file($_FILES['gallery_img_large']['tmp_name'], $upload_dir . '/large/' . $new_name . '.jpg');
+
+                            }
+                        }
+
+                        if (!file_exists($upload_dir . '/small/' . $new_name . '.jpg')) {
+
+                            if (isset($_FILES['gallery_img_small']['tmp_name'])) {
+
+                                move_uploaded_file($_FILES['gallery_img_small']['tmp_name'], $upload_dir . '/small/' . $new_name . '.jpg');
 
                             }
 
                         }
+                    }
 
 
 ##############

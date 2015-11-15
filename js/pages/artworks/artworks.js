@@ -122,17 +122,14 @@ function add_gallery() {
 
 function delete_work(id_work) {
 
-    id_work = '#' + id_work
-
-    alert($(id_work).attr('src')); return true;
 
     $.ajax({
         type: "POST",
         url: "artworks",
         data: {
             type_request: 'ajax_request',
-            action: 'add_gallery',
-            new_gallery_name: $('#new_gallery').val()
+            action: 'delete_work',
+            src_img_small: $('#'+id_work).attr('src')
 
         },
 
@@ -145,3 +142,37 @@ function delete_work(id_work) {
     });
 
 }
+function addWork() {
+
+    $.ajax({
+        type: "POST",
+        url: "artworks",
+        data: {
+            type_request: 'ajax_request',
+            action: 'add_work',
+            gallery_img_large: $('#gallery_img_large').val(),
+            gallery_img_small: $('#gallery_img_small').val()
+
+
+        },
+
+        success: function (data) {
+
+            location.reload();
+
+            if (data.length < 5) {
+
+                alert('New work added!!');
+
+            } else {
+
+                alert(data);
+
+            }
+
+        }
+
+    });
+
+}
+
