@@ -6,7 +6,7 @@ function select_gallery(gallery_type) {
         url: "artworks",
         data: { type_request:'ajax_request',
                 action: 'select_gallery',
-                artworks_type:        gallery_type
+                artworks_type: gallery_type
 
         },
 
@@ -91,6 +91,54 @@ function select_gallery(gallery_type) {
             });
 
         }
+
+        }
+
+    });
+
+}
+
+function add_gallery() {
+
+    $.ajax({
+        type: "POST",
+        url: "artworks",
+        data: {
+            type_request: 'ajax_request',
+            action: 'add_gallery',
+            new_gallery_name: $('#new_gallery').val()
+
+        },
+
+        success: function (data) {
+
+            location.reload();
+
+        }
+
+    });
+
+}
+
+function delete_work(id_work) {
+
+    id_work = '#' + id_work
+
+    alert($(id_work).attr('src')); return true;
+
+    $.ajax({
+        type: "POST",
+        url: "artworks",
+        data: {
+            type_request: 'ajax_request',
+            action: 'add_gallery',
+            new_gallery_name: $('#new_gallery').val()
+
+        },
+
+        success: function (data) {
+
+            location.reload();
 
         }
 

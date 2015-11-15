@@ -32,15 +32,21 @@ class Model_Artworks extends Model {
 
         }
 
-        foreach ( $artworks['large'] as $key => $artwork) {
+        if (count(@$artworks['large'])) {
 
-            $artworks['name'][$key] = $this->getArtworkName($type, $key);
-            $artworks['property'][$key] = $this->getArtworkProperty($type, $key);
+            foreach ($artworks['large'] as $key => $artwork) {
+
+                $artworks['name'][$key] = $this->getArtworkName($type, $key);
+                $artworks['property'][$key] = $this->getArtworkProperty($type, $key);
+
+            }
+
+            return $artworks;
 
         }
 
 
-        return $artworks;
+        return false;
 
     }
 
