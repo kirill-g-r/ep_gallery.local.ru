@@ -170,6 +170,9 @@ class Controller_Artworks extends Controller
 		mkdir('images/artworks/' . $_POST['new_gallery_name'] . '/large', 0777, true);
 		mkdir('images/artworks/' . $_POST['new_gallery_name'] . '/small', 0777, true);
 
+		mkdir('translations/artworks/' . $_POST['new_gallery_name'] . '/EN', 0777, true);
+		mkdir('translations/artworks/' . $_POST['new_gallery_name'] . '/RU', 0777, true);
+
 	}
 	function add_work() {
 
@@ -182,6 +185,16 @@ class Controller_Artworks extends Controller
 
 		unlink($_POST['src_img_small']);
 		unlink(str_replace('/small/', '/large/', $_POST['src_img_small']));
+
+
+		$name_tr_del = $_POST['src_img_small'];
+		$name_tr_del_2 = substr($name_tr_del, (strrpos($name_tr_del, '/small/') + 7), -3);
+
+		$name_tr_del_3 = str_replace('images/artworks/', '', $name_tr_del);
+		$name_tr_del_3 = substr($name_tr_del_3, 0, strpos($name_tr_del_3, '/small'));
+
+		unlink('translations/artworks/' .$name_tr_del_3 . '/'.$_COOKIE['language'].'/'.$name_tr_del_2 . 'txt');
+
 
 	}
 		

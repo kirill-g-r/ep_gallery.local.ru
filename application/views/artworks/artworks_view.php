@@ -489,6 +489,8 @@
 										<label>Small image</label><input name="gallery_img_small" id="gallery_img_small" type="file" />
 
 										<br>
+										<label>Name work</label><textarea name="name_work" cols="150" rows="2" ></textarea>
+
 										<br>
 										<button  onclick="addWork();" >Add Work</button>
 
@@ -520,11 +522,6 @@
                         $new_name = date('YmdHi');
 
 
-$fp = fopen('images/artworks/'.$data['artworks_type'].'/log.log', 'a');
-fwrite($fp, implode('=', $artworks_dir));
-                    fwrite($fp, '=1='.@$_FILES['gallery_img_large']['tmp_name'] . '=2=3=' . $upload_dir . '/large/'.$new_name.'.jpg');
-                    fwrite($fp, '=1='.@$_FILES['gallery_img_small']['tmp_name'] . '=2=3=' . $upload_dir . '/small/'.$new_name.'.jpg');
-
                     if (isset($_FILES['gallery_img_large']['tmp_name']) && isset($_FILES['gallery_img_small']['tmp_name'])) {
 
                         if (!file_exists($upload_dir . '/large/' . $new_name . '.jpg')) {
@@ -545,6 +542,14 @@ fwrite($fp, implode('=', $artworks_dir));
                             }
 
                         }
+
+
+                        $file = 'translations/artworks/' . $data['artworks_type'] . '/' . $_COOKIE['language'] . '/'.$new_name.'.txt';
+
+                        $fp = fopen($file, "w");
+                        fwrite($fp, $_POST['name_work']);
+
+
                     }
 
 
