@@ -478,85 +478,7 @@
 					<?php echo $data['artworks']; ?>
 
 
-                    <?php
 
-                    if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {
-                        echo '<div style="text-align: center" xmlns="http://www.w3.org/1999/html">
-									<form enctype="multipart/form-data" method="POST">
-
-										<label>Large image</label><input name="gallery_img_large" id="gallery_img_large" type="file" />
-										<br>
-										<label>Small image</label><input name="gallery_img_small" id="gallery_img_small" type="file" />
-
-										<br>
-										<label>Name work</label><textarea name="name_work" cols="150" rows="2" ></textarea>
-
-										<br>
-										<button  onclick="addWork();" >Add Work</button>
-
-										<!--<input type="submit"  value="Send File" />-->
-
-									</form>
-								</div>';
-                        echo '<BR>';
-                        echo '<BR>';
-                        echo '<BR>';
-                        echo '<BR>';
-
-                        echo '</td></tr>';
-
-                        echo '</table>';
-
-                    }
-
-
-
-#############
-
-                        $post_id = date('Ymd');
-
-                        $upload_dir = 'images/artworks/'.$data['artworks_type'];
-
-                        $artworks_dir = scandir($upload_dir . '/large');
-
-                        $new_name = date('YmdHi');
-
-
-                    if (isset($_FILES['gallery_img_large']['tmp_name']) && isset($_FILES['gallery_img_small']['tmp_name'])) {
-
-                        if (!file_exists($upload_dir . '/large/' . $new_name . '.jpg')) {
-
-                            if (isset($_FILES['gallery_img_large']['tmp_name'])) {
-
-                                move_uploaded_file($_FILES['gallery_img_large']['tmp_name'], $upload_dir . '/large/' . $new_name . '.jpg');
-
-                            }
-                        }
-
-                        if (!file_exists($upload_dir . '/small/' . $new_name . '.jpg')) {
-
-                            if (isset($_FILES['gallery_img_small']['tmp_name'])) {
-
-                                move_uploaded_file($_FILES['gallery_img_small']['tmp_name'], $upload_dir . '/small/' . $new_name . '.jpg');
-
-                            }
-
-                        }
-
-
-                        $file = 'translations/artworks/' . $data['artworks_type'] . '/' . $_COOKIE['language'] . '/'.$new_name.'.txt';
-
-                        $fp = fopen($file, "w");
-                        fwrite($fp, $_POST['name_work']);
-
-
-                    }
-
-
-##############
-
-
-                    ?>
 
 
 
@@ -770,6 +692,94 @@
 			</div><!--/main-->
 		</div>
 	</div>
+
+
+
+    <?php
+
+    if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {
+        echo '<div style="text-align: center" xmlns="http://www.w3.org/1999/html">
+									<form enctype="multipart/form-data" method="POST">
+
+										<label>Large image</label><input name="gallery_img_large" id="gallery_img_large" type="file" />
+										<br>
+										<label>Small image</label><input name="gallery_img_small" id="gallery_img_small" type="file" />
+
+										<br>
+										<label>Name work</label><textarea name="name_work" cols="150" rows="2" ></textarea>
+
+										<br>
+										<label>Name gallery type</label><textarea name="name_gallery_type" cols="5" rows="1" ></textarea>
+
+										<br>
+										<button  onclick="addWork();" >Add Work</button>
+
+										<!--<input type="submit"  value="Send File" />-->
+
+									</form>
+								</div>';
+        echo '<BR>';
+        echo '<BR>';
+        echo '<BR>';
+        echo '<BR>';
+
+        echo '</td></tr>';
+
+        echo '</table>';
+
+    }
+
+
+
+    #############
+
+    $post_id = date('Ymd');
+
+    $upload_dir = 'images/artworks/'.$_POST['name_gallery_type'];
+
+    $artworks_dir = scandir($upload_dir . '/large');
+
+    $new_name = date('YmdHi');
+
+
+    if (isset($_FILES['gallery_img_large']['tmp_name']) && isset($_FILES['gallery_img_small']['tmp_name'])) {
+
+        if (!file_exists($upload_dir . '/large/' . $new_name . '.jpg')) {
+
+            if (isset($_FILES['gallery_img_large']['tmp_name'])) {
+
+                move_uploaded_file($_FILES['gallery_img_large']['tmp_name'], $upload_dir . '/large/' . $new_name . '.jpg');
+
+            }
+        }
+
+        if (!file_exists($upload_dir . '/small/' . $new_name . '.jpg')) {
+
+            if (isset($_FILES['gallery_img_small']['tmp_name'])) {
+
+                move_uploaded_file($_FILES['gallery_img_small']['tmp_name'], $upload_dir . '/small/' . $new_name . '.jpg');
+
+            }
+
+        }
+
+
+        $file = 'translations/artworks/' . $_POST['name_gallery_type'] . '/' . $_COOKIE['language'] . '/'.$new_name.'.txt';
+
+        $fp = fopen($file, "w");
+        fwrite($fp, $_POST['name_work']);
+
+
+    }
+
+
+    ##############
+
+
+    ?>
+
+
+
 	<!-- Footer -->
 	<div id="footer">
 		<div class="container">

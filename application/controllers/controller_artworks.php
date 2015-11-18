@@ -100,10 +100,37 @@ class Controller_Artworks extends Controller
 
 				}
 
+				$contents = '';
+				$file = 'translations/artworks/' . $type . '/' . $_COOKIE['language'] . '/'.substr($artworks['small'][$key], 0, -3).'txt';
+
+				if (file_exists($file)) {
+
+					$fp = fopen($file, "r");
+					$contents = fread($fp, filesize($file));
+					fclose($fp);
+					unset($fp);
+
+					/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
+					$contents = str_replace("\n", "<br>", $contents);
+
+
+				}
+
+/*
 				$html .= '
 
 					<article class="3u">
 						<a href="images/artworks/' . $type . '/large/' . $artworks['large'][$key] . '" class="image fit"><img src="images/artworks/' . $type . '/small/' . $artworks['small'][$key] . '" id="'.$id_work_name.'" alt="" title="<b>' . $artworks['name'][$key] . '</b><BR>' . $artworks['property'][$key] . '" /></a>'.$delete_button.'
+					</article>
+
+					';
+
+*/
+
+				$html .= '
+
+					<article class="3u">
+						<a href="images/artworks/' . $type . '/large/' . $artworks['large'][$key] . '" class="image fit"><img src="images/artworks/' . $type . '/small/' . $artworks['small'][$key] . '" id="'.$id_work_name.'" alt="" title="<b>' . $contents . '</b>" /></a>'.$delete_button.'
 					</article>
 
 					';
@@ -170,8 +197,10 @@ class Controller_Artworks extends Controller
 		mkdir('images/artworks/' . $_POST['new_gallery_name'] . '/large', 0777, true);
 		mkdir('images/artworks/' . $_POST['new_gallery_name'] . '/small', 0777, true);
 
+		mkdir('translations/artworks/' . $_POST['new_gallery_name'], 0777, true);
 		mkdir('translations/artworks/' . $_POST['new_gallery_name'] . '/EN', 0777, true);
 		mkdir('translations/artworks/' . $_POST['new_gallery_name'] . '/RU', 0777, true);
+
 
 	}
 	function add_work() {
