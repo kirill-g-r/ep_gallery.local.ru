@@ -176,3 +176,24 @@ function addWork() {
 
 }
 
+function delete_gallery(gallery_type) {
+
+    $.ajax({
+        type: "POST",
+        url: "artworks",
+        data: {
+            type_request: 'ajax_request',
+            action: 'delete_gallery',
+            gallery_type: gallery_type
+
+        },
+
+        success: function (data) {
+
+            location.reload();
+
+        }
+
+    });
+
+}

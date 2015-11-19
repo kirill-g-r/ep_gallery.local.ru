@@ -181,8 +181,19 @@
 
                 $d = "'$d'";
 
+            if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {
+
+                echo '<li ><a href = "#" onclick = "select_gallery('.$d.');" >'.$d_name.'</a ><br><button onclick="delete_gallery('.$d.');";>Delete Gallery</button></li >';
+
+
+            } else {
+
                 echo '<li ><a href = "#" onclick = "select_gallery('.$d.');" >'.$d_name.'</a ></li >';
                 #	<li><a href="#" onclick="select_gallery('landscapes');">Landsacpes</a></li>
+
+            }
+
+
 
 
             }

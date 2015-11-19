@@ -226,6 +226,12 @@ class Controller_Artworks extends Controller
 
 
 	}
+	function delete_gallery() {
+
+		$this->removeDir('images/artworks/' .$_POST['gallery_type']);
+		//unlink('images/artworks/' .$_POST['gallery_type'] . '/'.$_COOKIE['language'].'/'.$name_tr_del_2 . 'txt');
+
+	}
 		
 }
 
