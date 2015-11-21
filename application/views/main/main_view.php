@@ -141,9 +141,9 @@
 			</section>
 
 			<!-- Carousel -->
-			<section id="carousel" class="carousel">
+			<section id="carousel2" class="carousel">
 				<div class="reel">
-					<div id="gallery">
+					<div id="carousel">
 						<article>
 							<a  href="images/slider/large/1.jpg" class="image featured"><img src="images/slider/small/1.jpg_small.jpg"  alt="" title="Baptism"></a>
 							<!--<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>-->
@@ -245,6 +245,148 @@
 			</section>
 
 
+			<?php
+
+/*
+
+			if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {
+				echo '<div style="text-align: center" xmlns="http://www.w3.org/1999/html">
+									<form enctype="multipart/form-data" method="POST">
+
+										<label>Large image</label><input name="silder_img_large1" id="slider_img_large1" type="file" />
+										<br>
+										<label>Small image</label><input name="slider_img_small1" id="slider_img_small1" type="file" />
+										<br>
+
+										<label>Name work</label><textarea name="name_work1" cols="150" rows="2" ></textarea>
+										<br>
+
+										<label>Large image</label><input name="silder_img_large2" id="slider_img_large2" type="file" />
+										<br>
+										<label>Small image</label><input name="slider_img_small2" id="slider_img_small2" type="file" />
+										<br>
+
+										<label>Name work</label><textarea name="name_work2" cols="150" rows="2" ></textarea>
+										<br>
+
+										<label>Large image</label><input name="silder_img_large3" id="slider_img_large3" type="file" />
+										<br>
+										<label>Small image</label><input name="slider_img_small3" id="slider_img_small3" type="file" />
+										<br>
+
+										<label>Name work</label><textarea name="name_work3" cols="150" rows="2" ></textarea>
+										<br>
+
+										<label>Large image</label><input name="silder_img_large4" id="slider_img_large4" type="file" />
+										<br>
+										<label>Small image</label><input name="slider_img_small4" id="slider_img_small4" type="file" />
+										<br>
+
+										<label>Name work</label><textarea name="name_work4" cols="150" rows="2" ></textarea>
+										<br>
+
+										<label>Large image</label><input name="silder_img_large5" id="slider_img_large5" type="file" />
+										<br>
+										<label>Small image</label><input name="slider_img_small5" id="slider_img_small5" type="file" />
+										<br>
+
+										<label>Name work</label><textarea name="name_work5" cols="150" rows="2" ></textarea>
+										<br>
+
+										<label>Large image</label><input name="silder_img_large6" id="slider_img_large6" type="file" />
+										<br>
+										<label>Small image</label><input name="slider_img_small6" id="slider_img_small6" type="file" />
+										<br>
+
+										<label>Name work</label><textarea name="name_work6" cols="150" rows="2" ></textarea>
+										<br>
+
+										<label>Large image</label><input name="silder_img_large7" id="slider_img_large7" type="file" />
+										<br>
+										<label>Small image</label><input name="slider_img_small7" id="slider_img_small7" type="file" />
+										<br>
+
+										<label>Name work</label><textarea name="name_work" cols="150" rows="2" ></textarea>
+										<br>
+
+										<label>Large image</label><input name="silder_img_large" id="slider_img_large" type="file" />
+										<br>
+										<label>Small image</label><input name="slider_img_small" id="slider_img_small" type="file" />
+										<br>
+
+										<label>Name work</label><textarea name="name_work" cols="150" rows="2" ></textarea>
+										<br>
+
+
+										<button  onclick="addWork();" >Update Slider</button>
+
+										<!--<input type="submit"  value="Send File" />-->
+
+									</form>
+								</div>';
+				echo '<BR>';
+				echo '<BR>';
+				echo '<BR>';
+				echo '<BR>';
+
+				echo '</td></tr>';
+
+				echo '</table>';
+
+
+				#############
+
+				if (isset($_POST['name_gallery_type'])) {
+
+					$post_id = date('Ymd');
+
+					$upload_dir = 'images/artworks/' . $_POST['name_gallery_type'];
+
+					$artworks_dir = scandir($upload_dir . '/large');
+
+					$new_name = date('YmdHi');
+
+
+					if (isset($_FILES['gallery_img_large']['tmp_name']) && isset($_FILES['gallery_img_small']['tmp_name'])) {
+
+						if (!file_exists($upload_dir . '/large/' . $new_name . '.jpg')) {
+
+							if (isset($_FILES['gallery_img_large']['tmp_name'])) {
+
+								move_uploaded_file($_FILES['gallery_img_large']['tmp_name'], $upload_dir . '/large/' . $new_name . '.jpg');
+
+							}
+						}
+
+						if (!file_exists($upload_dir . '/small/' . $new_name . '.jpg')) {
+
+							if (isset($_FILES['gallery_img_small']['tmp_name'])) {
+
+								move_uploaded_file($_FILES['gallery_img_small']['tmp_name'], $upload_dir . '/small/' . $new_name . '.jpg');
+
+							}
+
+						}
+
+
+						$file = 'translations/artworks/' . $_POST['name_gallery_type'] . '/' . $_COOKIE['language'] . '/' . $new_name . '.txt';
+
+						$fp = fopen($file, "w");
+						fwrite($fp, $_POST['name_work']);
+
+
+					}
+
+				}
+
+			}
+
+			##############
+
+*/
+			?>
+
+
 			<div id="header-like">
 			</div>
 
@@ -263,7 +405,70 @@
 										</a>
 									</header>
 									<ul class="divided">
-										<li>
+
+
+
+											<?php
+
+											$dir = scandir('translations/news/', SCANDIR_SORT_DESCENDING);
+
+
+
+											foreach ($dir as $key => $item) {
+
+												if (strlen($item) != 8) {
+
+													continue;
+
+												}
+
+												if ($key == 3) {
+
+													break;
+
+												}
+
+
+												$file = 'translations/news/' . $item . '/' . $_COOKIE['language'] . '/item.txt';
+
+												$fp = fopen($file, "r");
+												$contents = fread($fp, filesize($file));
+												fclose($fp);
+												unset($fp);
+
+												/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
+												if (strpos($contents, "\n")) {
+
+													$contents = substr($contents, 0, strpos($contents, "\n"));
+
+												} else {
+
+													$contents = $contents;
+
+												}
+
+
+												echo '	<li>
+														<article class="tweet">
+															' . $contents . '
+															<BR>
+															<span class="timestamp">' . date("d.m.Y", strtotime($item)) . '</span>
+															</article>
+														</li>';
+
+												unset($contents);
+
+
+											}
+
+											unset($dir);
+
+
+
+											?>
+
+
+<!--
 											<article class="tweet">
 												Added a new artwork in landscapes theme.
 												<BR>
@@ -284,7 +489,7 @@
 												<span class="timestamp">9.10.2015</span>
 											</article>
 										</li>
-
+-->
 									</ul>
 								</section>
 
@@ -340,6 +545,55 @@
 
 								<div class="row 25%" id="gallery_new_artworks">
 
+
+									<?php
+
+									$dir = scandir('images/artworks/123/large/');
+
+									$count = 0;
+									foreach ($dir as  $item) {
+
+										if (strlen($item) < 4) {
+
+											continue;
+
+										}
+
+										$count++;
+
+										if ($count > 2) {
+
+											break;
+
+										}
+
+
+										$file = 'translations/artworks/123/' . $_COOKIE['language'] . '/'.substr($item, 0, -4).'.txt';
+
+										$fp = fopen($file, "r");
+										$contents = fread($fp, filesize($file));
+										$contents = str_replace("\n", "<br>", $contents);
+										fclose($fp);
+										unset($fp);
+
+
+										echo '
+												<article class="6u" >
+													<a href="images/artworks/123/large/'.$item.'" class="image fit"><img src="images/artworks/123/small/'.$item.'" alt="" title="'.@$contents.'" /></a>
+												</article>';
+
+										unset($contents);
+
+
+									}
+
+									unset($dir);
+
+
+									?>
+
+<!--
+
 									<article class="6u" >
 										<a href="images/artworks/landscapes/large/1.jpg" class="image fit"><img src="images/artworks/landscapes/small/1.jpg_small.jpg" alt="" title="Baptism" /></a>
 									</article>
@@ -353,7 +607,7 @@
 										<a href="images/artworks/slider/large/4.jpg" class="image fit"><img src="images/artworks/landscapes/small/4.jpg_small.jpg" alt="" title="Restaurant on the Pont St. Martin. Strasbourg" /></a>
 
 									</article>
-
+-->
 
 								</div>
 
@@ -370,7 +624,67 @@
 										</a>
 									</header>
 									<ul class="divided">
-										<li>
+
+
+
+										<?php
+
+											$dir = scandir('translations/articles/', SCANDIR_SORT_DESCENDING);
+
+												foreach ($dir as $key => $item) {
+
+													if (strlen($item) != 8) {
+
+														continue;
+
+													}
+
+													if ($key == 3) {
+
+														break;
+
+													}
+
+
+													$file = 'translations/articles/' . $item . '/' . $_COOKIE['language'] . '/item.txt';
+
+													$fp = fopen($file, "r");
+													$contents = fread($fp, filesize($file));
+													fclose($fp);
+													unset($fp);
+
+													/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
+													if (strpos($contents, "\n")) {
+
+														$contents = substr($contents, 0, strpos($contents, "\n"));
+
+													} else {
+
+														$contents = $contents;
+
+													}
+
+
+													echo '<li>
+															<article class="tweet">
+															<a href="/articles">' . $contents . '</a>
+															<BR>
+															<span class="timestamp">' . date("d.m.Y", strtotime($item)) . '</span>
+															</article>
+															</li>';
+
+													unset($contents);
+
+
+												}
+
+												unset($dir);
+
+
+
+											?>
+
+
 <!--
 											<article class="post stub">
 												<header>
@@ -394,19 +708,19 @@
 												</header>
 												<span class="timestamp">Yesterday</span>
 											</article>
--->
+
 											<article class="tweet">
 												<a href="/articles">How to choose the right frame for the picture.</a>
 												<BR>
 												<span class="timestamp">11.10.2015</span>
 											</article>
-<!--
+
 											<article class="tweet">
 												<a href="/articles">Some text, some text.</a>
 												<span class="timestamp">40 minutes ago</span>
 											</article>
 -->
-										</li>
+
 
 									</ul>
 								</section>
@@ -466,7 +780,7 @@
 								<!-- Copyright -->
 									<div class="copyright">
 										<ul class="menu">
-											<li>&copy; 2015 ELENA OPALEVA. All rights reserved.</li><li>Developed by <a href="http://kirillgoryunov.com">KIRILL GORYUNOV</a></li>
+											<li>&copy; 2015 ELENA OPALEVA. All rights reserved.</li><li>Design by <a href="http://kirillgoryunov.com">KIRILL GORYUNOV</a></li>
 										</ul>
 									</div>
 

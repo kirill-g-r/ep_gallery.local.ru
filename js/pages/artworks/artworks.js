@@ -122,24 +122,27 @@ function add_gallery() {
 
 function delete_work(id_work) {
 
+    if (confirm('Are you sure?')) {
 
-    $.ajax({
-        type: "POST",
-        url: "artworks",
-        data: {
-            type_request: 'ajax_request',
-            action: 'delete_work',
-            src_img_small: $('#'+id_work).attr('src')
+        $.ajax({
+            type: "POST",
+            url: "artworks",
+            data: {
+                type_request: 'ajax_request',
+                action: 'delete_work',
+                src_img_small: $('#' + id_work).attr('src')
 
-        },
+            },
 
-        success: function (data) {
+            success: function (data) {
 
-            location.reload();
+                location.reload();
 
-        }
+            }
 
-    });
+        });
+
+    }
 
 }
 function addWork() {
@@ -178,22 +181,26 @@ function addWork() {
 
 function delete_gallery(gallery_type) {
 
-    $.ajax({
-        type: "POST",
-        url: "artworks",
-        data: {
-            type_request: 'ajax_request',
-            action: 'delete_gallery',
-            gallery_type: gallery_type
+    if (confirm('Are you sure?')) {
 
-        },
+        $.ajax({
+            type: "POST",
+            url: "artworks",
+            data: {
+                type_request: 'ajax_request',
+                action: 'delete_gallery',
+                gallery_type: gallery_type
 
-        success: function (data) {
+            },
 
-            location.reload();
+            success: function (data) {
 
-        }
+                location.reload();
 
-    });
+            }
+
+        });
+
+    }
 
 }

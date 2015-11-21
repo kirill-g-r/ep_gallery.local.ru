@@ -744,42 +744,46 @@
 
     #############
 
-    $post_id = date('Ymd');
+    if (isset($_POST['name_gallery_type'])) {
 
-    $upload_dir = 'images/artworks/'.$_POST['name_gallery_type'];
+        $post_id = date('Ymd');
 
-    $artworks_dir = scandir($upload_dir . '/large');
+        $upload_dir = 'images/artworks/' . $_POST['name_gallery_type'];
 
-    $new_name = date('YmdHi');
+        $artworks_dir = scandir($upload_dir . '/large');
+
+        $new_name = date('YmdHi');
 
 
-    if (isset($_FILES['gallery_img_large']['tmp_name']) && isset($_FILES['gallery_img_small']['tmp_name'])) {
+        if (isset($_FILES['gallery_img_large']['tmp_name']) && isset($_FILES['gallery_img_small']['tmp_name'])) {
 
-        if (!file_exists($upload_dir . '/large/' . $new_name . '.jpg')) {
+            if (!file_exists($upload_dir . '/large/' . $new_name . '.jpg')) {
 
-            if (isset($_FILES['gallery_img_large']['tmp_name'])) {
+                if (isset($_FILES['gallery_img_large']['tmp_name'])) {
 
-                move_uploaded_file($_FILES['gallery_img_large']['tmp_name'], $upload_dir . '/large/' . $new_name . '.jpg');
+                    move_uploaded_file($_FILES['gallery_img_large']['tmp_name'], $upload_dir . '/large/' . $new_name . '.jpg');
 
-            }
-        }
-
-        if (!file_exists($upload_dir . '/small/' . $new_name . '.jpg')) {
-
-            if (isset($_FILES['gallery_img_small']['tmp_name'])) {
-
-                move_uploaded_file($_FILES['gallery_img_small']['tmp_name'], $upload_dir . '/small/' . $new_name . '.jpg');
-
+                }
             }
 
+            if (!file_exists($upload_dir . '/small/' . $new_name . '.jpg')) {
+
+                if (isset($_FILES['gallery_img_small']['tmp_name'])) {
+
+                    move_uploaded_file($_FILES['gallery_img_small']['tmp_name'], $upload_dir . '/small/' . $new_name . '.jpg');
+
+                }
+
+            }
+
+
+            $file = 'translations/artworks/' . $_POST['name_gallery_type'] . '/' . $_COOKIE['language'] . '/' . $new_name . '.txt';
+
+            $fp = fopen($file, "w");
+            fwrite($fp, $_POST['name_work']);
+
+
         }
-
-
-        $file = 'translations/artworks/' . $_POST['name_gallery_type'] . '/' . $_COOKIE['language'] . '/'.$new_name.'.txt';
-
-        $fp = fopen($file, "w");
-        fwrite($fp, $_POST['name_work']);
-
 
     }
 
@@ -821,7 +825,7 @@
 					<!-- Copyright -->
 					<div class="copyright">
 						<ul class="menu">
-							<li>&copy; 2015 ELENA OPALEVA. All rights reserved.</li><li>Developed by <a href="http://kirillgoryunov.com">KIRILL GORYUNOV</a></li>
+							<li>&copy; 2015 ELENA OPALEVA. All rights reserved.</li><li>Design by <a href="http://kirillgoryunov.com">KIRILL GORYUNOV</a></li>
 						</ul>
 					</div>
 
