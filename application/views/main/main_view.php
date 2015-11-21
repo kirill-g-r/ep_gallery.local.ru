@@ -548,7 +548,9 @@
 
 									<?php
 
-									$dir = scandir('images/artworks/123/large/');
+									$dir_type = '123';
+
+									$dir = scandir('images/artworks/'.$dir_type.'/large/', SCANDIR_SORT_DESCENDING);
 
 									$count = 0;
 									foreach ($dir as  $item) {
@@ -568,7 +570,7 @@
 										}
 
 
-										$file = 'translations/artworks/123/' . $_COOKIE['language'] . '/'.substr($item, 0, -4).'.txt';
+										$file = 'translations/artworks/'.$dir_type.'/' . $_COOKIE['language'] . '/' . substr($item, 0, -4) . '.txt';
 
 										$fp = fopen($file, "r");
 										$contents = fread($fp, filesize($file));
@@ -579,7 +581,54 @@
 
 										echo '
 												<article class="6u" >
-													<a href="images/artworks/123/large/'.$item.'" class="image fit"><img src="images/artworks/123/small/'.$item.'" alt="" title="'.@$contents.'" /></a>
+													<a href="images/artworks/'.$dir_type.'/large/' . $item . '" class="image fit"><img src="images/artworks/'.$dir_type.'/small/' . $item . '" alt="" title="' . @$contents . '" /></a>
+												</article>';
+
+										unset($contents);
+
+
+									}
+
+									unset($dir);
+
+
+									#####################################
+
+
+									$dir_type = '321';
+
+									$dir = scandir('images/artworks/'.$dir_type.'/large/', SCANDIR_SORT_DESCENDING);
+
+									$count = 0;
+									foreach ($dir as  $item) {
+
+										if (strlen($item) < 4) {
+
+											continue;
+
+										}
+
+										$count++;
+
+										if ($count > 2) {
+
+											break;
+
+										}
+
+
+										$file = 'translations/artworks/'.$dir_type.'/' . $_COOKIE['language'] . '/' . substr($item, 0, -4) . '.txt';
+
+										$fp = fopen($file, "r");
+										$contents = fread($fp, filesize($file));
+										$contents = str_replace("\n", "<br>", $contents);
+										fclose($fp);
+										unset($fp);
+
+
+										echo '
+												<article class="6u" >
+													<a href="images/artworks/'.$dir_type.'/large/' . $item . '" class="image fit"><img src="images/artworks/'.$dir_type.'/small/' . $item . '" alt="" title="' . @$contents . '" /></a>
 												</article>';
 
 										unset($contents);

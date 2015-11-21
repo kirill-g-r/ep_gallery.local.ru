@@ -123,7 +123,9 @@
 
 					isMobile = true;
 
+
 				}
+
 
 				if (isMobile == false) {
 
