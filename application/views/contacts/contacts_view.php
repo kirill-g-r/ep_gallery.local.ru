@@ -123,13 +123,6 @@
 
 		<br>
 
-
-
-
-
-
-
-
 		<!-- Form to Contact -->
 		<div class="container slideLeft" >
 
@@ -182,21 +175,9 @@
 
 				<section class="6u 12u(mobile)" >
 
-
-
-
-
-
 					<form method="post" action="#">
 						<div class="row uniform">
-<!--
-							<div class="6u 12u$(xsmall)">
-								<input type="text" name="about_send_mail_name" id="about_send_mail_name" value="" placeholder="Your Name" />
-							</div>
-							<div class="6u$ 12u$(xsmall)">
-								<input type="email" name="about_send_mail_email" id="about_send_mail_email" value="" placeholder="Email" />
-							</div>
--->
+
 							<?php
 
 								if ($_COOKIE['language'] == 'EN') {
@@ -237,23 +218,7 @@
 
 							?>
 
-							<div class="12u$">
-								<input type="text" name="about_send_mail_message" id="about_send_mail_name" placeholder="Your name" />
-								<input type="email" name="about_send_mail_message" id="about_send_mail_email" placeholder="Your Email" />
-								<input type="text" name="about_send_mail_message" id="about_send_mail_subject" placeholder="Subject" />
-								<textarea name="about_send_mail_message" id="about_send_mail_message" placeholder="Your message" rows="1"></textarea>
-							</div>
-<!--
-							<div class="12u$">
-								<textarea name="about_send_mail_message" id="about_send_mail_message" placeholder="Your message" rows="1"></textarea>
-							</div>
--->
-							<div class="12u$">
-								<ul class="actions">
-									<li><input type="button" value="Send Message" class="special" onclick="sentMail();"/></li>
-									<li><input type="reset" value="Reset" /></li>
-								</ul>
-							</div>
+
 						</div>
 					</form>
 				</section>
@@ -293,32 +258,6 @@
 
 									<section class="contact">
 										<header>
-<!--
-											<ul id="nav_bottom">
-												<li><a href="/">Home</a></li>
-												<li><a href="/artworks">Artworks</a></li>
-												<li><a href="/artist">Artist</a></li>
-												//								<li><a href="/artist">Artist</a></li>
-                                                 //                                   <ul>
-                                                 //                                       <li><a href="">Biographi</a></li>
-                                                  //                                      <li>
-                                                   //                                         <a href="">Media &hellip;</a>
-                                                    //                                        <ul>
-                                                     //                                           <li><a href="">Photo</a></li>
-                                                      /                                          <li><a href="">Video</a></li>
-                                                      /                                      </ul>
-                                                       /                                 </li>
-                                                      /                                  <li><a href="">Exhibitions</a></li>
-                                                      /                                  <li><a href="">Publishing</a></li>
-                                                      /                              </ul>
-/
-                                                            /                    </li>
-
-												<li><a href="/news">News</a></li>
-												<li><a href="/articles">Articles</a></li>
-												<li><a href="/contacts">Contacts</a></li>
-											</ul>
--->
 											<h1 style="font-size: 400%" class="text-shadow-logo"><a href="/">Elena Opaleva</a></h1>
 										</header>
 										<p>Find on social networks</p>

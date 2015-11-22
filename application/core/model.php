@@ -15,25 +15,7 @@ class Model
 	public $dbConnect;
 	
 	public function __construct() {
-/* ОТКЛЮЧЕНО
-		if (!isset($this->dbConnect)) {
 
-			global $config;
-
-#			if (!$this->dbConnect = new PDO( 'mysql:host=localhost;dbname=MyCharges', 'root', 'sergsund' )) {
-
-			if ($config) {
-
-				if (!$this->dbConnect = new PDO( 'mysql:host='.$config['db_connect_local']['db_host'].';dbname='.$config['db_connect_local']['db_name'], $config['db_connect_local']['db_user'], $config['db_connect_local']['db_password'] )) {
-
-					exit('Failed to connect to DB');
-
-				}
-
-			}
-
-		}
-*/
 	}
 		
 	// метод выборки данных

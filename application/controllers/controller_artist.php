@@ -31,7 +31,6 @@ class Controller_Artist extends Controller
 		}
 
 		$this->view->generate('', 'artist_view.php');
-		//$this->view->generate('main_view.php', 'template_view.php');
 
 
 	}
@@ -42,11 +41,6 @@ class Controller_Artist extends Controller
 
 		$fp = fopen($file, "w");
 		fwrite($fp, $_POST['artist_info']);
-
-		/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
-		//$contents = str_replace("\n", "<br>", $contents);
-
-		//echo $_POST['artist_info'];
 
 	}
 

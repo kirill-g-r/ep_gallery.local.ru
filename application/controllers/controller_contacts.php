@@ -68,12 +68,6 @@ class Controller_Contacts extends Controller
 		mail($to, $subject, $message, $headers);
 
 
-
-
-
-
-
-
 	}
 
 		

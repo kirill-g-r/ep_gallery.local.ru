@@ -124,17 +124,6 @@ class Controller_Artworks extends Controller
 
 				}
 
-/*
-				$html .= '
-
-					<article class="3u">
-						<a href="images/artworks/' . $type . '/large/' . $artworks['large'][$key] . '" class="image fit"><img src="images/artworks/' . $type . '/small/' . $artworks['small'][$key] . '" id="'.$id_work_name.'" alt="" title="<b>' . $artworks['name'][$key] . '</b><BR>' . $artworks['property'][$key] . '" /></a>'.$delete_button.'
-					</article>
-
-					';
-
-*/
-
 				$html .= '
 
 					<article class="3u">
@@ -164,33 +153,6 @@ class Controller_Artworks extends Controller
 
 
 		if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {
-
-/*
-			$html .= '<div style="text-align: center" xmlns="http://www.w3.org/1999/html">
-									<form enctype="multipart/form-data" method="POST">
-
-										<label>Large image</label><input name="gallery_img_large" id="gallery_img_large" type="file" />
-										<br>
-										<label>Small image</label><input name="gallery_img_small" id="gallery_img_small" type="file" />
-
-										<br>
-										<br>
-										<button  onclick="addWork();" >Add Work</button>
-
-										<!--<input type="submit"  value="Send File" />-->
-
-									</form>
-								</div>';
-			$html .= '<BR>';
-			$html .= '<BR>';
-			$html .= '<BR>';
-			$html .= '<BR>';
-
-			$html .= '</td></tr>';
-
-			$html .= '</table>';
-*/
-
 
 
 		}
@@ -237,7 +199,6 @@ class Controller_Artworks extends Controller
 	function delete_gallery() {
 
 		$this->removeDir('images/artworks/' .$_POST['gallery_type']);
-		//unlink('images/artworks/' .$_POST['gallery_type'] . '/'.$_COOKIE['language'].'/'.$name_tr_del_2 . 'txt');
 
 	}
 		
