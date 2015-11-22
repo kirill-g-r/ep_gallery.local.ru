@@ -213,5 +213,6 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
     $("div").removeClass("slideLeft");
     $("section").removeClass("slideLeft");
+    $("#banner").removeClass("slideLeft");
 
 }

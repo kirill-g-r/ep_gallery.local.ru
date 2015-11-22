@@ -204,36 +204,40 @@
 
 					}
 
-					echo '<tr"><td><article id="main" class="special">
+					$file = 'translations/articles/' . $item . '/' . $_COOKIE['language'] . '/item.txt';
+
+					if (file_exists($file)) {
+
+						echo '<tr"><td><article id="main" class="special">
 
 									<p style="text-indent: 50px;">';
 
-					if (file_exists('images/articles/' . $item . '/img.jpg')) {
+						if (file_exists('images/articles/' . $item . '/img.jpg')) {
 
-						echo '<img src="images/articles/' . $item . '/img.jpg"
+							echo '<img src="images/articles/' . $item . '/img.jpg"
 								 			align="left" vspace="5" hspace="5" style="padding-right: 5%; max-height:300px">';
-					}
+						}
 
-					echo '<p><b>'.date("d.m.Y", strtotime($item)).'</b></p>';
-
-
-					$file = 'translations/articles/' . $item . '/' . $_COOKIE['language'] . '/item.txt';
-
-					$fp = fopen($file, "r");
-					$contents = fread($fp, filesize($file));
-					fclose($fp);
-					unset($fp);
+						echo '<p><b>' . date("d.m.Y", strtotime($item)) . '</b></p>';
 
 
-					$contents = str_replace("\n", "<br>", $contents);
+						$fp = fopen($file, "r");
+						$contents = fread($fp, filesize($file));
+						fclose($fp);
+						unset($fp);
 
-					//echo file_get_contents($file);
-					echo $contents;
 
-					echo '</p>
+						$contents = str_replace("\n", "<br>", $contents);
+
+						//echo file_get_contents($file);
+						echo $contents;
+
+						echo '</p>
 								</article></td></tr>';
 
-					echo '<tr><td><div style="text-align: center"> <button onclick="deletePost('.$item.');">Delete Post</button> </div><hr /></td></tr>';
+						echo '<tr><td><div style="text-align: center"> <button onclick="deletePost(' . $item . ');">Delete Post</button> </div><hr /></td></tr>';
+
+					}
 
 				}
 

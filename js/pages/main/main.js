@@ -30,5 +30,8 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
     $("div").removeClass("slideLeft");
     $("section").removeClass("slideLeft");
+    $("h1").removeClass("slideLeft");
+    $("p").removeClass("slideLeft");
+    $("hr").removeClass("slideLeft");
 
 }

@@ -179,9 +179,9 @@
 			</section>
 
 			<!-- Carousel -->
-			<section id="carousel2" class="carousel">
+			<section id="carousel" class="carousel">
 				<div class="reel">
-					<div id="carousel">
+					<div id="gallery">
 						<article>
 							<a  href="images/slider/large/1.jpg" class="image featured"><img src="images/slider/small/1.jpg_small.jpg"  alt="" title="Baptism"></a>
 							<!--<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>-->
@@ -624,7 +624,8 @@
 											}
 
 
-											$file = 'translations/artworks/' . $dir_type . '/' . $_COOKIE['language'] . '/' . substr($item, 0, -4) . '.txt';
+											//$file = 'translations/artworks/' . $dir_type . '/' . $_COOKIE['language'] . '/' . substr($item, 0, -4) . '.txt';
+											$file = 'translations/artworks/' . $dir_type . '/EN/' . substr($item, 0, -4) . '.txt';
 
 											if (file_exists($file)) {
 
@@ -681,7 +682,8 @@
 											}
 
 
-											$file = 'translations/artworks/' . $dir_type . '/' . $_COOKIE['language'] . '/' . substr($item, 0, -4) . '.txt';
+											//$file = 'translations/artworks/' . $dir_type . '/' . $_COOKIE['language'] . '/' . substr($item, 0, -4) . '.txt';
+											$file = 'translations/artworks/' . $dir_type . '/EN/' . substr($item, 0, -4) . '.txt';
 
 											if (file_exists($file)) {
 
@@ -931,6 +933,7 @@
 
 		<script>
 			$(function() {
+
 				$('#gallery').poptrox({
 					usePopupCaption: true
 				});

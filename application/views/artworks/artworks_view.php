@@ -131,7 +131,7 @@
 	<section id="banner" style="padding: 4.5em 0 1em 0" class="slideLeft">
 
 		<header>
-			<h2 class="zapfiro text-shadow" style="font-size: 300%; margin-top: -3%; margin-bottom: -10%;">Artworks</h2>
+			<h2 id="artworks_label" class="zapfiro text-shadow" style="font-size: 300%;  ">Artworks</h2>
 		</header>
 
 		<ul id="nav_bottom_artworks">

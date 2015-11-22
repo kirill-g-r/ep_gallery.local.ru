@@ -265,39 +265,42 @@
 
 							}
 
-							echo '<tr"><td><article id="main" class="special">
+							$file = 'translations/news/' . $item . '/' . $_COOKIE['language'] . '/item.txt';
+
+							if (file_exists($file)) {
+
+								echo '<tr"><td><article id="main" class="special">
 
 									<p style="text-indent: 50px;">';
 
-							if (file_exists('images/news/' . $item . '/img.jpg')) {
+								if (file_exists('images/news/' . $item . '/img.jpg')) {
 
-								echo '<img src="images/news/' . $item . '/img.jpg"
+									echo '<img src="images/news/' . $item . '/img.jpg"
 								 			align="left" vspace="5" hspace="5" style="padding-right: 5%; max-height:300px">';
 
-							}
+								}
 
-							echo '<p><b>'.date("d.m.Y", strtotime($item)).'</b></p>';
+								echo '<p><b>' . date("d.m.Y", strtotime($item)) . '</b></p>';
 
+								$fp = fopen($file, "r");
+								$contents = fread($fp, filesize($file));
+								fclose($fp);
+								unset($fp);
 
-							$file = 'translations/news/' . $item . '/' . $_COOKIE['language'] . '/item.txt';
+								/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
+								$contents = str_replace("\n", "<br>", $contents);
 
-							$fp = fopen($file, "r");
-							$contents = fread($fp, filesize($file));
-							fclose($fp);
-							unset($fp);
+								//echo file_get_contents($file);
+								echo $contents;
 
-							/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
-							$contents = str_replace("\n", "<br>", $contents);
+								unset($contents);
 
-							//echo file_get_contents($file);
-							echo $contents;
-
-							unset($contents);
-
-							echo '</p>
+								echo '</p>
 								</article></td></tr>';
 
-							echo '<tr><td><hr /></td></tr>';
+								echo '<tr><td><hr /></td></tr>';
+
+							}
 
 						}
 
