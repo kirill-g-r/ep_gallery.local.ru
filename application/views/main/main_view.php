@@ -448,7 +448,9 @@
 
 											<?php
 
-											$dir = scandir('translations/news/', SCANDIR_SORT_DESCENDING);
+											$dir = scandir('translations/news/');
+
+											arsort($dir);
 
 											if ($dir) {
 
@@ -594,7 +596,9 @@
 
 									$dir_type = 'landscapes';
 
-									$dir = @scandir('images/artworks/'.$dir_type.'/large/', SCANDIR_SORT_DESCENDING);
+									$dir = @scandir('images/artworks/'.$dir_type.'/large/');
+
+									arsort($dir);
 
 									if ($dir) {
 
@@ -649,7 +653,9 @@
 
 									$dir_type = 'composition';
 
-									$dir = @scandir('images/artworks/'.$dir_type.'/large/', SCANDIR_SORT_DESCENDING);
+									$dir = @scandir('images/artworks/'.$dir_type.'/large/');
+
+									arsort($dir);
 
 									if ($dir) {
 
@@ -738,7 +744,9 @@
 
 										<?php
 
-											$dir = scandir('translations/articles/', SCANDIR_SORT_DESCENDING);
+											$dir = scandir('translations/articles/');
+
+											arsort($dir);
 
 												if ($dir) {
 
