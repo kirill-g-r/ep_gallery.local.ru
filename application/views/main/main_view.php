@@ -454,6 +454,8 @@
 
 											if ($dir) {
 
+												$count = 0;
+
 												foreach ($dir as $key => $item) {
 
 													if (strlen($item) != 8) {
@@ -462,7 +464,9 @@
 
 													}
 
-													if ($key == 3) {
+													$count++;
+
+													if ($count > 3) {
 
 														break;
 
@@ -750,6 +754,8 @@
 
 												if ($dir) {
 
+													$count = 0;
+
 													foreach ($dir as $key => $item) {
 
 														if (strlen($item) != 8) {
@@ -758,7 +764,9 @@
 
 														}
 
-														if ($key == 3) {
+														$count++;
+
+														if ($count > 3) {
 
 															break;
 
