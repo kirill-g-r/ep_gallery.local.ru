@@ -51,28 +51,37 @@
 			<!-- Nav -->
 			<nav id="nav" style="position: static; padding: 0.5em 0 1.5em 0 ">
 				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="/artworks">Artworks</a></li>
-					<li><a href="/artist">Artist</a></li>
-					<!--								<li><a href="/artist">Artist</a></li>
-                                                        <ul>
-                                                            <li><a href="">Biographi</a></li>
-                                                            <li>
-                                                                <a href="">Media &hellip;</a>
-                                                                <ul>
-                                                                    <li><a href="">Photo</a></li>
-                                                                    <li><a href="">Video</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li><a href="">Exhibitions</a></li>
-                                                            <li><a href="">Publishing</a></li>
-                                                        </ul>
 
-                                                    </li>
-                    -->
-					<li><a href="/news">News</a></li>
-					<li><a href="/articles">Articles</a></li>
-					<li><a href="/contacts">Contacts</a></li>
+                    <?php
+
+                    if ($_COOKIE['language'] == 'EN') {
+
+                        echo '
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/artworks">Artworks</a></li>
+                                <li><a href="/artist">Artist</a></li>
+                                <li><a href="/news">News</a></li>
+                                <li><a href="/articles">Articles</a></li>
+                                <li><a href="/contacts">Contacts</a></li>
+                        ';
+
+
+                    } else {
+
+                        echo '
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/artworks">Галерея</a></li>
+                                <li><a href="/artist">О художнице</a></li>
+                                <li><a href="/news">Новости</a></li>
+                                <li><a href="/articles">Статьи</a></li>
+                                <li><a href="/contacts">Контакты</a></li>
+                        ';
+
+                    }
+
+
+                    ?>
+
 				</ul>
 			</nav>
 
@@ -124,28 +133,37 @@
 	<div id="footer_gkg" style="opacity: 0.9">
 
 		<ul id="nav_bottom" style=" text-align: center; margin-bottom: 0%;">
-			<li><a href="/">Home</a></li>
-			<li><a href="/artworks">Artworks</a></li>
-			<li><a href="/artist">Artist</a></li>
-			<!--								<li><a href="/artist">Artist</a></li>
-                                                <ul>
-                                                    <li><a href="">Biographi</a></li>
-                                                    <li>
-                                                        <a href="">Media &hellip;</a>
-                                                        <ul>
-                                                            <li><a href="">Photo</a></li>
-                                                            <li><a href="">Video</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="">Exhibitions</a></li>
-                                                    <li><a href="">Publishing</a></li>
-                                                </ul>
 
-                                            </li>
-            -->
-			<li><a href="/news">News</a></li>
-			<li><a href="/articles">Articles</a></li>
-			<li><a href="/contacts">Contacts</a></li>
+            <?php
+
+            if ($_COOKIE['language'] == 'EN') {
+
+                echo '
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/artworks">Artworks</a></li>
+                                <li><a href="/artist">Artist</a></li>
+                                <li><a href="/news">News</a></li>
+                                <li><a href="/articles">Articles</a></li>
+                                <li><a href="/contacts">Contacts</a></li>
+                        ';
+
+
+            } else {
+
+                echo '
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/artworks">Галерея</a></li>
+                                <li><a href="/artist">О художнице</a></li>
+                                <li><a href="/news">Новости</a></li>
+                                <li><a href="/articles">Статьи</a></li>
+                                <li><a href="/contacts">Контакты</a></li>
+                        ';
+
+            }
+
+
+            ?>
+
 		</ul>
 
 	</div>
@@ -169,33 +187,54 @@
             <?php
 
             $dir = scandir('images/artworks');
-            foreach ($dir as $d) {
+            if ($dir) {
+                foreach ($dir as $d) {
 
-                if (strlen($d) < 3) {
-                    continue;
+                    if (strlen($d) < 3) {
+                        continue;
+                    }
+
+                    $d = ltrim($d);
+
+                    $d_name = mb_convert_case($d, MB_CASE_TITLE, "UTF-8");
+
+
+                    if ($_COOKIE['language'] == 'EN') {
+
+                        if (preg_match( '/[А-Яа-я]/', $d_name )) {
+
+                            continue;
+
+                        }
+
+                    }
+                    if ($_COOKIE['language'] == 'RU') {
+
+                        if (preg_match( '/[A-Za-z]/', $d_name )) {
+
+                            continue;
+
+                        }
+
+                    }
+
+
+                    $d = "'$d'";
+
+                    if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {
+
+                        echo '<li ><a href = "#" onclick = "select_gallery(' . $d . ');" >' . $d_name . '</a ><br><button onclick="delete_gallery(' . $d . ');";>Delete Gallery</button></li >';
+
+
+                    } else {
+
+                        echo '<li ><a href = "#" onclick = "select_gallery(' . $d . ');" >' . $d_name . '</a ></li >';
+                        #	<li><a href="#" onclick="select_gallery('landscapes');">Landsacpes</a></li>
+
+                    }
+
+
                 }
-
-                $d = ltrim($d);
-
-                $d_name = mb_convert_case($d, MB_CASE_TITLE, "UTF-8");
-
-                $d = "'$d'";
-
-            if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {
-
-                echo '<li ><a href = "#" onclick = "select_gallery('.$d.');" >'.$d_name.'</a ><br><button onclick="delete_gallery('.$d.');";>Delete Gallery</button></li >';
-
-
-            } else {
-
-                echo '<li ><a href = "#" onclick = "select_gallery('.$d.');" >'.$d_name.'</a ></li >';
-                #	<li><a href="#" onclick="select_gallery('landscapes');">Landsacpes</a></li>
-
-            }
-
-
-
-
             }
 
             if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {

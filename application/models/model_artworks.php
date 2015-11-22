@@ -36,8 +36,8 @@ class Model_Artworks extends Model {
 
             foreach ($artworks['large'] as $key => $artwork) {
 
-                $artworks['name'][$key] = $this->getArtworkName($type, $key);
-                $artworks['property'][$key] = $this->getArtworkProperty($type, $key);
+                //$artworks['name'][$key] = $this->getArtworkName($type, $key);
+                //$artworks['property'][$key] = $this->getArtworkProperty($type, $key);
 
             }
 

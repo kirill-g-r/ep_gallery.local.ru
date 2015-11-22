@@ -13,7 +13,8 @@ function change_language(language) {
 
         success: function (data) {
 
-
+            alert(language + ' version');
+            location.reload();
 
         }
 

@@ -46,28 +46,37 @@
 			<!-- Nav -->
 			<nav id="nav" style="position: static; padding: 0.5em 0 1.5em 0 ">
 				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="/artworks">Artworks</a></li>
-					<li><a href="/artist">Artist</a></li>
-					<!--								<li><a href="/artist">Artist</a></li>
-                                                        <ul>
-                                                            <li><a href="">Biographi</a></li>
-                                                            <li>
-                                                                <a href="">Media &hellip;</a>
-                                                                <ul>
-                                                                    <li><a href="">Photo</a></li>
-                                                                    <li><a href="">Video</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li><a href="">Exhibitions</a></li>
-                                                            <li><a href="">Publishing</a></li>
-                                                        </ul>
 
-                                                    </li>
-                    -->
-					<li><a href="/news">News</a></li>
-					<li><a href="/articles">Articles</a></li>
-					<li><a href="/contacts">Contacts</a></li>
+					<?php
+
+					if ($_COOKIE['language'] == 'EN') {
+
+						echo '
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/artworks">Artworks</a></li>
+                                <li><a href="/artist">Artist</a></li>
+                                <li><a href="/news">News</a></li>
+                                <li><a href="/articles">Articles</a></li>
+                                <li><a href="/contacts">Contacts</a></li>
+                        ';
+
+
+					} else {
+
+						echo '
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/artworks">Галерея</a></li>
+                                <li><a href="/artist">О художнице</a></li>
+                                <li><a href="/news">Новости</a></li>
+                                <li><a href="/articles">Статьи</a></li>
+                                <li><a href="/contacts">Контакты</a></li>
+                        ';
+
+					}
+
+
+					?>
+
 				</ul>
 			</nav>
 
@@ -77,28 +86,37 @@
 	<div id="footer_gkg" style="opacity: 0.9">
 
 		<ul id="nav_bottom" style=" text-align: center; margin-bottom: 0%;">
-			<li><a href="/">Home</a></li>
-			<li><a href="/artworks">Artworks</a></li>
-			<li><a href="/artist">Artist</a></li>
-			<!--								<li><a href="/artist">Artist</a></li>
-                                                <ul>
-                                                    <li><a href="">Biographi</a></li>
-                                                    <li>
-                                                        <a href="">Media &hellip;</a>
-                                                        <ul>
-                                                            <li><a href="">Photo</a></li>
-                                                            <li><a href="">Video</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="">Exhibitions</a></li>
-                                                    <li><a href="">Publishing</a></li>
-                                                </ul>
 
-                                            </li>
-            -->
-			<li><a href="/news">News</a></li>
-			<li><a href="/articles">Articles</a></li>
-			<li><a href="/contacts">Contacts</a></li>
+			<?php
+
+			if ($_COOKIE['language'] == 'EN') {
+
+				echo '
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/artworks">Artworks</a></li>
+                                <li><a href="/artist">Artist</a></li>
+                                <li><a href="/news">News</a></li>
+                                <li><a href="/articles">Articles</a></li>
+                                <li><a href="/contacts">Contacts</a></li>
+                        ';
+
+
+			} else {
+
+				echo '
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/artworks">Галерея</a></li>
+                                <li><a href="/artist">О художнице</a></li>
+                                <li><a href="/news">Новости</a></li>
+                                <li><a href="/articles">Статьи</a></li>
+                                <li><a href="/contacts">Контакты</a></li>
+                        ';
+
+			}
+
+
+			?>
+
 		</ul>
 
 	</div>
@@ -267,39 +285,45 @@
 
 					}
 
-					echo '<tr"><td><article id="main" class="special">
-
-									<p style="text-indent: 50px;">';
-
-					if (file_exists('images/articles/' . $item . '/img.jpg')) {
-
-						echo '<img src="images/articles/' . $item . '/img.jpg"
-								 			align="left" vspace="5" hspace="5" style="padding-right: 5%; max-height:300px">';
-
-					}
-
-					echo '<p><b>'.date("d.m.Y", strtotime($item)).'</b></p>';
-
 
 					$file = 'translations/articles/' . $item . '/' . $_COOKIE['language'] . '/item.txt';
 
-					$fp = fopen($file, "r");
-					$contents = fread($fp, filesize($file));
-					fclose($fp);
-					unset($fp);
+					if (file_exists($file)) {
 
-					/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
-					$contents = str_replace("\n", "<br>", $contents);
+						echo '<tr"><td><article id="main" class="special">
 
-					//echo file_get_contents($file);
-					echo $contents;
+									<p style="text-indent: 50px;">';
 
-					unset($contents);
+						if (file_exists('images/articles/' . $item . '/img.jpg')) {
 
-					echo '</p>
+							echo '<img src="images/articles/' . $item . '/img.jpg"
+								 			align="left" vspace="5" hspace="5" style="padding-right: 5%; max-height:300px">';
+
+						}
+
+						echo '<p><b>' . date("d.m.Y", strtotime($item)) . '</b></p>';
+
+
+						$fp = fopen($file, "r");
+						$contents = fread($fp, filesize($file));
+						fclose($fp);
+						unset($fp);
+
+						/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
+						$contents = str_replace("\n", "<br>", $contents);
+
+						//echo file_get_contents($file);
+						echo $contents;
+
+						unset($contents);
+
+
+						echo '</p>
 								</article></td></tr>';
 
-					echo '<tr><td><hr /></td></tr>';
+						echo '<tr><td><hr /></td></tr>';
+
+					}
 
 				}
 
@@ -312,7 +336,9 @@
 			?>
 
 			<article id="main" class="special">
+<!--
 				<header><p>COMMING SOON!</p></header>
+-->
 				<br>
 				<br>
 				<br>
@@ -364,7 +390,7 @@
                 -->
 
 			</article>
-			<hr />
+
 			<br>
 			<br>
 			<br>

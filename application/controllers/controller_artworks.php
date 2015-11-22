@@ -31,7 +31,15 @@ class Controller_Artworks extends Controller
 
 	function load_page() {
 
-		$data['artworks_type'] = 'landscapes';
+		if ($_COOKIE['language'] == 'EN') {
+
+			$data['artworks_type'] = 'landscapes';
+
+		} else {
+
+			$data['artworks_type'] = 'пейзажи';
+
+		}
 
 		$data['artworks'] = $this->getArtworks($data['artworks_type']);
 

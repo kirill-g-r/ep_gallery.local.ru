@@ -59,36 +59,57 @@
 						<nav id="nav">
 
 							<ul>
+
+								<?php
+
+								if ($_COOKIE['language'] == 'EN') {
+
+
+									echo '
+											<li><a href="/">Home</a></li>
+											<li><a class="transition" href="/artworks">Artworks</a></li>
+											<li><a href="/artist">Artist</a></li>
+											<li><a href="/news">News</a></li>
+											<li><a href="/articles">Articles</a></li>
+											<li><a href="/contacts">Contacts</a></li>
+
+											';
+
+
+
+								} else {
+
+									echo '
+											<li><a href="/">Главная</a></li>
+											<li><a class="transition" href="/artworks">Галерея</a></li>
+											<li><a href="/artist">О хужожнице</a></li>
+											<li><a href="/news">Новости</a></li>
+											<li><a href="/articles">Статьи</a></li>
+											<li><a href="/contacts">Контакты</a></li>
+
+											';
+
+								}
+
+
+								?>
+
+<!--
 								<li><a href="/">Home</a></li>
 								<li><a class="transition" href="/artworks">Artworks</a></li>
 								<li><a href="/artist">Artist</a></li>
-<!--														<li><a href="/artist">Artist</a></li>
-															<ul>
-																<li><a href="">Biographi</a></li>
-																<li>
-																	<a href="">Media &hellip;</a>
-																	<ul>
-																		<li><a href="">Photo</a></li>
-																		<li><a href="">Video</a></li>
-																	</ul>
-																</li>
-																<li><a href="">Exhibitions</a></li>
-																<li><a href="">Publishing</a></li>
-															</ul>
-
-														</li>
--->
-
 								<li><a href="/news">News</a></li>
 								<li><a href="/articles">Articles</a></li>
 								<li><a href="/contacts">Contacts</a></li>
+-->
+
 							</ul>
 
 							<br>
 							<br>
-							<!--
-							<a onclick="change_language('EN');">EN</a>/<a onclick="change_language('EN');">RU</a>
-							-->
+
+							<a style="cursor: pointer" onclick="change_language('EN');">EN</a>/<a style="cursor: pointer" onclick="change_language('RU');">RU</a>
+
 							
 							<!--<a href="../../../../EN">EN</a>/<a href="../../../../RU">RU</a>
 							-->
@@ -101,28 +122,45 @@
 			<div id="footer_gkg" style="opacity: 0.9">
 
 				<ul id="nav_bottom" style=" text-align: center; margin-bottom: 0%;">
+
+					<?php
+
+					if ($_COOKIE['language'] == 'EN') {
+
+						echo '
+								<li><a href="/">Home</a></li>
+								<li><a href="/artworks">Artworks</a></li>
+								<li><a href="/artist">Artist</a></li>
+								<li><a href="/news">News</a></li>
+								<li><a href="/articles">Articles</a></li>
+								<li><a href="/contacts">Contacts</a></li>
+						';
+
+					} else {
+
+						echo '
+								<li><a href="/">Главная</a></li>
+								<li><a href="/artworks">Галерея</a></li>
+								<li><a href="/artist">О художнице</a></li>
+								<li><a href="/news">Новости</a></li>
+								<li><a href="/articles">Статьи</a></li>
+								<li><a href="/contacts">Контакты</a></li>
+						';
+
+					}
+
+
+
+					?>
+<!--
 					<li><a href="/">Home</a></li>
 					<li><a href="/artworks">Artworks</a></li>
 					<li><a href="/artist">Artist</a></li>
-					<!--								<li><a href="/artist">Artist</a></li>
-                                                        <ul>
-                                                            <li><a href="">Biographi</a></li>
-                                                            <li>
-                                                                <a href="">Media &hellip;</a>
-                                                                <ul>
-                                                                    <li><a href="">Photo</a></li>
-                                                                    <li><a href="">Video</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li><a href="">Exhibitions</a></li>
-                                                            <li><a href="">Publishing</a></li>
-                                                        </ul>
-
-                                                    </li>
-                    -->
 					<li><a href="/news">News</a></li>
 					<li><a href="/articles">Articles</a></li>
 					<li><a href="/contacts">Contacts</a></li>
+-->
+
 				</ul>
 
 			</div>
@@ -412,43 +450,45 @@
 
 											$dir = scandir('translations/news/', SCANDIR_SORT_DESCENDING);
 
+											if ($dir) {
+
+												foreach ($dir as $key => $item) {
+
+													if (strlen($item) != 8) {
+
+														continue;
+
+													}
+
+													if ($key == 3) {
+
+														break;
+
+													}
 
 
-											foreach ($dir as $key => $item) {
+													$file = 'translations/news/' . $item . '/' . $_COOKIE['language'] . '/item.txt';
 
-												if (strlen($item) != 8) {
+													if (file_exists($file)) {
 
-													continue;
+														$fp = fopen($file, "r");
+														$contents = fread($fp, filesize($file));
+														fclose($fp);
+														unset($fp);
 
-												}
+														/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
+														if (strpos($contents, "\n")) {
 
-												if ($key == 3) {
+															$contents = substr($contents, 0, strpos($contents, "\n"));
 
-													break;
+														} else {
 
-												}
+															$contents = $contents;
 
-
-												$file = 'translations/news/' . $item . '/' . $_COOKIE['language'] . '/item.txt';
-
-												$fp = fopen($file, "r");
-												$contents = fread($fp, filesize($file));
-												fclose($fp);
-												unset($fp);
-
-												/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
-												if (strpos($contents, "\n")) {
-
-													$contents = substr($contents, 0, strpos($contents, "\n"));
-
-												} else {
-
-													$contents = $contents;
-
-												}
+														}
 
 
-												echo '	<li>
+														echo '	<li>
 														<article class="tweet">
 															' . $contents . '
 															<BR>
@@ -456,8 +496,12 @@
 															</article>
 														</li>';
 
-												unset($contents);
+														unset($contents);
 
+													}
+
+
+												}
 
 											}
 
@@ -548,44 +592,52 @@
 
 									<?php
 
-									$dir_type = '123';
+									$dir_type = 'landscapes';
 
-									$dir = scandir('images/artworks/'.$dir_type.'/large/', SCANDIR_SORT_DESCENDING);
+									$dir = @scandir('images/artworks/'.$dir_type.'/large/', SCANDIR_SORT_DESCENDING);
 
-									$count = 0;
-									foreach ($dir as  $item) {
+									if ($dir) {
 
-										if (strlen($item) < 4) {
+										$count = 0;
+										foreach ($dir as $item) {
 
-											continue;
+											if (strlen($item) < 4) {
 
-										}
+												continue;
 
-										$count++;
+											}
 
-										if ($count > 2) {
+											$count++;
 
-											break;
+											if ($count > 2) {
 
-										}
+												break;
 
-
-										$file = 'translations/artworks/'.$dir_type.'/' . $_COOKIE['language'] . '/' . substr($item, 0, -4) . '.txt';
-
-										$fp = fopen($file, "r");
-										$contents = fread($fp, filesize($file));
-										$contents = str_replace("\n", "<br>", $contents);
-										fclose($fp);
-										unset($fp);
+											}
 
 
-										echo '
+											$file = 'translations/artworks/' . $dir_type . '/' . $_COOKIE['language'] . '/' . substr($item, 0, -4) . '.txt';
+
+											if (file_exists($file)) {
+
+												$fp = fopen($file, "r");
+												$contents = fread($fp, filesize($file));
+												$contents = str_replace("\n", "<br>", $contents);
+												fclose($fp);
+												unset($fp);
+
+
+												echo '
 												<article class="6u" >
-													<a href="images/artworks/'.$dir_type.'/large/' . $item . '" class="image fit"><img src="images/artworks/'.$dir_type.'/small/' . $item . '" alt="" title="' . @$contents . '" /></a>
+													<a href="images/artworks/' . $dir_type . '/large/' . $item . '" class="image fit"><img src="images/artworks/' . $dir_type . '/small/' . $item . '" alt="" title="' . @$contents . '" /></a>
 												</article>';
 
-										unset($contents);
+												unset($contents);
 
+											}
+
+
+										}
 
 									}
 
@@ -595,44 +647,52 @@
 									#####################################
 
 
-									$dir_type = '321';
+									$dir_type = 'composition';
 
-									$dir = scandir('images/artworks/'.$dir_type.'/large/', SCANDIR_SORT_DESCENDING);
+									$dir = @scandir('images/artworks/'.$dir_type.'/large/', SCANDIR_SORT_DESCENDING);
 
-									$count = 0;
-									foreach ($dir as  $item) {
+									if ($dir) {
 
-										if (strlen($item) < 4) {
+										$count = 0;
+										foreach ($dir as $item) {
 
-											continue;
+											if (strlen($item) < 4) {
 
-										}
+												continue;
 
-										$count++;
+											}
 
-										if ($count > 2) {
+											$count++;
 
-											break;
+											if ($count > 2) {
 
-										}
+												break;
 
-
-										$file = 'translations/artworks/'.$dir_type.'/' . $_COOKIE['language'] . '/' . substr($item, 0, -4) . '.txt';
-
-										$fp = fopen($file, "r");
-										$contents = fread($fp, filesize($file));
-										$contents = str_replace("\n", "<br>", $contents);
-										fclose($fp);
-										unset($fp);
+											}
 
 
-										echo '
+											$file = 'translations/artworks/' . $dir_type . '/' . $_COOKIE['language'] . '/' . substr($item, 0, -4) . '.txt';
+
+											if (file_exists($file)) {
+
+												$fp = fopen($file, "r");
+												$contents = fread($fp, filesize($file));
+												$contents = str_replace("\n", "<br>", $contents);
+												fclose($fp);
+												unset($fp);
+
+
+												echo '
 												<article class="6u" >
-													<a href="images/artworks/'.$dir_type.'/large/' . $item . '" class="image fit"><img src="images/artworks/'.$dir_type.'/small/' . $item . '" alt="" title="' . @$contents . '" /></a>
+													<a href="images/artworks/' . $dir_type . '/large/' . $item . '" class="image fit"><img src="images/artworks/' . $dir_type . '/small/' . $item . '" alt="" title="' . @$contents . '" /></a>
 												</article>';
 
-										unset($contents);
+												unset($contents);
 
+											}
+
+
+										}
 
 									}
 
@@ -680,50 +740,58 @@
 
 											$dir = scandir('translations/articles/', SCANDIR_SORT_DESCENDING);
 
-												foreach ($dir as $key => $item) {
+												if ($dir) {
 
-													if (strlen($item) != 8) {
+													foreach ($dir as $key => $item) {
 
-														continue;
+														if (strlen($item) != 8) {
+
+															continue;
+
+														}
+
+														if ($key == 3) {
+
+															break;
+
+														}
+
+
+														$file = 'translations/articles/' . $item . '/' . $_COOKIE['language'] . '/item.txt';
+
+														if (file_exists($file)) {
+
+															$fp = fopen($file, "r");
+															$contents = fread($fp, filesize($file));
+															fclose($fp);
+															unset($fp);
+
+															/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
+															if (strpos($contents, "\n")) {
+
+																$contents = substr($contents, 0, strpos($contents, "\n"));
+
+															} else {
+
+																$contents = $contents;
+
+															}
+
+
+															echo '<li>
+																	<article class="tweet">
+																	<a href="/articles">' . $contents . '</a>
+																	<BR>
+																	<span class="timestamp">' . date("d.m.Y", strtotime($item)) . '</span>
+																	</article>
+																	</li>';
+
+															unset($contents);
+
+														}
+
 
 													}
-
-													if ($key == 3) {
-
-														break;
-
-													}
-
-
-													$file = 'translations/articles/' . $item . '/' . $_COOKIE['language'] . '/item.txt';
-
-													$fp = fopen($file, "r");
-													$contents = fread($fp, filesize($file));
-													fclose($fp);
-													unset($fp);
-
-													/* заменяем переносы строки в файле на тег BR. заменить можно что угодно */
-													if (strpos($contents, "\n")) {
-
-														$contents = substr($contents, 0, strpos($contents, "\n"));
-
-													} else {
-
-														$contents = $contents;
-
-													}
-
-
-													echo '<li>
-															<article class="tweet">
-															<a href="/articles">' . $contents . '</a>
-															<BR>
-															<span class="timestamp">' . date("d.m.Y", strtotime($item)) . '</span>
-															</article>
-															</li>';
-
-													unset($contents);
-
 
 												}
 

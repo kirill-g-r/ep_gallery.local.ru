@@ -44,28 +44,37 @@
 				<!-- Nav -->
 				<nav id="nav" style="position: static; padding: 0.5em 0 1.5em 0 ">
 					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="/artworks">Artworks</a></li>
-						<li><a href="/artist">Artist</a></li>
-						<!--								<li><a href="/artist">Artist</a></li>
-                                                            <ul>
-                                                                <li><a href="">Biographi</a></li>
-                                                                <li>
-                                                                    <a href="">Media &hellip;</a>
-                                                                    <ul>
-                                                                        <li><a href="">Photo</a></li>
-                                                                        <li><a href="">Video</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li><a href="">Exhibitions</a></li>
-                                                                <li><a href="">Publishing</a></li>
-                                                            </ul>
 
-                                                        </li>
-                        -->
-						<li><a href="/news">News</a></li>
-						<li><a href="/articles">Articles</a></li>
-						<li><a href="/contacts">Contacts</a></li>
+						<?php
+
+						if ($_COOKIE['language'] == 'EN') {
+
+							echo '
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/artworks">Artworks</a></li>
+                                <li><a href="/artist">Artist</a></li>
+                                <li><a href="/news">News</a></li>
+                                <li><a href="/articles">Articles</a></li>
+                                <li><a href="/contacts">Contacts</a></li>
+                        ';
+
+
+						} else {
+
+							echo '
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/artworks">Галерея</a></li>
+                                <li><a href="/artist">О художнице</a></li>
+                                <li><a href="/news">Новости</a></li>
+                                <li><a href="/articles">Статьи</a></li>
+                                <li><a href="/contacts">Контакты</a></li>
+                        ';
+
+						}
+
+
+						?>
+
 					</ul>
 				</nav>
 
@@ -75,28 +84,37 @@
 		<div id="footer_gkg" style="opacity: 0.9">
 
 			<ul id="nav_bottom" style=" text-align: center; margin-bottom: 0%;">
-				<li><a href="/">Home</a></li>
-				<li><a href="/artworks">Artworks</a></li>
-				<li><a href="/artist">Artist</a></li>
-				<!--								<li><a href="/artist">Artist</a></li>
-                                                    <ul>
-                                                        <li><a href="">Biographi</a></li>
-                                                        <li>
-                                                            <a href="">Media &hellip;</a>
-                                                            <ul>
-                                                                <li><a href="">Photo</a></li>
-                                                                <li><a href="">Video</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li><a href="">Exhibitions</a></li>
-                                                        <li><a href="">Publishing</a></li>
-                                                    </ul>
 
-                                                </li>
-                -->
-				<li><a href="/news">News</a></li>
-				<li><a href="/articles">Articles</a></li>
-				<li><a href="/contacts">Contacts</a></li>
+				<?php
+
+				if ($_COOKIE['language'] == 'EN') {
+
+					echo '
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/artworks">Artworks</a></li>
+                                <li><a href="/artist">Artist</a></li>
+                                <li><a href="/news">News</a></li>
+                                <li><a href="/articles">Articles</a></li>
+                                <li><a href="/contacts">Contacts</a></li>
+                        ';
+
+
+				} else {
+
+					echo '
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/artworks">Галерея</a></li>
+                                <li><a href="/artist">О художнице</a></li>
+                                <li><a href="/news">Новости</a></li>
+                                <li><a href="/articles">Статьи</a></li>
+                                <li><a href="/contacts">Контакты</a></li>
+                        ';
+
+				}
+
+
+				?>
+
 			</ul>
 
 		</div>

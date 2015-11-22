@@ -46,28 +46,37 @@
 				<!-- Nav -->
 				<nav id="nav" style="position: static; padding: 0.5em 0 1.5em 0 ">
 					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="/artworks">Artworks</a></li>
-						<li><a href="/artist">Artist</a></li>
-						<!--								<li><a href="/artist">Artist</a></li>
-                                                            <ul>
-                                                                <li><a href="">Biographi</a></li>
-                                                                <li>
-                                                                    <a href="">Media &hellip;</a>
-                                                                    <ul>
-                                                                        <li><a href="">Photo</a></li>
-                                                                        <li><a href="">Video</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li><a href="">Exhibitions</a></li>
-                                                                <li><a href="">Publishing</a></li>
-                                                            </ul>
 
-                                                        </li>
-                        -->
-						<li><a href="/news">News</a></li>
-						<li><a href="/articles">Articles</a></li>
-						<li><a href="/contacts">Contacts</a></li>
+						<?php
+
+						if ($_COOKIE['language'] == 'EN') {
+
+							echo '
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/artworks">Artworks</a></li>
+                                <li><a href="/artist">Artist</a></li>
+                                <li><a href="/news">News</a></li>
+                                <li><a href="/articles">Articles</a></li>
+                                <li><a href="/contacts">Contacts</a></li>
+                        ';
+
+
+						} else {
+
+							echo '
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/artworks">Галерея</a></li>
+                                <li><a href="/artist">О художнице</a></li>
+                                <li><a href="/news">Новости</a></li>
+                                <li><a href="/articles">Статьи</a></li>
+                                <li><a href="/contacts">Контакты</a></li>
+                        ';
+
+						}
+
+
+						?>
+
 					</ul>
 				</nav>
 
@@ -77,28 +86,37 @@
 		<div id="footer_gkg" style="opacity: 0.9">
 
 			<ul id="nav_bottom" style=" text-align: center; margin-bottom: 0%;">
-				<li><a href="/">Home</a></li>
-				<li><a href="/artworks">Artworks</a></li>
-				<li><a href="/artist">Artist</a></li>
-				<!--								<li><a href="/artist">Artist</a></li>
-                                                    <ul>
-                                                        <li><a href="">Biographi</a></li>
-                                                        <li>
-                                                            <a href="">Media &hellip;</a>
-                                                            <ul>
-                                                                <li><a href="">Photo</a></li>
-                                                                <li><a href="">Video</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li><a href="">Exhibitions</a></li>
-                                                        <li><a href="">Publishing</a></li>
-                                                    </ul>
 
-                                                </li>
-                -->
-				<li><a href="/news">News</a></li>
-				<li><a href="/articles">Articles</a></li>
-				<li><a href="/contacts">Contacts</a></li>
+				<?php
+
+				if ($_COOKIE['language'] == 'EN') {
+
+					echo '
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/artworks">Artworks</a></li>
+                                <li><a href="/artist">Artist</a></li>
+                                <li><a href="/news">News</a></li>
+                                <li><a href="/articles">Articles</a></li>
+                                <li><a href="/contacts">Contacts</a></li>
+                        ';
+
+
+				} else {
+
+					echo '
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/artworks">Галерея</a></li>
+                                <li><a href="/artist">О художнице</a></li>
+                                <li><a href="/news">Новости</a></li>
+                                <li><a href="/articles">Статьи</a></li>
+                                <li><a href="/contacts">Контакты</a></li>
+                        ';
+
+				}
+
+
+				?>
+
 			</ul>
 
 		</div>
@@ -129,9 +147,25 @@
 
 				<section class="6u 12u(mobile)" >
 
+					<?php
 
-					Please contact  me for additional information about pricing<br>
+            			if ($_COOKIE['language'] == 'EN') {
+
+							echo '
+								Please contact  me for additional information about pricing<br>
 					or any other questions that you may have<br><br>
+							';
+
+						} else {
+
+							echo '
+								Please contact  me for additional information about pricing<br>
+					or any other questions that you may have<br><br>
+							';
+
+						}
+
+					?>
 
 					<a class="icon fa-phone"><span class="label">Phone</span></a>
 					&nbsp&nbsp&nbsp&nbsp&nbspPhone:
@@ -163,6 +197,46 @@
 								<input type="email" name="about_send_mail_email" id="about_send_mail_email" value="" placeholder="Email" />
 							</div>
 -->
+							<?php
+
+								if ($_COOKIE['language'] == 'EN') {
+
+									echo '
+											<div class="12u$">
+												<input type="text" name="about_send_mail_message" id="about_send_mail_name" placeholder="Your name" />
+												<input type="email" name="about_send_mail_message" id="about_send_mail_email" placeholder="Your Email" />
+												<input type="text" name="about_send_mail_message" id="about_send_mail_subject" placeholder="Subject" />
+												<textarea name="about_send_mail_message" id="about_send_mail_message" placeholder="Your message" rows="1"></textarea>
+											</div>
+											<div class="12u$">
+												<ul class="actions">
+													<li><input type="button" value="Send Message" class="special" onclick="sentMail();"/></li>
+													<li><input type="reset" value="Reset" /></li>
+												</ul>
+											</div>
+									';
+
+								} else {
+
+									echo '
+											<div class="12u$">
+												<input type="text" name="about_send_mail_message" id="about_send_mail_name" placeholder="Ваше имя" />
+												<input type="email" name="about_send_mail_message" id="about_send_mail_email" placeholder="Ваш емэйл" />
+												<input type="text" name="about_send_mail_message" id="about_send_mail_subject" placeholder="Тема письма" />
+												<textarea name="about_send_mail_message" id="about_send_mail_message" placeholder="Текст письма" rows="1"></textarea>
+											</div>
+											<div class="12u$">
+												<ul class="actions">
+													<li><input type="button" value="Отправить" class="special" onclick="sentMail();"/></li>
+													<li><input type="reset" value="Очистить" /></li>
+												</ul>
+											</div>
+									';
+
+								}
+
+							?>
+
 							<div class="12u$">
 								<input type="text" name="about_send_mail_message" id="about_send_mail_name" placeholder="Your name" />
 								<input type="email" name="about_send_mail_message" id="about_send_mail_email" placeholder="Your Email" />
