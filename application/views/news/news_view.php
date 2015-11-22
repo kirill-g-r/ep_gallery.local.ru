@@ -142,7 +142,9 @@
 
 					if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {
 
-						$dir = scandir('translations/news/', SCANDIR_SORT_DESCENDING);
+						$dir = scandir('translations/news/');
+
+						arsort($dir);
 
 						echo '<table>';
 
@@ -249,7 +251,9 @@
 
 					} else {
 
-						$dir = scandir('translations/news/', SCANDIR_SORT_DESCENDING);
+						$dir = scandir('translations/news/');
+
+						arsort($dir);
 
 						echo '<table>';
 

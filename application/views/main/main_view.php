@@ -94,12 +94,25 @@
 
 								?>
 
+<!--
+								<li><a href="/">Home</a></li>
+								<li><a class="transition" href="/artworks">Artworks</a></li>
+								<li><a href="/artist">Artist</a></li>
+								<li><a href="/news">News</a></li>
+								<li><a href="/articles">Articles</a></li>
+								<li><a href="/contacts">Contacts</a></li>
+-->
+
 							</ul>
 
 							<br>
 							<br>
 
 							<a style="cursor: pointer" onclick="change_language('EN');">EN</a>/<a style="cursor: pointer" onclick="change_language('RU');">RU</a>
+
+
+							<!--<a href="../../../../EN">EN</a>/<a href="../../../../RU">RU</a>
+							-->
 
 						</nav>
 
@@ -139,6 +152,14 @@
 
 
 					?>
+<!--
+					<li><a href="/">Home</a></li>
+					<li><a href="/artworks">Artworks</a></li>
+					<li><a href="/artist">Artist</a></li>
+					<li><a href="/news">News</a></li>
+					<li><a href="/articles">Articles</a></li>
+					<li><a href="/contacts">Contacts</a></li>
+-->
 
 				</ul>
 
@@ -148,6 +169,12 @@
 			<section id="banner" style="padding-top: 2%; padding-bottom: 1%;">
 				<header>
 					<a href="/artworks"><h2 class="zapfiro text-shadow" style="font-size: 400%;">Artworks</h2></a>
+					<!--
+                                            <p>
+                                                A (free) responsive site template by <a href="http://html5up.net">HTML5 UP</a>.
+                                                Built on <strong>skel</strong> and released under the <a href="http://html5up.net/license">CCA</a> license.
+                                            </p>
+                    -->
 				</header>
 			</section>
 
@@ -157,6 +184,12 @@
 					<div id="carousel">
 						<article>
 							<a  href="images/slider/large/1.jpg" class="image featured"><img src="images/slider/small/1.jpg_small.jpg"  alt="" title="Baptism"></a>
+							<!--<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>-->
+<!--
+							<header>
+								<h3>#Натюрморт</h3>
+							</header>
+-->
 
 						</article>
 
@@ -199,6 +232,12 @@
 
 						<article>
 							<a  href="images/slider/large/1.jpg" class="image featured"><img src="images/slider/small/1.jpg_small.jpg"  alt="" title="Baptism"></a>
+							<!--<a href="#banner" class="image featured"><img src="images/1_2.jpg" alt="" /></a>-->
+							<!--
+                                                        <header>
+                                                            <h3>#Натюрморт</h3>
+                                                        </header>
+                            -->
 
 						</article>
 
@@ -247,8 +286,6 @@
 			<?php
 
 /*
-
-############## FOR UPLOAD SLIDER !!!
 
 			if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'true') {
 				echo '<div style="text-align: center" xmlns="http://www.w3.org/1999/html">
@@ -474,6 +511,29 @@
 
 											?>
 
+
+<!--
+											<article class="tweet">
+												Added a new artwork in landscapes theme.
+												<BR>
+												<span class="timestamp">21.10.2015</span>
+											</article>
+										</li>
+										<li>
+											<article class="tweet">
+												Added a new artwork in landscapes theme.
+												<BR>
+												<span class="timestamp">19.10.2015</span>
+											</article>
+										</li>
+										<li>
+											<article class="tweet">
+												Added a new artwork in compositions theme.
+												<BR>
+												<span class="timestamp">9.10.2015</span>
+											</article>
+										</li>
+-->
 									</ul>
 								</section>
 
@@ -487,6 +547,26 @@
                                     	<h2 class="icon fa-image circled"><span class="label">Photos</span></h2>
 									</a>
 								</header>
+
+<!--
+                                <div class="row 25%">
+
+                                    <div class="6u">
+                                        <a href="images/20_2.jpg" class="image fit"><img src="images/20_2.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="6u$">
+                                        <a href="#" class="image fit"><img src="images/10_2.JPG" alt="" /></a>
+                                    </div>
+                                    <div class="6u">
+                                        <a href="#" class="image fit"><img src="images/17_2.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="6u$">
+                                        <a href="#" class="image fit"><img src="images/1_2.jpg" alt="" /></a>
+
+									</div>
+
+                                </div>
+-->
 
 								<style>
 									.layer_gkg {
@@ -621,6 +701,23 @@
 
 									?>
 
+<!--
+
+									<article class="6u" >
+										<a href="images/artworks/landscapes/large/1.jpg" class="image fit"><img src="images/artworks/landscapes/small/1.jpg_small.jpg" alt="" title="Baptism" /></a>
+									</article>
+									<article class="6u$">
+										<a href="images/artworks/landscapes/large/2.jpg" class="image fit"><img src="images/artworks/landscapes/small/2.jpg_small.jpg" alt="" title="Barges on the Seine"  /></a>
+									</article>
+									<article class="6u">
+										<a href="images/artworks/landscapes/large/3.jpg" class="image fit"><img src="images/artworks/landscapes/small/3.jpg_small.jpg" alt="" title="Barges on the Seine" /></a>
+									</article>
+									<article class="6u$">
+										<a href="images/artworks/slider/large/4.jpg" class="image fit"><img src="images/artworks/landscapes/small/4.jpg_small.jpg" alt="" title="Restaurant on the Pont St. Martin. Strasbourg" /></a>
+
+									</article>
+-->
+
 								</div>
 
                             </section>
@@ -704,6 +801,44 @@
 
 											?>
 
+
+<!--
+											<article class="post stub">
+												<header>
+													<h3><a href="#">Как правильно подобрать обрамление для картины</a></h3>
+												</header>
+												<span class="timestamp">3 hours ago</span>
+											</article>
+										</li>
+										<li>
+											<article class="post stub">
+												<header>
+													<h3><a href="#">Some text, some text</a></h3>
+												</header>
+												<span class="timestamp">6 hours ago</span>
+											</article>
+										</li>
+										<li>
+											<article class="post stub">
+												<header>
+													<h3><a href="#">Some text, some text</a></h3>
+												</header>
+												<span class="timestamp">Yesterday</span>
+											</article>
+
+											<article class="tweet">
+												<a href="/articles">How to choose the right frame for the picture.</a>
+												<BR>
+												<span class="timestamp">11.10.2015</span>
+											</article>
+
+											<article class="tweet">
+												<a href="/articles">Some text, some text.</a>
+												<span class="timestamp">40 minutes ago</span>
+											</article>
+-->
+
+
 									</ul>
 								</section>
 
@@ -715,7 +850,34 @@
 								<!-- Contact -->
 									<section class="contact">
 										<header>
+<!--
+											<ul id="nav_bottom">
+												<li><a href="/">Home</a></li>
+												<li><a href="/artworks">Artworks</a></li>
+												<li><a href="/artist">Artist</a></li>
+-->
+												<!--								<li><a href="/artist">Artist</a></li>
+                                                                                    <ul>
+                                                                                        <li><a href="">Biographi</a></li>
+                                                                                        <li>
+                                                                                            <a href="">Media &hellip;</a>
+                                                                                            <ul>
+                                                                                                <li><a href="">Photo</a></li>
+                                                                                                <li><a href="">Video</a></li>
+                                                                                            </ul>
+                                                                                        </li>
+                                                                                        <li><a href="">Exhibitions</a></li>
+                                                                                        <li><a href="">Publishing</a></li>
+                                                                                    </ul>
 
+                                                                                </li>
+                                                -->
+<!--
+												<li><a href="/news">News</a></li>
+												<li><a href="/articles">Articles</a></li>
+												<li><a href="/contacts">Contacts</a></li>
+											</ul>
+-->
 											<h1 style="font-size: 400%" class="text-shadow-logo"><a href="/">Elena Opaleva</a></h1>
 
 										</header>

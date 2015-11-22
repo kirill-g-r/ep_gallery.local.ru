@@ -14,7 +14,8 @@ function updateArtistInfo() {
 
         success: function (data) {
 
-            //alert(data);
+            location.reload();
+            alert('Updated');
 
         }
 

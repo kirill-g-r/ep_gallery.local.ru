@@ -37,7 +37,7 @@ class Controller_Artist extends Controller
 
 	function update_artist_info() {
 
-		$file = 'translations/' . $_COOKIE['language'] . '/artist/artist.txt';
+		$file = 'translations/artist/' . $_COOKIE['language'] . '/artist.txt';
 
 		$fp = fopen($file, "w");
 		fwrite($fp, $_POST['artist_info']);
